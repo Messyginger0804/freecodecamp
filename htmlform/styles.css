@@ -1,6 +1,11 @@
-/* Step 10
-That is better. Now, make the background easy on the eyes, by changing the body background-color to #1b1b32. Then, to see the text, change the color to #f5f6f7. */
+/* 
 
+Step 43
+The HTML for the registration form is finished. Now, you can spruce it up a bit.
+
+Start by changing the font to Tahoma, and the font size to 16px in the body.
+
+*/
 
 
 body {
@@ -9,6 +14,8 @@ body {
     margin: 0;
     background-color: #1b1b32;
     color: f5f6f7;
+    font-family: Tahoma;
+    font-size: 16px;
 }
 
 label {
