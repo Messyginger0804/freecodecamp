@@ -12,11 +12,10 @@
     <p>Please fill out this form with the required information</p>
     <!--
         
-Step 26
-Within each corresponding label element, and immediately after the input element, add a space and add the following text:
+Step 27
+You only want one radio input to be selectable at a time. However, the form does not know the radio inputs are related.
 
-Personal 
-Business 
+To relate the radio inputs, give them the same name attribute with a value of account-type. Now, it is not possible to select both radio inputs at the same time.
 
 -->
 
@@ -29,10 +28,10 @@ Business
         </fieldset>
         <fieldset>
             <label for="">
-                <input type="radio"> Personal
+                <input name="account-type" type="radio"> Personal
             </label>
             <label for="">
-                <input type="radio"> Business
+                <input name="account-type" type="radio"> Business
             </label>
         </fieldset>
         <fieldset></fieldset>
