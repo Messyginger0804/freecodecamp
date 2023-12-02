@@ -12,18 +12,20 @@
     <p>Please fill out this form with the required information</p>
     <!--
         
-Step 16
-The rem unit stands for root em, and is relative to the font size of the html element.
+Step 18
+Following accessibility best practices, link the input elements and the label elements together using the for attribute.
 
-As label elements are inline by default, they are all displayed side by side on the same line, making their text hard to read. To make them appear on separate lines, add display: block to the label element, and add a margin of 0.5rem 0, to separate them from each other.
+Use first-name, last-name, email, and new-password as values for the respective id attributes.
+
+
 -->
 
     <form  method="post" action="https://register-demo.freecodecamp.org">
          <fieldset>
-            <label for="first-name">Enter Your First Name: <input type="text"></label>
-            <label for="last-name">Enter Your Last Name: <input type="text"></label>
-            <label for="email">Enter Your Email: <input type="text"></label>
-            <label for="password">Create a New Password: <input type="text"></label>
+            <label for="first-name">Enter Your First Name: <input type="text" id="first-name"></label>
+            <label for="last-name">Enter Your Last Name: <input type="text" id="last-name"></label>
+            <label for="email">Enter Your Email: <input type="text" id="email"></label>
+            <label for="new-password">Create a New Password: <input type="text" id="new-password"></label>
          </fieldset>
          <fieldset></fieldset>
          <fieldset></fieldset>
