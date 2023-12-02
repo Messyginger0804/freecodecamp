@@ -12,10 +12,12 @@
     <p>Please fill out this form with the required information</p>
     <!--
         
-Step 29
-Follow accessibility best practices by linking the input elements and the label elements in the second fieldset.
+Step 30
+You need to confirm that the user has read the terms and conditions.
 
-Use personal-account, and business-account as values for the respective id attributes.
+Add a label element. Inside the newly created label element add an input element and set the type attribute to checkbox. Make this input element required so users can not sign up without agreeing to the terms and conditions.
+
+Add an id and for attribute with the value terms-and-conditions to the elements for accessibility.
 
 -->
 
@@ -38,7 +40,13 @@ Use personal-account, and business-account as values for the respective id attri
             <!-- </legend> -->
         </fieldset>
 
-        <fieldset></fieldset>
+        <fieldset>
+            <legend >Account type (required)</legend>
+
+            <label for="terms-and-conditions">
+                <input type="checkbox" id="terms-and-conditions">
+            </label>
+        </fieldset>
         
         <input type="submit" id="submit" value="Submit">
     </form>
