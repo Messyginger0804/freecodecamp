@@ -18,9 +18,9 @@ body {
     font-size: 16px;
 }
 
-/* input {
-    display: inline-block;
-} */
+.inline {
+    width: unset;
+}
 
 input,
 textarea,
