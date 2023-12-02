@@ -12,13 +12,10 @@
     <p>Please fill out this form with the required information</p>
     <!--
         
-        Step 21
-At this point, you should be able to submit the form. However, you might notice not much happens.
+Step 22
+Certain type attribute values come with built-in form validation. For example, type="email" requires that the value be a valid email address.
 
-To make the form more interactive, add the required attribute to the input elements in the first fieldset.
-
-Now, if you try to submit the form without filling in the required fields, you will see an error message.
-
+Add custom validation to the password input element, by adding a minlength attribute with a value of 8. Doing so prevents inputs of less than 8 characters being submitted.
 
 -->
 
@@ -27,7 +24,7 @@ Now, if you try to submit the form without filling in the required fields, you w
             <label for="first-name">Enter Your First Name: <input required type="text" id="first-name"></label>
             <label for="last-name">Enter Your Last Name: <input required type="text" id="last-name"></label>
             <label for="email">Enter Your Email: <input required type="email" id="email"></label>
-            <label for="new-password">Create a New Password: <input required type="password" id="new-password"></label>
+            <label for="new-password">Create a New Password: <input required minlength="8" type="password" id="new-password"></label>
         </fieldset>
         <fieldset></fieldset>
         <fieldset></fieldset>
