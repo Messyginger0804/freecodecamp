@@ -12,10 +12,12 @@
     <p>Please fill out this form with the required information</p>
     <!--
         
-Step 31
-Add I accept the terms and conditions text to the newly added label, then link the text terms and conditions to the following location:
+Step 33
+Add another label after the first, with the text Input your age (years): . Then, nest an input with the type of number.
 
-https://www.freecodecamp.org/news/terms-of-service/
+Next, add a min attribute to the input with a value of 13 because users under the age of 13 should not register. Also, users probably will not be over the age of 120; add a max attribute with a value of 120.
+
+Now, if someone tries to submit the form with values outside of the range, a warning will appear, and the form will not submit. Give it a try.
 
 -->
 
@@ -42,7 +44,11 @@ https://www.freecodecamp.org/news/terms-of-service/
 
 <label for=""">
 <input type="file">Upload a profile picture: 
-</label>        </fieldset>
+</label> 
+<label for="age">
+    Input your age (years): <input max="120" min="13" id="age" type="number">
+</label>       
+</fieldset>
         <label for="terms-and-conditions">
             <input required type="checkbox" id="terms-and-conditions">I accept the <a href="https://www.freecodecamp.org/news/terms-of-service/">terms and conditions</a>
         </label>
