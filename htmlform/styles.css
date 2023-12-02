@@ -1,7 +1,9 @@
 /* 
 
-Step 45
-Center the form element, by giving it a margin of 0 auto. Then, fix its size to a maximum width of 500px, and a minimum width of 300px. In between that range, allow it to have a width of 60vw.
+Step 46
+During development, it is useful to see the fieldset default borders. However, they make the content appear too separated.
+
+Remove the border, and add 2rem of padding only to the top and bottom of each fieldset. Be sure to remove the padding from the left and right.
 
 */
 
@@ -14,6 +16,14 @@ body {
     color: f5f6f7;
     font-family: Tahoma;
     font-size: 16px;
+}
+
+fieldset {
+    border: none;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    padding-left: 0;
+    padding-right: 0;
 }
 
 form {
