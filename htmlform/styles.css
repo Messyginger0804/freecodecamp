@@ -1,8 +1,10 @@
 /* 
 
 
-Step 64
-Make the input for the terms and conditions inline by adding the appropriate class in the HTML.
+Step 65
+Lastly change the text color of the terms and conditions link element to #dfdfe2 by adding a new selector in the CSS.
+
+Well done! You have completed the final part of the Registration Form practice project.
 
 */
 
@@ -94,4 +96,8 @@ p {
 label {
     display: block;
     margin: 0.5rem 0;
+}
+
+a {
+    color: #dfdfe2;
 }
