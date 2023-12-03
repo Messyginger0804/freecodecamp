@@ -1,9 +1,9 @@
 /* 
 
-Step 55
-Currently, if you type in the input or textarea elements, you will not be able to see the text. Also, their height is too small to be easy to use.
+Step 56
+You want the select element to remain with a white background, but now it is not getting the same min-height as the input and textarea elements.
 
-Fix this, by setting the color to #ffffff, and setting their min-height to 2em.
+Move the min-height property and value so that all three element types have the same min-height value, and the select element still has a white background.
 
 */
 
@@ -21,9 +21,13 @@ body {
     font-size: 16px;
 }
 
+select {
+    min-height: 2em;
+    background-color: white;
+}
+
 textarea,
 input {
-    min-height: 2em;
     color: #ffffff;
     background-color: #0a0a23;
     border-color: #0a0a23;
@@ -43,11 +47,10 @@ input {
 input,
 textarea,
 select {
+    margin: 10px 0 0 0;
     width: 100%;
-    margin-top: 10px;
-    margin-bottom: 0;
-    margin-left: 0;
-    margin-right: 0;
+    min-height: 2em;
+    background-color: white;
 }
 
 fieldset {
