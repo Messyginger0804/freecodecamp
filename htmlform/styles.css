@@ -1,12 +1,13 @@
 /* 
 
-Step 50
-For the second fieldset, you want the input and label text to appear on the same line.
-
-Start, by giving the input elements in the second fieldset a class of inline.
+Step 52
+Add some space between the .inline elements and the label text, by giving a right margin of 0.5em. Also, set all the other margin to 0.
 
 */
 
+* {
+    margin: 0;
+}
 
 body {
     width: 100%;
@@ -20,6 +21,10 @@ body {
 
 .inline {
     width: unset;
+    margin-right: 0.5em;
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-left: 0;
 }
 
 input,
