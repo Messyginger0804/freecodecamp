@@ -1,16 +1,14 @@
 /* 
 
 
-Step 63
-Speaking of padding, the submit button is sitting at the bottom of the form element. Add 2em of padding only to the bottom of the form.
-
+Step 64
+Make the input for the terms and conditions inline by adding the appropriate class in the HTML.
 
 */
 
 * {
     margin: 0;
 }
-
 
 body {
     width: 100%;

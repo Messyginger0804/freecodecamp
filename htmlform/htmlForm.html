@@ -12,8 +12,8 @@
 
         <!-- 
             
-Step 51
-Select only the .inline elements, and give them width of unset. This will remove the earlier rule which set all the input elements to width: 100%.
+Step 64
+Make the input for the terms and conditions inline by adding the appropriate class in the HTML.
     
     -->
 
@@ -46,7 +46,7 @@ Select only the .inline elements, and give them width of unset. This will remove
 </label>
       </fieldset>
       <label for="terms-and-conditions">
-        <input name="checkbox" id="terms-and-conditions" type="checkbox" required /> I accept the <a href="https://www.freecodecamp.org/news/terms-of-service/">terms and conditions</a>
+        <input class="inline" id="terms-and-conditions" type="checkbox" required name="terms-and-conditions" /> I accept the <a href="https://www.freecodecamp.org/news/terms-of-service/">terms and conditions</a>
       </label>
       <input name="submission" type="submit" value="Submit" />
     </form>
