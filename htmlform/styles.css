@@ -1,7 +1,9 @@
 /* 
 
-Step 52
-Add some space between the .inline elements and the label text, by giving a right margin of 0.5em. Also, set all the other margin to 0.
+Step 53
+If you look close enough, you will notice the .inline elements are too high on the line.
+
+To combat this, set the vertical-align property to middle.
 
 */
 
@@ -25,6 +27,7 @@ body {
     margin-top: 0;
     margin-bottom: 0;
     margin-left: 0;
+    vertical-align: middle;
 }
 
 input,
