@@ -1,12 +1,13 @@
 /* 
 
-Step 14Passed
-Fine-tune the placement of your h1 by giving it a top and bottom margin of -4px and a left and right margin of 0.
+Step 17Passed
+Create a selector for your new .divider and set the border-bottom property to 1px solid #888989. Also give it a top and bottom margin of 2px. It should not have any left or right margin.
 
 */
 
 * {
     box-sizing: border-box;
+
 }
 
 html {
@@ -15,6 +16,11 @@ html {
 
 p {
     margin: 0;
+}
+
+.divider {
+    border-bottom: 1px solid #888989;
+    margin: 2px 0;
 }
 
 h1 {
