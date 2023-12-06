@@ -1,7 +1,9 @@
 /* 
 
-Step 6Passed
-The font is a bit small. Create an html selector and set the font to have a size of 16px.
+Step 8Passed
+Borders can be used to group and prioritize content.
+
+Create a .label selector and give it a border set to 2px solid black.
 
 */
 
@@ -11,4 +13,8 @@ html {
 
 body {
     font-family: "Open Sans", sans-serif;
+}
+
+.label {
+    border: 2px solid black;
 }
