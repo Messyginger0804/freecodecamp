@@ -1,9 +1,9 @@
 /* 
 
-Step 8Passed
-Borders can be used to group and prioritize content.
+Step 10Passed
+Give your .label selector a margin property set to 20px auto, and a padding property set to 0 7px.
 
-Create a .label selector and give it a border set to 2px solid black.
+
 
 */
 
@@ -16,5 +16,8 @@ body {
 }
 
 .label {
+    margin: 20px auto;
+    padding: 0 7px;
     border: 2px solid black;
+    width: 270px;
 }
