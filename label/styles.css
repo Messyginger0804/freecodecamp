@@ -1,7 +1,7 @@
 /* 
 
-Step 13Passed
-Give your h1 selector a text-align property of center.
+Step 14Passed
+Fine-tune the placement of your h1 by giving it a top and bottom margin of -4px and a left and right margin of 0.
 
 */
 
@@ -14,6 +14,7 @@ html {
 }
 
 h1 {
+    margin: -4 0;
     font-weight: 800;
     text-align: center;
 }
