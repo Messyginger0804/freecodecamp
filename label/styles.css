@@ -1,9 +1,9 @@
 /* 
 
-Step 18Passed
-The letter-spacing property can be used to adjust the space between each character of text in an element.
+Step 20Passed
+Your new class does not have any styling yet. Create a .bold selector and give it a font-weight property set to 800 to make the text bold.
 
-Give your h1 selector a letter-spacing property set to 0.15px to space them out a bit more.
+Go ahead and remove the font-weight property from your h1 selector as well.
 
 */
 
@@ -27,9 +27,12 @@ p {
 
 h1 {
     margin: -4 0;
-    font-weight: 800;
     text-align: center;
     letter-spacing: .15px;
+}
+
+.bold {
+    font-weight: 800;
 }
 
 body {
