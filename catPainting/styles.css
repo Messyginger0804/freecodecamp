@@ -1,9 +1,21 @@
-/* Step 4 
+/* 
 
-Use the universal selector to add box-sizing: border-box; to your CSS. This ensures elements include padding and border in their specified width and height. 
+Step 7
+Using a class selector, give the .cat-head element a width of 205px and a height of 180px. Also, give it a border of 1px solid #000 and a border-radius of 46%.
 
 */
 
 * {
     box-sizing: border-box;
+}
+
+body {
+    background-color: #c9d2fc;
+}
+
+.cat-head {
+    width: 205px;
+    height: 180px;
+    border: 1px solid #000;
+    border-radius: 46%;
 }
