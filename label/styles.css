@@ -1,9 +1,20 @@
+/* 
+
+Step 41
+The text % Daily Value * should be aligned to the right. Create a .right selector and use the justify-content property to do it. 
+
+*/
+
 * {
     box-sizing: border-box;
 }
 
 html {
     font-size: 16px;
+}
+
+.right {
+    justify-content: flex-end;
 }
 
 body {
