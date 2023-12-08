@@ -1,9 +1,7 @@
 /* 
 
-Step 32
-That's not the behavior you want. You should make the ears display over the head so the borders that overlap with them don't show.
-
-Instead of -1, set the z-index property of the left ear to 1.
+Step 33
+Set the z-indexproperty of the right ear to 1 so it always stays over the head.
 
 */
 
@@ -17,6 +15,8 @@ body {
 
 
 .cat-right-ear {
+    z-index: 1;
+
     border-left: 35px solid transparent;
     border-right: 35px solid transparent;
     border-bottom: 70px solid #5e5e5e;
