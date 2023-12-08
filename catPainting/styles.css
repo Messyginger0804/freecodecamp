@@ -1,7 +1,7 @@
 /* 
 
-Step 35
-Move the inner ear into position with a position property set to absolute, a top of 22px, and a left of -20px.
+Step 36
+To remove all the pointed edges of the ear, set a bottom-right and bottom-left border radius of 40% each, a top-left border radius of 90px, and a top-right border radius of 10px.
 
 */
 
@@ -36,6 +36,10 @@ body {
     position: absolute;
     top: 22px;
     left: -20px;
+    border-bottom-left-radius: 40%;
+    border-bottom-right-radius: 40%;
+    border-top-left-radius: 90px;
+    border-top-right-radius: 10px;
 }
 
 .cat-left-ear {
