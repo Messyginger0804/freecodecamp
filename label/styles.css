@@ -1,9 +1,7 @@
-/* 
+/* Step 67Passed
+Give the .note selector a left and right padding of 8px, removing the top and bottom padding. Also set the text-indent property to -8px.
 
-Step 41
-The text % Daily Value * should be aligned to the right. Create a .right selector and use the justify-content property to do it. 
-
-*/
+With these last changes, your nutrition label is complete! */
 
 * {
     box-sizing: border-box;
@@ -13,8 +11,12 @@ html {
     font-size: 16px;
 }
 
-.right {
-    justify-content: flex-end;
+.note {
+    padding-left: 8px;
+    padding-right: 8px;
+    padding-top: 0;
+    padding-bottom: 0;
+    text-indent: -8px;
 }
 
 body {
@@ -67,6 +69,7 @@ p {
     font-size: 0.85rem;
 }
 
+
 .calories-info {
     display: flex;
     justify-content: space-between;
@@ -87,4 +90,25 @@ p {
     margin: -7px -2px;
     font-size: 2.4em;
     font-weight: 700;
+}
+
+.right {
+    justify-content: flex-end;
+}
+
+.indent {
+    margin-left: 1em;
+}
+
+.double-indent {
+    margin-left: 2em;
+}
+
+.daily-value p:not(.no-divider) {
+    border-bottom: 1px solid #888989;
+}
+
+.note {
+    font-size: 0.6rem;
+    margin: 5px 0;
 }
