@@ -1,13 +1,11 @@
 /* 
 
-Step 28Passed
-You may notice there is still a small border at the bottom of your .large element. To reset this, give your .large, .medium selector a border property set to 0.
+Step 31Passed
+The rem unit stands for root em, and is relative to the font size of the html element.
 
-Note: the medium(medium) class will be utilized later for the thinner bars of the nutrition label.
+Create a .small-text selector and set the font-size to 0.85rem, which would calculate to roughly 13.6px (remember that you set your html to have a font-size of 16px). 
 
-
- */
-
+*/
 
 
 * {
@@ -44,6 +42,11 @@ p {
 .divider {
     border-bottom: 1px solid #888989;
     margin: 2px 0;
+}
+
+.small-text {
+    font-size: 0.85rem;
+
 }
 
 .bold {
