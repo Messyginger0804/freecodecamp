@@ -1,9 +1,7 @@
 /* 
 
-Step 16
-You should now center the cat head.
-
-Give the .cat-head element a position property set to absolute. Set a value of 0 for the right, left, top, bottom properties, then set its margin property on all sides to auto. That's one way to center an element vertically and horizontally using CSS positioning.
+Step 18
+Also, remove the .box CSS rule and its declarations because you don't need them anymore.
 
 */
 
@@ -13,15 +11,6 @@ Give the .cat-head element a position property set to absolute. Set a value of 0
 
 body {
     background-color: #c9d2fc;
-}
-
-.box {
-    width: 200px;
-    height: 600px;
-    background-color: #000;
-    position: absolute;
-    top: 800px;
-    left: 650px;
 }
 
 .cat-head {
