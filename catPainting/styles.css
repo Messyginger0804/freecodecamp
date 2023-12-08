@@ -1,11 +1,9 @@
 /* 
 
-Step 26
-To position the left ear properly, you can use CSS transform to rotate it in a certain degree.
+Step 27
+Now you can work on the right ear of the cat. You have the HTML for it already.
 
-The transform property allows you to modify the shape, position, and size of an element without changing the layout or affecting the surrounding elements. It has functions such as translate(), rotate(), scale(), skew(), and matrix().
-
-Set the transform property to rotate(-45deg) and see what happens.
+Using a class selector, give the .cat-right-ear element a left and right border of 35px solid transparent each. Also, set the bottom border to 70px solid #5e5e5e.
 
 */
 
