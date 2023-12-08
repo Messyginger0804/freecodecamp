@@ -1,3 +1,15 @@
+/* 
+
+Step 28Passed
+You may notice there is still a small border at the bottom of your .large element. To reset this, give your .large, .medium selector a border property set to 0.
+
+Note: the medium(medium) class will be utilized later for the thinner bars of the nutrition label.
+
+
+ */
+
+
+
 * {
     box-sizing: border-box;
 }
@@ -45,4 +57,5 @@ p {
 .large,
 .medium {
     background-color: black;
+    border: 0;
 }
