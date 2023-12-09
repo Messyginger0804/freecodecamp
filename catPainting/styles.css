@@ -1,9 +1,7 @@
 /* 
 
-Step 40
-You will now start working on the cat's eyes. Like the ears, the eyes will have inner eyes.
-
-Create a div element with the class cat-eyes. Inside the cat-eyes element, create two div elements with the class cat-left-eye and cat-right-eye respectively.
+Step 43
+Using a class selector, give your .cat-left-eye element a width of 30px and a height of 40px. Also, give it a background-color of #000.
 
 */
 
@@ -79,4 +77,10 @@ body {
     border-left: 20px solid transparent;
     border-right: 20px solid transparent;
     border-bottom: 40px solid #3b3b4f;
+}
+
+.cat-left-eye {
+    width: 30px;
+    height: 40px;
+    background-color: #000;
 }
