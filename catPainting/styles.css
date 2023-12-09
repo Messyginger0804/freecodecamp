@@ -1,7 +1,7 @@
 /* 
 
-Step 53
-It's time to work on the nose. In your HTML, create a div element with the class cat-nose.
+Step 54
+Using a class selector, give your .cat-nose element a left and right border of 15px solid transparent each. Also give it a bottom border of 20px solid #442c2c.
 
 */
 
@@ -11,6 +11,12 @@ It's time to work on the nose. In your HTML, create a div element with the class
 
 body {
     background-color: #c9d2fc;
+}
+
+.cat-nose {
+    border-left: 15px solid transparent;
+    border-right: 15px solid transparent;
+    border-bottom: 20px solid #442c2c;
 }
 
 .cat-head {
