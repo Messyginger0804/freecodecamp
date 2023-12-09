@@ -1,7 +1,9 @@
 /* 
 
-Step 39
-As you did for the left inner ear, remove the sharp edges of the right inner ear by setting a bottom-right and bottom-left border radius of 40%, a top-left border radius of 90px, and a top-right border radius of 10px.
+Step 40
+You will now start working on the cat's eyes. Like the ears, the eyes will have inner eyes.
+
+Create a div element with the class cat-eyes. Inside the cat-eyes element, create two div elements with the class cat-left-eye and cat-right-eye respectively.
 
 */
 
