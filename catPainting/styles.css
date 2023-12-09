@@ -1,7 +1,7 @@
 /* 
 
-Step 38
-Move the right inner ear into position with a position property set to absolute, a top of 22px and a left of -20px.
+Step 39
+As you did for the left inner ear, remove the sharp edges of the right inner ear by setting a bottom-right and bottom-left border radius of 40%, a top-left border radius of 90px, and a top-right border radius of 10px.
 
 */
 
@@ -13,67 +13,68 @@ body {
     background-color: #c9d2fc;
 }
 
-.cat-right-inner-ear {
-    border-left: 20px solid transparent;
-    border-right: 20px solid transparent;
-    border-bottom: 40px solid #3b3b4f;
-    position: absolute;
-    top: 22px;
-    left: -20px;
-}
-
-.cat-right-ear {
-    z-index: 1;
-
-    border-left: 35px solid transparent;
-    border-right: 35px solid transparent;
-    border-bottom: 70px solid #5e5e5e;
-    position: absolute;
-    top: -26px;
-    left: 163px;
-    transform: rotate(45deg);
-    border-top-left-radius: 90px;
-    border-top-right-radius: 10px;
-
-}
-
-.cat-left-inner-ear {
-    border-left: 20px solid transparent;
-    border-right: 20px solid transparent;
-    border-bottom: 40px solid #3b3b4f;
-    position: absolute;
-    top: 22px;
-    left: -20px;
-    border-bottom-left-radius: 40%;
-    border-bottom-right-radius: 40%;
-    border-top-left-radius: 90px;
-    border-top-right-radius: 10px;
-}
-
-.cat-left-ear {
-    z-index: 1;
-    border-top-left-radius: 90px;
-    border-top-right-radius: 10px;
-    position: absolute;
-    top: -26px;
-    left: -31px;
-    border-left: 35px solid transparent;
-    border-right: 35px solid transparent;
-    border-bottom: 70px solid #5e5e5e;
-    transform: rotate(-45deg);
-
-}
-
 .cat-head {
+    position: absolute;
+    right: 0;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    background: linear-gradient(#5e5e5e 85%, #45454f 100%);
     width: 205px;
     height: 180px;
     border: 1px solid #000;
     border-radius: 46%;
-    background: linear-gradient(0deg, #5e5e5e 85%, #45454f 100%);
+}
+
+.cat-left-ear {
     position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    margin: auto;
+    top: -26px;
+    left: -31px;
+    z-index: 1;
+    border-top-left-radius: 90px;
+    border-top-right-radius: 10px;
+    transform: rotate(-45deg);
+    border-left: 35px solid transparent;
+    border-right: 35px solid transparent;
+    border-bottom: 70px solid #5e5e5e;
+}
+
+.cat-right-ear {
+    position: absolute;
+    top: -26px;
+    left: 163px;
+    z-index: 1;
+    transform: rotate(45deg);
+    border-top-left-radius: 90px;
+    border-top-right-radius: 10px;
+    border-left: 35px solid transparent;
+    border-right: 35px solid transparent;
+    border-bottom: 70px solid #5e5e5e;
+}
+
+.cat-left-inner-ear {
+    position: absolute;
+    top: 22px;
+    left: -20px;
+    border-top-left-radius: 90px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 40%;
+    border-bottom-left-radius: 40%;
+    border-left: 20px solid transparent;
+    border-right: 20px solid transparent;
+    border-bottom: 40px solid #3b3b4f;
+}
+
+.cat-right-inner-ear {
+    position: absolute;
+    top: 22px;
+    left: -20px;
+    border-top-left-radius: 90px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 40%;
+    border-bottom-left-radius: 40%;
+    border-left: 20px solid transparent;
+    border-right: 20px solid transparent;
+    border-bottom: 40px solid #3b3b4f;
 }
