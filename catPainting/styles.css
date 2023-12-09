@@ -1,7 +1,7 @@
 /* 
 
-Step 50
-Move the left inner eye into position with a position property of absolute, a top of 8px, and a left of 2px. Also, give it a border radius of 60% and rotate it at 10 degrees.
+Step 51
+Using a class selector, give your .cat-right-inner-eye element a width of 10px and a height of 20px. Also, give it a background color of #fff.
 
 */
 
@@ -109,5 +109,16 @@ body {
     top: 54px;
     left: 134px;
     transform: rotate(-25deg);
+    border-radius: 60%;
+}
+
+.cat-right-inner-eye {
+    width: 10px;
+    height: 20px;
+    background-color: #fff;
+    position: absolute;
+    top: 8px;
+    left: 2px;
+    transform: rotate(10deg);
     border-radius: 60%;
 }
