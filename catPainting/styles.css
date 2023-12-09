@@ -1,7 +1,9 @@
 /* 
 
-Step 56
-Remove the sharp edges of the nose with border radius of 50% each on the top-left, bottom-right, and bottom-left corners. Also, rotate it at 180 degrees.
+Step 57
+Now you will start working on the mouth. There will be a right line and left line for the mouth.
+
+Create a div element with the class cat-mouth.
 
 */
 
