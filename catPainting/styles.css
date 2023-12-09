@@ -1,7 +1,7 @@
 /* 
 
-Step 47
-Move the right eye into position with a position property of absolute a top of 54px, and a left of 134px.
+Step 48
+To make the right eye look like an eye, give it a border radius of 60%. Also, using the transform property, rotate it at -25 degrees.
 
 */
 
@@ -97,6 +97,6 @@ body {
     position: absolute;
     top: 54px;
     left: 134px;
-    transform: rotate(25deg);
+    transform: rotate(-25deg);
     border-radius: 60%;
 }
