@@ -1,7 +1,9 @@
 /* 
 
-Step 48
-To make the right eye look like an eye, give it a border radius of 60%. Also, using the transform property, rotate it at -25 degrees.
+Step 49
+Those look like eyes, but you can still make them better. That's why you created two inner eyes div elements.
+
+Using a class selector, give your .cat-left-inner-eye element a width of 10px and a height of 20px. Also, give it a background color of #fff.
 
 */
 
@@ -88,6 +90,12 @@ body {
     left: 39px;
     transform: rotate(25deg);
     border-radius: 60%;
+}
+
+.cat-left-inner-eye {
+    width: 10px;
+    height: 20px;
+    background-color: #fff;
 }
 
 .cat-right-eye {
