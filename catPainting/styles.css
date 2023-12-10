@@ -1,10 +1,8 @@
 /* 
 
-Step 57
-Now you will start working on the mouth. There will be a right line and left line for the mouth.
-
-Create a div element with the class cat-mouth.
-
+Step 60
+You are going to make the two mouth lines into an elliptical shape. So, give the .cat-mouth div selector a border color of black transparent transparent transparent and a border radius of 190%/190px 150px 0 0.
+ 
 */
 
 * {
@@ -141,4 +139,7 @@ body {
     width: 30px;
     height: 50px;
     border: 2px solid #000;
+    border-color: black transparent transparent transparent;
+    border-radius: 190%/190px 150px 0 0;
+
 }
