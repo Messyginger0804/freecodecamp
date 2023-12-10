@@ -1,7 +1,7 @@
 /* 
 
-Step 60
-You are going to make the two mouth lines into an elliptical shape. So, give the .cat-mouth div selector a border color of black transparent transparent transparent and a border radius of 190%/190px 150px 0 0.
+Step 77
+Now you will work on moving the right whiskers into place. Use class selector to target the .cat-whisker-right-top element and give it a position of absolute, a top of 120px, and a left of 109px.
  
 */
 
@@ -192,4 +192,10 @@ body {
     left: 52px;
     transform: rotate(-3deg);
 
+}
+
+.cat-whisker-right-top {
+    position: absolute;
+    top: 120px;
+    left: 109px;
 }
