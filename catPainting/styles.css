@@ -141,6 +141,7 @@ body {
     border: 2px solid #000;
     border-color: black transparent transparent transparent;
     border-radius: 190%/190px 150px 0 0;
+    transform: rotate(165deg);
 
 }
 
