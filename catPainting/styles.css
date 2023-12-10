@@ -177,3 +177,9 @@ body {
     transform: rotate(10deg);
 
 }
+
+.cat-whisker-left-middle {
+    position: absolute;
+    top: 127px;
+    left: 52px;
+}
