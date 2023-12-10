@@ -143,3 +143,9 @@ body {
     border-radius: 190%/190px 150px 0 0;
 
 }
+
+.cat-mouth-line-left {
+    position: absolute;
+    top: 88px;
+    left: 74px;
+}
