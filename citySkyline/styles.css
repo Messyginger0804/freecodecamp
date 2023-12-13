@@ -1,7 +1,7 @@
 /* 
 
-Step 71
-The windows are stacked on top of each other at the left of the section, behind the purple building. Add a new class below .building-wrap called window-wrap. Make .window-wrap a flexbox container, and use the align-items and justify-content properties to center its child elements vertically and evenly space them in their parent, respectively.
+Step 72
+Add the new window-wrap class to the .bb4c element.
 
 */
 :root {
@@ -38,9 +38,6 @@ body {
 }
 
 /* BACKGROUND BUILDINGS - "bb" stands for "background building" */
-
-/* Step 71
-The windows are stacked on top of each other at the left of the section, behind the purple building. Add a new class below .building-wrap called window-wrap. Make .window-wrap a flexbox container, and use the align-items and justify-content properties to center its child elements vertically and evenly space them in their parent, respectively. */
 
 .building-wrap {
     display: flex;
