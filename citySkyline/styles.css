@@ -1,7 +1,7 @@
 /* 
 
-Step 73
-Looks good! On to the foreground buildings! Turn the .fb1 building into three sections by nesting three new div elements within it. Give them the classes of fb1a, fb1b and fb1c, in that order.
+Step 74
+Give .fb1b a width of 60% and height of 10%, and .fb1c a width of 100% and height of 80%.
 
 */
 :root {
@@ -147,10 +147,21 @@ Give the bb4-window class a width of 18%, a height of 90%, and add your --window
 }
 
 /* FOREGROUND BUILDINGS - "fb" stands for "foreground building" */
+
 .fb1 {
     width: 10%;
     height: 60%;
     background-color: var(--building-color4);
+}
+
+.fb1b {
+    width: 60%;
+    height: 10%;
+}
+
+.fb1c {
+    width: 100%;
+    height: 80%;
 }
 
 .fb2 {
