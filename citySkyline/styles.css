@@ -1,7 +1,7 @@
 /* 
 
-Step 75
-Add the building-wrap class to the .fb1 element to center the sections.
+Step 76
+Move the background-color property and value from .fb1 to .fb1b.
 
 */
 :root {
@@ -148,15 +148,18 @@ Give the bb4-window class a width of 18%, a height of 90%, and add your --window
 
 /* FOREGROUND BUILDINGS - "fb" stands for "foreground building" */
 
+/* Step 76
+Move the background-color property and value from .fb1 to .fb1b. */
+
 .fb1 {
     width: 10%;
     height: 60%;
-    background-color: var(--building-color4);
 }
 
 .fb1b {
     width: 60%;
     height: 10%;
+    background-color: var(--building-color4);
 }
 
 .fb1c {
