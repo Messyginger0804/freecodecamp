@@ -1,10 +1,4 @@
-/* 
-
-Step 50
-Create a new variable in :root named window-color2 with a value of #8cd9b3. This will be used as the secondary color for this building. 
-
-*/
-
+/* file: styles.css */
 :root {
     --building-color1: #aa80ff;
     --building-color2: #66cc99;
@@ -79,6 +73,10 @@ body {
 .bb2b {
     width: 100%;
     height: 100%;
+    background: repeating-linear-gradient(var(--building-color2)0%,
+            var(--building-color2) 6%,
+            var(--window-color2) 6%,
+            var(--window-color2) 9%);
 }
 
 .bb3 {
