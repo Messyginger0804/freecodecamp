@@ -1,8 +1,7 @@
 /* 
 
-Step 64
-Remove the background-color property and value from .bb4, and add it to the three new sections .bb4a, .bb4b, and .bb4c, so only the sections are filled.
-
+Step 65
+You want .bb4 to share the properties of .bb1 that center the sections. Instead of duplicating that code, create a new class above the background building comment called building-wrap. Leave it empty for now; this class will be used in a few places to save you some coding.
 
 
 */
@@ -39,6 +38,9 @@ body {
 }
 
 /* BACKGROUND BUILDINGS - "bb" stands for "background building" */
+
+.building-wrap {}
+
 .bb1 {
     width: 10%;
     height: 70%;
@@ -106,8 +108,8 @@ body {
     height: 58%;
 }
 
-/* Step 64
-Remove the background-color property and value from .bb4, and add it to the three new sections .bb4a, .bb4b, and .bb4c, so only the sections are filled. */
+/* Step 65
+You want .bb4 to share the properties of .bb1 that center the sections. Instead of duplicating that code, create a new class above the background building comment called building-wrap. Leave it empty for now; this class will be used in a few places to save you some coding.*/
 
 .bb4a {
     width: 3%;
