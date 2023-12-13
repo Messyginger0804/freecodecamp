@@ -1,6 +1,8 @@
 /* 
-Step 61
-Remove the background-color property and value from .bb3 since you are using the gradient as the background now.
+
+Step 62
+The next building will have three sections. Nest three div elements within .bb4. Give them the classes of bb4a, bb4b and bb4c in that order.
+
 */
 :root {
     --building-color1: #aa80ff;
