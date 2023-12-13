@@ -1,4 +1,7 @@
-/* file: styles.css */
+/* 
+Step 61
+Remove the background-color property and value from .bb3 since you are using the gradient as the background now.
+*/
 :root {
     --building-color1: #aa80ff;
     --building-color2: #66cc99;
@@ -88,7 +91,6 @@ body {
 .bb3 {
     width: 10%;
     height: 55%;
-    background-color: var(--building-color3);
     background: repeating-linear-gradient(90deg,
             var(--building-color3),
             var(--building-color3),
