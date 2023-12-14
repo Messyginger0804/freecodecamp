@@ -1,11 +1,3 @@
-/* 
-
-Step 103
-This building is going to have another triangle on top. Give the top section a border-top of 5vh solid transparent, and a border-left that is 8vw, solid, and uses your building color variable as the color.
-
-*/
-
-
 :root {
     --building-color1: #aa80ff;
     --building-color2: #66cc99;
@@ -250,29 +242,17 @@ body {
 .fb5 {
     width: 10%;
     height: 33%;
+    background-color: var(--building-color2);
     position: relative;
     right: 10%;
     background: repeating-linear-gradient(var(--building-color2),
             var(--building-color2) 5%,
             transparent 5%,
-            transparent 10%),
-        repeating-linear-gradient(90deg,
-            var(--building-color2),
-            var(--building-color2) 12%,
-            var(--window-color2) 12%,
-            var(--window-color2) 44%);
+            transparent 10%)
 }
 
 .fb6 {
     width: 9%;
     height: 38%;
     background-color: var(--building-color3);
-    background: repeating-linear-gradient(90deg,
-            var(--building-color3),
-            var(--building-color3) 10%,
-            transparent 10%,
-            transparent 30%), repeating-linear-gradient(var(--building-color3),
-            var(--building-color3) 10%,
-            var(--window-color3) 10%,
-            var(--window-color3) 30%);
 }
