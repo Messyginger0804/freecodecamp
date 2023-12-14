@@ -1,7 +1,7 @@
 /* 
 
-Step 102
-The windows are stacked on top of each other on the rightmost purple building. Turn the building into a flexbox parent, and use the flex-wrap property to put the windows side by side, and push them down to a new row when they don't fit.
+Step 103
+This building is going to have another triangle on top. Give the top section a border-top of 5vh solid transparent, and a border-left that is 8vw, solid, and uses your building color variable as the color.
 
 */
 
@@ -219,14 +219,16 @@ body {
     background-color: var(--window-color1);
 }
 
-/* Step 101
-Fill in the windows with your secondary color for this building. Also add a margin of 10% to give the windows some space.*/
-
 .fb4 {
     width: 8%;
     height: 45%;
     position: relative;
     left: 10%;
+}
+
+.fb4a {
+    border-top: 5vh solid transparent;
+    border-left: 8vw solid var(--building-color1);
 }
 
 .fb4b {
@@ -238,23 +240,39 @@ Fill in the windows with your secondary color for this building. Also add a marg
 }
 
 .fb4-window {
-    background-color: var(--window-color1);
-    margin: 10%;
     width: 30%;
     height: 10%;
     border-radius: 50%;
+    background-color: var(--window-color1);
+    margin: 10%;
 }
 
 .fb5 {
     width: 10%;
     height: 33%;
-    background-color: var(--building-color2);
     position: relative;
     right: 10%;
+    background: repeating-linear-gradient(var(--building-color2),
+            var(--building-color2) 5%,
+            transparent 5%,
+            transparent 10%),
+        repeating-linear-gradient(90deg,
+            var(--building-color2),
+            var(--building-color2) 12%,
+            var(--window-color2) 12%,
+            var(--window-color2) 44%);
 }
 
 .fb6 {
     width: 9%;
     height: 38%;
     background-color: var(--building-color3);
+    background: repeating-linear-gradient(90deg,
+            var(--building-color3),
+            var(--building-color3) 10%,
+            transparent 10%,
+            transparent 30%), repeating-linear-gradient(var(--building-color3),
+            var(--building-color3) 10%,
+            var(--window-color3) 10%,
+            var(--window-color3) 30%);
 }
