@@ -1,11 +1,3 @@
-/* 
-
-Step 97
-Give .fb4b a width of 100% and height of 89%.
-
-*/
-
-
 :root {
     --building-color1: #aa80ff;
     --building-color2: #66cc99;
@@ -150,7 +142,6 @@ body {
     border-bottom: 7vh solid var(--building-color4);
     border-left: 2vw solid transparent;
     border-right: 2vw solid transparent;
-
 }
 
 .fb1b {
@@ -178,15 +169,8 @@ body {
     height: 40%;
 }
 
-.fb2-window {
-    width: 22%;
-    height: 100%;
-    background-color: var(--window-color3);
-}
-
 .fb2a {
     width: 100%;
-    height: 75%;
     border-bottom: 10vh solid var(--building-color3);
     border-left: 1vw solid transparent;
     border-right: 1vw solid transparent;
@@ -198,12 +182,27 @@ body {
     background-color: var(--building-color3);
 }
 
-/* Step 93
-Give the .fb3-window elements a width of 25%, a height of 80%, and use your --window-color1 variable as the background-color value. */
+.fb2-window {
+    width: 22%;
+    height: 100%;
+    background-color: var(--window-color3);
+}
 
 .fb3 {
     width: 10%;
     height: 35%;
+}
+
+.fb3a {
+    width: 80%;
+    height: 15%;
+    background-color: var(--building-color1);
+}
+
+.fb3b {
+    width: 100%;
+    height: 35%;
+    background-color: var(--building-color1);
 }
 
 .fb3-window {
@@ -211,23 +210,6 @@ Give the .fb3-window elements a width of 25%, a height of 80%, and use your --wi
     height: 80%;
     background-color: var(--window-color1);
 }
-
-.fb3a {
-    width: 80%;
-    height: 15%;
-    background-color: var(--building-color1);
-
-}
-
-.fb3b {
-    width: 100%;
-    height: 35%;
-    background-color: var(--building-color1);
-
-}
-
-/* Step 97
-Give .fb4b a width of 100% and height of 89%. */
 
 .fb4 {
     width: 8%;
