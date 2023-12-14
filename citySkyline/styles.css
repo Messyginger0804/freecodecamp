@@ -1,7 +1,7 @@
 /* 
 
-Step 86
-Move the background-color property and value from .fb2 to .fb2b to just color the section and not the container.
+Step 87
+For .fb2a, add a border-bottom of 10vh solid var(--building-color3), and a border-left and border-right of 1vw solid transparent. This time the border trick will create a trapezoid shape.
 
 */
 
@@ -173,6 +173,9 @@ body {
             var(--window-color4) 90%);
 }
 
+/* Step 87
+For .fb2a, add a border-bottom of 10vh solid var(--building-color3), and a border-left and border-right of 1vw solid transparent. This time the border trick will create a trapezoid shape. */
+
 .fb2 {
     width: 10%;
     height: 40%;
@@ -190,6 +193,9 @@ Move the background-color property and value from .fb2 to .fb2b to just color th
 .fb2a {
     width: 100%;
     height: 75%;
+    border-bottom: 10vh solid var(--building-color3);
+    border-left: 1vw solid transparent;
+    border-right: 1vw solid transparent;
 }
 
 .fb2b {
