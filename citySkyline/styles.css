@@ -1,7 +1,7 @@
 /* 
 
-Step 90
-Remove the background-color property and value from .fb3, and add them to .fb3a and .fb3b.
+Step 93
+Give the .fb3-window elements a width of 25%, a height of 80%, and use your --window-color1 variable as the background-color value.
 
 */
 
@@ -198,12 +198,18 @@ body {
     background-color: var(--building-color3);
 }
 
-/* Step 90
-Remove the background-color property and value from .fb3, and add them to .fb3a and .fb3b. */
+/* Step 93
+Give the .fb3-window elements a width of 25%, a height of 80%, and use your --window-color1 variable as the background-color value. */
 
 .fb3 {
     width: 10%;
     height: 35%;
+}
+
+.fb3-window {
+    width: 25%;
+    height: 80%;
+    background-color: var(--window-color1);
 }
 
 .fb3a {
