@@ -1,7 +1,7 @@
 /* 
 
-Step 82
-Give .fb2a a width of 100% and .fb2b a width of 100% and height of 75%.
+Step 85
+Give the .fb2-window elements a width of 22%, height of 100%, and a background-color of your --window-color3 variable.
 
 */
 
@@ -56,9 +56,6 @@ body {
     width: 10%;
     height: 70%;
 }
-
-/* Step 79
-You're going to use some more border tricks for the top section. Add a border-bottom with a value of 7vh solid var(--building-color4) to .fb1a. This will put a 7vh height border on the bottom. But since the element has zero size, it only shows up as a 2px wide line from the 1px border that is on all the elements. */
 
 .bb1a {
     width: 70%;
@@ -182,8 +179,14 @@ You're going to use some more border tricks for the top section. Add a border-bo
     background-color: var(--building-color3);
 }
 
-/* Step 82
-Give .fb2a a width of 100% and .fb2b a width of 100% and height of 75%. */
+.fb2-window {
+    width: 22%;
+    height: 100%;
+    background-color: var(--window-color3);
+}
+
+/* Step 85
+Give the .fb2-window elements a width of 22%, height of 100%, and a background-color of your --window-color3 variable. */
 
 .fb2a {
     width: 100%;
