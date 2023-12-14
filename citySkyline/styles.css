@@ -1,9 +1,3 @@
-/* 
-
-Step 76
-Move the background-color property and value from .fb1 to .fb1b.
-
-*/
 :root {
     --building-color1: #aa80ff;
     --building-color2: #66cc99;
@@ -37,8 +31,6 @@ body {
     top: 0;
 }
 
-/* BACKGROUND BUILDINGS - "bb" stands for "background building" */
-
 .building-wrap {
     display: flex;
     flex-direction: column;
@@ -51,10 +43,10 @@ body {
     justify-content: space-evenly;
 }
 
+/* BACKGROUND BUILDINGS - "bb" stands for "background building" */
 .bb1 {
     width: 10%;
     height: 70%;
-
 }
 
 .bb1a {
@@ -108,12 +100,30 @@ body {
     background: repeating-linear-gradient(90deg,
             var(--building-color3),
             var(--building-color3),
-            var(--window-color3) 15%)
+            var(--window-color3) 15%);
 }
 
 .bb4 {
     width: 11%;
     height: 58%;
+}
+
+.bb4a {
+    width: 3%;
+    height: 10%;
+    background-color: var(--building-color4);
+}
+
+.bb4b {
+    width: 80%;
+    height: 5%;
+    background-color: var(--building-color4);
+}
+
+.bb4c {
+    width: 100%;
+    height: 85%;
+    background-color: var(--building-color4);
 }
 
 .bb4-window {
@@ -122,35 +132,7 @@ body {
     background-color: var(--window-color4);
 }
 
-/* Step 70
-Give the bb4-window class a width of 18%, a height of 90%, and add your --window-color4 variable as the background-color.*/
-
-.bb4a {
-    width: 3%;
-    height: 10%;
-    background-color: var(--building-color4);
-
-}
-
-.bb4b {
-    width: 80%;
-    height: 5%;
-    background-color: var(--building-color4);
-
-}
-
-.bb4c {
-    width: 100%;
-    height: 85%;
-    background-color: var(--building-color4);
-
-}
-
 /* FOREGROUND BUILDINGS - "fb" stands for "foreground building" */
-
-/* Step 76
-Move the background-color property and value from .fb1 to .fb1b. */
-
 .fb1 {
     width: 10%;
     height: 60%;
@@ -165,6 +147,11 @@ Move the background-color property and value from .fb1 to .fb1b. */
 .fb1c {
     width: 100%;
     height: 80%;
+    background: repeating-linear-gradient(90deg,
+            var(--building-color4),
+            var(--building-color4) 10%,
+            transparent 10%,
+            transparent 15%)
 }
 
 .fb2 {
