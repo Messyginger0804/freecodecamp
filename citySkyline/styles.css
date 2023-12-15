@@ -1,7 +1,12 @@
 /*
 
-Step 113
-At the top of the sky gradient color list, where you would put a direction for the gradient; add circle closest-corner at 15% 15%,. This will move the start of the gradient to 15% from the top and left. It will make it end at the closest-corner and it will maintain a circle shape. These are some keywords built into gradients to describe how it behaves.
+Step 114
+A media query can be used to change styles based on certain conditions, and they look like this:
+
+@media (condition) {
+
+}  
+Add an empty media query at the bottom of your stylesheet with a condition of max-width: 1000px. Styles added in here will take effect when the document size is 1000px wide or less.
 
 */
 
@@ -277,4 +282,8 @@ body {
             var(--building-color3) 10%,
             transparent 10%,
             transparent 30%)
+}
+
+@media (max-width: 1000px) {
+    /* Add styles here for document size 1000px wide or less */
 }
