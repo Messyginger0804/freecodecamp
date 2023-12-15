@@ -1,12 +1,3 @@
-/*
-
-Step 118
-Lastly, in the :root selector of the media query, redefine all four of the --window-color variables to use #777. When you're done, resize the window and watch it go from day to night.
-
-Variables are primarily used with colors, and that's how you used them here. But they can be given any value and used on any property. Your project looks great!
-
-*/
-
 :root {
     --building-color1: #aa80ff;
     --building-color2: #66cc99;
@@ -20,14 +11,6 @@ Variables are primarily used with colors, and that's how you used them here. But
 
 * {
     box-sizing: border-box;
-}
-
-.sky {
-    background: radial-gradient(circle closest-corner at 15% 15%,
-            #ffcf33,
-            #ffcf33 20%,
-            #ffff66 21%,
-            #bbeeff 100%);
 }
 
 body {
@@ -57,6 +40,14 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-evenly;
+}
+
+.sky {
+    background: radial-gradient(closest-corner circle at 15% 15%,
+            #ffcf33,
+            #ffcf33 20%,
+            #ffff66 21%,
+            #bbeeff 100%);
 }
 
 /* BACKGROUND BUILDINGS - "bb" stands for "background building" */
@@ -278,23 +269,14 @@ body {
             var(--building-color3),
             var(--building-color3) 10%,
             transparent 10%,
-            transparent 30%)
+            transparent 30%),
+        repeating-linear-gradient(var(--building-color3),
+            var(--building-color3) 10%,
+            var(--window-color3) 10%,
+            var(--window-color3) 30%);
 }
 
-/* Step 118
-Lastly, in the :root selector of the media query, redefine all four of the --window-color variables to use #777. When you're done, resize the window and watch it go from day to night.
-
-Variables are primarily used with colors, and that's how you used them here. But they can be given any value and used on any property. Your project looks great! */
-
 @media (max-width: 1000px) {
-    .sky {
-        background: radial-gradient(circle closest-corner at 15% 15%,
-                #ccc,
-                #ccc 20%,
-                #445 21%,
-                #223 100%);
-    }
-
     :root {
         --building-color1: #000;
         --building-color2: #000;
@@ -304,5 +286,13 @@ Variables are primarily used with colors, and that's how you used them here. But
         --window-color2: #777;
         --window-color3: #777;
         --window-color4: #777;
+    }
+
+    .sky {
+        background: radial-gradient(closest-corner circle at 15% 15%,
+                #ccc,
+                #ccc 20%,
+                #445 21%,
+                #223 100%);
     }
 }
