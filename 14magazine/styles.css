@@ -1,7 +1,7 @@
 /*
 
-Step 28
-Create a body selector. Set the font-family property to Baskervville, with a fallback of serif. Set the color property to linen and the background-color property to rgb(20, 30, 40).
+Step 29
+Create an h1 selector, and set the font-family property to Anton with the fallback of sans-serif.
 
 */
 
@@ -21,4 +21,8 @@ body {
     font-family: "Baskervville", serif;
     color: linen;
     background-color: rgb(20, 30, 40);
+}
+
+h1 {
+    font-family: 'Anton', sans-serif;
 }
