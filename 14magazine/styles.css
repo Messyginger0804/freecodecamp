@@ -1,9 +1,9 @@
 /*
 
-Step 26
-To start your CSS, normalize the CSS rules by targeting all elements with *, including the ::before and ::after pseudo-selectors.
+Step 27
+Create an html selector and give it a font-size property set to 62.5%. This will set the default font size for your web page to 10px (the browser default is 16px).
 
-Set the padding and margin properties both to 0 and set the box-sizing property to border-box. 
+This will make it easier for you to work with rem units later, as 2rem would be 20px.
 
 */
 
@@ -13,4 +13,8 @@ Set the padding and margin properties both to 0 and set the box-sizing property 
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
 }
