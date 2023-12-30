@@ -35,13 +35,17 @@ a {
 
 main {
     display: grid;
+    grid-template-columns: 1fr 94rem 1fr;
 }
+
+
+
 
 /*
 
-Step 32
-Now you are ready to start putting together the grid layout. CSS Grid offers a two-dimensional grid-based layout, allowing you to center items horizontally and vertically while still retaining control to do things like overlap elements.
+Step 33
+Now you can style the layout of your grid. CSS Grid is similar to Flexbox in that it has a special property for both the parent and child elements.
 
-Begin by creating a main selector and giving it a display property set to grid.
+In this case, your parent element is the main element. Set the content to have a three-column layout by adding a grid-template-columns property with a value of 1fr 94rem 1fr. This will create three columns where the middle column is 94rem wide, and the first and last columns are both 1 fraction of the remaining space in the grid container.
 
 */
