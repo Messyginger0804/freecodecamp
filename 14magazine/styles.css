@@ -28,9 +28,14 @@ h6 {
     font-family: 'Raleway', sans-serif;
 }
 
+a {
+    text-decoration: none;
+    color: linen;
+}
+
 /*
 
-Step 30
-Create an h2, h3, h4, h5, h6 selector. Give it a font-family property set to Raleway with a fallback of sans-serif.
+Step 31
+Create an a selector, and give it a text-decoration property set to none and a color property set to linen.
 
 */
