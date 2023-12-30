@@ -40,6 +40,7 @@ main {
 }
 
 .heading {
+    display: grid;
     grid-column: 2/3;
 }
 
@@ -49,7 +50,9 @@ main {
 
 /*
 
-Step 37
-Create a .text selector and give it a grid-column property set to 2 / 3.
+Step 38
+For additional control over the layout of your content, you can have a CSS Grid within a CSS Grid.
+
+Set the display property of your .heading selector to grid.
 
 */
