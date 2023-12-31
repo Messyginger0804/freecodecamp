@@ -113,12 +113,14 @@ hr {
     color: #00beef;
     font-size: 2.4rem;
     text-align: center;
+    font-family: 'Raleway', sans-serif;
 }
+
 
 
 /*
 
-Step 62
-Create a .quote selector. Give it a color property set to #00beef, a font-size property set to 2.4rem, and a text-align property set to center.
+Step 63
+To make the quote text stand out more, give the .quote selector a font-family property set to Raleway with a fallback of sans-serif.
 
 */
