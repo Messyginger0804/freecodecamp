@@ -91,3 +91,17 @@
 .line:nth-of-type(6) {
     transform: rotate(300deg);
 }
+
+@keyframes wheel {
+    0% {
+        /* Styles at the start of the animation */
+    }
+
+    50% {
+        /* Styles at the midpoint of the animation */
+    }
+
+    100% {
+        /* Styles at the end of the animation */
+    }
+}
