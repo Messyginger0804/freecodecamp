@@ -134,11 +134,12 @@ hr {
 
 .lists {
     list-style-type: none;
+    margin-top: 2rem;
 }
 
 /*
 
-Step 68
-Create a .lists selector and set the list-style-type property to none. This will get rid of the bullet points on the list items.
+Step 69
+Give the .lists selector a margin-top property set to 2rem.
 
 */
