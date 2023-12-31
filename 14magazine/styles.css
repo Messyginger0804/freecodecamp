@@ -11,7 +11,7 @@ html {
 }
 
 body {
-    font-family: "Baskervville", serif;
+    font-family: 'Baskervville', serif;
     color: linen;
     background-color: rgb(20, 30, 40);
 }
@@ -39,19 +39,21 @@ main {
     row-gap: 3rem;
 }
 
+img {
+    width: 100%;
+    object-fit: cover;
+}
+
+hr {
+    margin: 1.5rem 0;
+    border: 1px solid rgba(120, 120, 120, 0.6);
+}
+
 .heading {
+    grid-column: 2 / 3;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     row-gap: 1.5rem;
-}
-
-.author {
-    font-size: 2rem;
-    font-family: Raleway, sans-serif;
-}
-
-.author-name a:hover {
-    background-color: #306203;
 }
 
 .text {
@@ -79,9 +81,13 @@ main {
     text-align: center;
 }
 
-img {
-    width: 100%;
-    object-fit: cover;
+.author {
+    font-size: 2rem;
+    font-family: "Raleway", sans-serif;
+}
+
+.author-name a:hover {
+    background-color: #306203;
 }
 
 .publish-date {
@@ -104,16 +110,11 @@ img {
     margin-right: 1rem;
 }
 
-hr {
-    margin: 1.5rem 0;
-    border: 1px solid rgba(120, 120, 120, 0.6);
-}
-
 .quote {
     color: #00beef;
     font-size: 2.4rem;
     text-align: center;
-    font-family: 'Raleway', sans-serif;
+    font-family: "Raleway", sans-serif;
 }
 
 .quote::before {
@@ -131,11 +132,9 @@ hr {
     margin-bottom: 3rem;
 }
 
-
-
 /*
-
-Step 67
-Give the .text-with-images selector a margin-bottom property set to 3rem.
+ 
+Step 68
+Create a .lists selector and set the list-style-type property to none. This will get rid of the bullet points on the list items.
 
 */
