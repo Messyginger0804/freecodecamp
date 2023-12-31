@@ -55,6 +55,12 @@ main {
     position: relative;
 }
 
+.hero-title {
+    text-align: center;
+    color: orangered;
+    font-size: 8rem;
+}
+
 img {
     width: 100%;
     object-fit: cover;
@@ -63,9 +69,7 @@ img {
 
 /*
 
-Step 44
-Create an img selector and give it a width property set to 100%, and an object-fit property set to cover.
-
-The object-fit property tells the browser how to position the element within its container. In this case, cover will set the image to fill the container, cropping as needed to avoid changing the aspect ratio.
+Step 45
+Create a .hero-title selector and give it a text-align property set to center, a color property set to orangered and a font-size property set to 8rem.
 
 */
