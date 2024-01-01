@@ -90,6 +90,13 @@ body {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
+.project-tile div {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    gap: 2rem;
+}
+
 .project-tile h3 {
     color: #61dafb;
 }
