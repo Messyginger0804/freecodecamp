@@ -184,6 +184,11 @@
         transform: rotate(0deg);
     }
 
+    25% {
+        background-color: yellow;
+        /* New selector at 25% */
+    }
+
     50% {
         background-color: purple;
         /* Keep this line for the middle of the animation */
