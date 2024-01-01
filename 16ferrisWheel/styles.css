@@ -94,12 +94,11 @@
 
 @keyframes wheel {
     0% {
-        /* Styles at the start of the animation */
+        transform: rotate(0deg);
+        /* Other styles for the beginning of the animation */
     }
 
-    50% {
-        /* Styles at the midpoint of the animation */
-    }
+    /* Add more keyframes as needed */
 
     100% {
         /* Styles at the end of the animation */
