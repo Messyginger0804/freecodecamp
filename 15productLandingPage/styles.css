@@ -35,8 +35,12 @@ img {
 }
 
 .product-label {
+    justify-content: center;
     font-weight: bold;
     font-size: 18px;
+    display: flex;
+    align-items: center;
+    gap: 3rem;
 }
 
 .product-price {
