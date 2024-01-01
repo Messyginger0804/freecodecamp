@@ -101,6 +101,7 @@
     /* Add more keyframes as needed */
 
     100% {
+        transform: rotate(360deg);
         /* Styles at the end of the animation */
     }
 }
