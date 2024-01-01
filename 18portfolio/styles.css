@@ -27,7 +27,6 @@ body {
     position: fixed;
     background-color: rgb(49, 47, 47);
     color: #ddd;
-    /* Light gray color for the text */
     z-index: 50;
     padding: 10px;
     position: fixed;
@@ -127,4 +126,23 @@ body {
 
 #profile-link a:hover {
     text-decoration: underline;
+}
+
+footer {
+    background-color: #61dafb;
+    text-align: center;
+    padding: 80px 20px 20px 20px;
+    background-color: #61dafb;
+    color: white;
+}
+
+#link {
+    text-decoration: none;
+    color: whitesmoke;
+}
+
+.footer-links {
+    display: flex;
+    justify-content: center;
+    gap: 3rem;
 }
