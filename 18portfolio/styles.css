@@ -18,17 +18,30 @@ body {
 
 /* Navbar styles */
 #navbar {
-    background-color: #333;
+    border: 3px solid whitesmoke;
+    display: flex;
+    justify-content: center;
+    width: fit-content;
+    text-align: center;
+    border-radius: 15px;
+    position: fixed;
+    background-color: rgb(49, 47, 47);
+    color: #ddd;
+    /* Light gray color for the text */
+    z-index: 50;
     padding: 10px;
     position: fixed;
     top: 0;
-    width: 100%;
+    left: 41%;
+    z-index: 1000;
+    opacity: .9;
 }
+
 
 #navbar ul {
     list-style-type: none;
     display: flex;
-    justify-content: space-around;
+    gap: 2rem;
 }
 
 #navbar a {
@@ -54,6 +67,14 @@ body {
 #welcome-section h1 {
     font-size: 2.5em;
     margin-bottom: 20px;
+}
+
+#welcome-section p {
+    font-size: large;
+    margin-left: 15%;
+    margin-right: 15%;
+    letter-spacing: 1px;
+    font-style: monospace;
 }
 
 /* Projects section styles */
