@@ -182,14 +182,15 @@
 @keyframes cabins {
     0% {
         transform: rotate(0deg);
-        /* Other styles for the beginning of the animation */
+        background-color: yellow;
+        /* Add this line to set the background color */
     }
 
-    /* Add more keyframes as needed */
+    /* Keep the rest of the keyframes rules unchanged */
 
     100% {
         transform: rotate(-360deg);
-        /* Set the transform property to rotate in the opposite direction */
-        /* Styles at the end of the animation */
+        background-color: yellow;
+        /* You can also add the background color in the 100% selector if needed */
     }
 }
