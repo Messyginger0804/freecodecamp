@@ -175,3 +175,18 @@
         /* Styles at the end of the animation */
     }
 }
+
+@keyframes cabins {
+    0% {
+        transform: rotate(0deg);
+        /* Other styles for the beginning of the animation */
+    }
+
+    /* Add more keyframes as needed */
+
+    100% {
+        transform: rotate(-360deg);
+        /* Set the transform property to rotate in the opposite direction */
+        /* Styles at the end of the animation */
+    }
+}
