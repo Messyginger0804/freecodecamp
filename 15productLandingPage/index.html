@@ -8,16 +8,16 @@
 </head>
 <body>
     <header id="header">
+        <div class="nav">
+        <nav id="nav-bar">
+            <a href="#products" class="nav-link">Products</a>
+            <a href="#braylee-profile" class="nav-link">Features</a>
+            <a href="#order-section" class="nav-link">Features</a>
+        </nav>
+    </div>
         <h1>Braylees Unicorn Soaps!</h1>
         <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ4nLtzWHTyaCxIh-iCocbuHAEPHvc3ZFKcSA&usqp=CAU" alt="Logo" id="header-img">
-        <div class="nav">
 
-            <nav id="nav-bar">
-                <a href="#products" class="nav-link">Products</a>
-                <a href="#braylee-profile" class="nav-link">Features</a>
-                <a href="#order-section" class="nav-link">Features</a>
-            </nav>
-        </div>
     </header>
 
     <section id="products">
@@ -65,8 +65,8 @@
         </section>
 
         <section id="order-section">
-            <h2>Order Your Unicorn Soaps</h2>
-            <form id="order-form" action="https://www.freecodecamp.com/email-submit" method="post">
+            <form id="form" action="https://www.freecodecamp.com/email-submit" method="post">
+                <h2>Order Your Unicorn Soaps</h2>
                 <label for="email">Email:</label>
                 <input type="email" id="email" name="email" placeholder="Enter your email" required>
         
@@ -75,6 +75,10 @@
         
                 <input type="submit" id="submit" value="Order Now">
             </form>
+            <div>
+                <p>Have a look at our product in action:</p>
+                <iframe id="video" width="560" height="315" src="https://www.youtube.com/embed/your-video-id" frameborder="0" allowfullscreen></iframe>
+            </div>
         </section>
         
     <script src="script.js"></script>
