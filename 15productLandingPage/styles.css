@@ -50,11 +50,6 @@ img {
     z-index: 1000;
 }
 
-/* 
-w-max py-3 px-6 sm:px-8 border border-solid border-dark rounded-full font-medium capitalize  items-center flex  sm:hidden
-fixed top-6 right-1/2 translate-x-1/2 bg-light/80 backdrop-blur-sm z-50
-transition-all ease duration-300 */
-
 .nav-link {
     text-decoration: none;
     color: white;
@@ -176,23 +171,17 @@ transition-all ease duration-300 */
 
 #order-section h2 {
     grid-column: 1;
-    /* Place h2 in the first column */
     grid-row: 1;
-    /* Place h2 in the first row */
 }
 
 #video {
     grid-column: 1;
-    /* Place video in the first column */
     grid-row: 2;
-    /* Place video in the second row */
 }
 
 #form {
     grid-column: 2;
-    /* Place form in the second column */
     grid-row: 1 / span 2;
-    /* Span the form over two rows */
     display: flex;
     flex-direction: column;
 }
@@ -221,11 +210,6 @@ transition-all ease duration-300 */
 
 
 @media screen and (max-width: 768px) {
-    /* #nav-bar {
-        flex-direction: column;
-        align-items: center;
-    } */
-
     section {
         flex-direction: column;
         align-items: center;
