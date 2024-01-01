@@ -183,14 +183,15 @@
     0% {
         transform: rotate(0deg);
         background-color: yellow;
-        /* Add this line to set the background color */
     }
 
-    /* Keep the rest of the keyframes rules unchanged */
+    50% {
+        background-color: purple;
+        /* Add this line for the middle of the animation */
+    }
 
     100% {
         transform: rotate(-360deg);
         background-color: yellow;
-        /* You can also add the background color in the 100% selector if needed */
     }
 }
