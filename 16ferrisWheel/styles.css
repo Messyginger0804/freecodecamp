@@ -1,4 +1,10 @@
 .wheel {
+    animation-name: wheel;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    /* Set animation iteration count to infinite */
+    animation-timing-function: linear;
+    /* Set animation timing function to linear */
     border: 2px solid black;
     border-radius: 50%;
     margin-left: 50px;
@@ -8,6 +14,7 @@
     max-height: 500px;
     max-width: 500px;
 }
+
 
 .line {
     background-color: black;
@@ -29,6 +36,61 @@
 }
 
 .cabin:nth-of-type(1) {
+    background-color: blue;
+
+    position: absolute;
+    right: -8.5%;
+    top: 50%;
+    transform: translate(0%, -50%);
+}
+
+.cabin:nth-of-type(2) {
+    background-color: green;
+
+    position: absolute;
+    right: 17%;
+    top: 93.5%;
+    transform: translate(0%, -50%);
+}
+
+.cabin:nth-of-type(3) {
+    background-color: yellow;
+
+    position: absolute;
+    right: 67%;
+    top: 93.5%;
+    transform: translate(0%, -50%);
+}
+
+.cabin:nth-of-type(4) {
+    background-color: orange;
+
+    position: absolute;
+    left: -8.5%;
+    top: 50%;
+    transform: translate(0%, -50%);
+}
+
+.cabin:nth-of-type(5) {
+    background-color: purple;
+
+    position: absolute;
+    left: 17%;
+    top: 7%;
+    transform: translate(0%, -50%);
+}
+
+.cabin:nth-of-type(6) {
+    background-color: pink;
+
+    position: absolute;
+    right: 17%;
+    top: 7%;
+    transform: translate(0%, -50%);
+}
+
+
+/* .cabin:nth-of-type(1) {
     position: absolute;
     right: -8.5%;
     top: 50%;
@@ -68,7 +130,7 @@
     right: 17%;
     top: 7%;
     transform: translate(0%, -50%);
-}
+} */
 
 
 
@@ -91,6 +153,14 @@
 .line:nth-of-type(6) {
     transform: rotate(300deg);
 }
+
+.wheel {
+    /* Other styles for your .wheel selector */
+
+    /* Add the animation properties */
+    /* Add this if you want the animation to repeat */
+}
+
 
 @keyframes wheel {
     0% {
