@@ -78,16 +78,16 @@ body {
 .penguin-body::before {
     content: '';
     position: absolute;
-    top: 0;
-    left: 50%;
+    top: 10%;
+    /* Set the top position to 10% of its parent's height */
+    left: 25%;
+    /* Set the left position to 25% of its parent's width */
     transform: translateX(-50%);
     width: 50%;
-    /* Set the width to half of its parent's width */
     height: 45%;
-    /* Set the height to 45% of its parent's height */
     background-color: gray;
-    /* Set the background color to gray */
 }
+
 
 
 .ground {
