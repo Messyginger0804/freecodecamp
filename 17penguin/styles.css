@@ -76,10 +76,10 @@ body {
 }
 
 .penguin-body::before {
-    content: '';
-    /* Set the content property to an empty string */
-}
+    content: "";
+    position: absolute;
 
+}
 
 .ground {
     width: 100vw;
