@@ -69,21 +69,15 @@ body {
     background-color: white;
     border-radius: 70% 70% 60% 60%;
     top: 15%;
-    /* Set the top position to 15% */
 }
 
 .face.left {
-    position: absolute;
     left: 5%;
-    /* Set the left position to 5% */
 }
 
 .face.right {
-    position: absolute;
     right: 5%;
-    /* Set the right position to 5% */
 }
-
 
 .penguin-body {
     width: 53%;
@@ -98,19 +92,16 @@ body {
 }
 
 .penguin-body::before {
-    content: '';
+    content: "";
     position: absolute;
-    top: 10%;
-    left: 25%;
-    transform: translateX(-50%);
     width: 50%;
     height: 45%;
     background-color: gray;
+    top: 10%;
+    left: 25%;
     border-radius: 0% 0% 100% 100%;
-    opacity: 0.7;
-    /* Set the opacity to 70% */
+    opacity: 70%;
 }
-
 
 .ground {
     width: 100vw;
