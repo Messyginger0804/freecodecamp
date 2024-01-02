@@ -42,20 +42,27 @@ body {
 }
 
 
-
-
 .penguin {
     width: 300px;
     height: 300px;
-    margin: auto;
-    margin-top: 75px;
+    margin: 75px auto 0;
+    position: relative;
+    z-index: 4;
+    /* Set the stack level to 4, in front of the .ground element */
+}
+
+.penguin-head {
+    /* Add styles for the penguin head as needed */
+}
+
+.penguin-body {
+    /* Add styles for the penguin body as needed */
 }
 
 .ground {
     width: 100vw;
-    height: 400px;
     background: linear-gradient(90deg, rgb(88, 175, 236), rgb(182, 255, 255));
+    height: 400px;
     z-index: 3;
     position: absolute;
-    margin-top: -58px;
 }
