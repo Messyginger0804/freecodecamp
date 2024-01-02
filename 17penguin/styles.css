@@ -33,13 +33,14 @@ body {
     height: 200px;
     background-color: yellow;
     border-radius: 50%;
-    /* Set border-radius for a circular shape */
     position: absolute;
-    /* Set position to absolute */
-    top: 50px;
-    left: 50px;
+    top: -75px;
+    /* Move 75px off the top of the screen */
+    right: -75px;
+    /* Move 75px off the right of the screen */
     z-index: 4;
 }
+
 
 
 
