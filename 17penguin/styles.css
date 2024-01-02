@@ -21,21 +21,16 @@ body {
 
 .back-mountain {
     width: 300px;
-    /* Set the width to 300px */
     height: 300px;
-    /* Set the height to 300px */
     background: linear-gradient(to bottom, rgb(203, 241, 228), rgb(47, 170, 255));
-    /* Set the background gradient */
     position: absolute;
+    /* Set position to absolute */
     top: 50px;
-    /* Adjust the top position as needed */
     left: 200px;
-    /* Adjust the left position as needed */
     transform: skew(0deg, 44deg);
-    /* Skew the back mountain */
     z-index: 1;
-    /* Set the stack level to 1, behind the .left-mountain */
 }
+
 
 
 .ground {
