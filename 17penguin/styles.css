@@ -71,7 +71,13 @@ body {
     width: 15%;
     height: 17%;
     background-color: black;
+    position: absolute;
+    top: 45%;
+    /* Position 45% from the top of the parent */
+    border-radius: 50%;
+    /* Give all corners a radius of 50% */
 }
+
 
 
 .face {
