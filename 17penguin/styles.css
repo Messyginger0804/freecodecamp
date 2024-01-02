@@ -72,6 +72,12 @@ body {
     /* Set the top position to 15% */
 }
 
+.face.left {
+    position: absolute;
+    left: 5%;
+    /* Set the left position to 5% */
+}
+
 
 
 .penguin-body {
