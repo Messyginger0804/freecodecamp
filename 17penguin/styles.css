@@ -45,7 +45,14 @@ body {
     margin-top: 75px;
     z-index: 4;
     position: relative;
+    /* Set position to absolute for all descendant elements */
 }
+
+.penguin * {
+    position: absolute;
+    /* Set position to absolute for all descendant elements */
+}
+
 
 .penguin-head {
     width: 50%;
