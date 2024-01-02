@@ -79,14 +79,15 @@ body {
     content: '';
     position: absolute;
     top: 10%;
-    /* Set the top position to 10% of its parent's height */
     left: 25%;
-    /* Set the left position to 25% of its parent's width */
     transform: translateX(-50%);
     width: 50%;
     height: 45%;
     background-color: gray;
+    border-radius: 0% 0% 100% 100%;
+    /* Set the border-radius for the bottom corners */
 }
+
 
 
 
