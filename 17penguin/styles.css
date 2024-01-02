@@ -49,14 +49,11 @@ body {
 
 .penguin-head {
     width: 50%;
-    /* Set the width to half of its parent's width */
     height: 45%;
-    /* Set the height to 45% of its parent's height */
     background: linear-gradient(45deg, gray, rgb(239, 240, 228));
-    /* Set the background gradient */
+    border-radius: 70% 70% 65% 65%;
+    /* Set the border-radius for a slightly oval shape */
 }
-
-
 
 
 .ground {
