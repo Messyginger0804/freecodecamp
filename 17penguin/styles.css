@@ -85,10 +85,9 @@ body {
     height: 45%;
     background-color: gray;
     border-radius: 0% 0% 100% 100%;
-    /* Set the border-radius for the bottom corners */
+    opacity: 0.7;
+    /* Set the opacity to 70% */
 }
-
-
 
 
 .ground {
