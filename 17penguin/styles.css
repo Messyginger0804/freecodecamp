@@ -24,12 +24,17 @@ body {
     height: 300px;
     background: linear-gradient(to bottom, rgb(203, 241, 228), rgb(47, 170, 255));
     position: absolute;
-    top: 50px;
-    left: 200px;
-    transform: skew(0deg, 44deg);
+    top: 225px;
+    /* Adjust the top position as needed */
+    left: 110px;
+    /* Adjust the left position as needed */
+    transform: rotate(45deg);
+    /* Rotate by 45deg clockwise */
     z-index: 1;
-    /* Set the stack level lower than .left-mountain */
+    /* Set the stack level to 1, behind the .left-mountain element */
 }
+
+
 
 
 
