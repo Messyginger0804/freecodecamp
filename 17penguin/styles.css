@@ -10,10 +10,8 @@ body {
 .left-mountain {
     width: 300px;
     height: 300px;
-    background: linear-gradient(to bottom, rgb(203, 241, 228), rgb(80, 183, 255));
+    background: linear-gradient(rgb(203, 241, 228), rgb(80, 183, 255));
     position: absolute;
-    top: 0;
-    left: 0;
     transform: skew(0deg, 44deg);
     z-index: 2;
     margin-top: 100px;
@@ -22,36 +20,45 @@ body {
 .back-mountain {
     width: 300px;
     height: 300px;
-    background: linear-gradient(to bottom, rgb(203, 241, 228), rgb(47, 170, 255));
+    background: linear-gradient(rgb(203, 241, 228), rgb(47, 170, 255));
     position: absolute;
-    top: 225px;
-    /* Adjust the top position as needed */
-    left: 110px;
-    /* Adjust the left position as needed */
-    transform: rotate(45deg);
-    /* Rotate by 45deg clockwise */
     z-index: 1;
-    /* Set the stack level to 1, behind the .left-mountain element */
+    transform: rotate(45deg);
+    left: 110px;
+    top: 225px;
 }
 
-
-
-
-
-.ground {
-    width: 100vw;
-    background: linear-gradient(90deg, rgb(88, 175, 236), rgb(182, 255, 255));
-    height: 400px;
-    z-index: 3;
+.sun {
+    width: 200px;
+    /* Set the width of the sun */
+    height: 200px;
+    /* Set the height of the sun */
+    background-color: yellow;
+    /* Set the background color to yellow for the sun */
+    border-radius: 50%;
+    /* Create a circular shape */
     position: absolute;
-    margin-top: -58px;
-
+    top: 50px;
+    /* Adjust the top position as needed */
+    left: 50px;
+    /* Adjust the left position as needed */
+    z-index: 4;
+    /* Set the stack level to 4, in front of other elements */
 }
-
 
 
 .penguin {
     width: 300px;
     height: 300px;
-    margin: 75px auto 0;
+    margin: auto;
+    margin-top: 75px;
+}
+
+.ground {
+    width: 100vw;
+    height: 400px;
+    background: linear-gradient(90deg, rgb(88, 175, 236), rgb(182, 255, 255));
+    z-index: 3;
+    position: absolute;
+    margin-top: -58px;
 }
