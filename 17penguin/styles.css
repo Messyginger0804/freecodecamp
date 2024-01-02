@@ -30,21 +30,17 @@ body {
 
 .sun {
     width: 200px;
-    /* Set the width of the sun */
     height: 200px;
-    /* Set the height of the sun */
     background-color: yellow;
-    /* Set the background color to yellow for the sun */
     border-radius: 50%;
-    /* Create a circular shape */
+    /* Set border-radius for a circular shape */
     position: absolute;
+    /* Set position to absolute */
     top: 50px;
-    /* Adjust the top position as needed */
     left: 50px;
-    /* Adjust the left position as needed */
     z-index: 4;
-    /* Set the stack level to 4, in front of other elements */
 }
+
 
 
 .penguin {
