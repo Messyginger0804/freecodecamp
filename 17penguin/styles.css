@@ -21,10 +21,12 @@ body {
     background: linear-gradient(to bottom, rgb(203, 241, 228), rgb(80, 183, 255));
     position: absolute;
     top: 0;
-    /* Align the mountain to the top of the container */
     left: 0;
-    /* Align the mountain to the left of the container */
+    transform: skew(0deg, 44deg);
+    /* Skew the mountain */
 }
+
+
 
 
 
