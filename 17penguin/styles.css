@@ -67,6 +67,13 @@ body {
     z-index: 1;
 }
 
+.eye {
+    width: 15%;
+    height: 17%;
+    background-color: black;
+}
+
+
 .face {
     width: 60%;
     height: 70%;
