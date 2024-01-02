@@ -55,6 +55,16 @@ body {
     /* Set the border-radius for a slightly oval shape */
 }
 
+.penguin-body {
+    width: 53%;
+    /* Set the width to 53% of its parent's width */
+    height: 45%;
+    /* Set the height to 45% of its parent's height */
+    background: linear-gradient(45deg, rgb(134, 133, 133) 0%, rgb(234, 231, 231) 25%, white 67%);
+    /* Set the background gradient */
+}
+
+
 
 .ground {
     width: 100vw;
