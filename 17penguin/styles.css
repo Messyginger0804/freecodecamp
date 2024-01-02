@@ -23,8 +23,9 @@ body {
     top: 0;
     left: 0;
     transform: skew(0deg, 44deg);
-    /* Skew the mountain */
+    z-index: 2;
 }
+
 
 
 
