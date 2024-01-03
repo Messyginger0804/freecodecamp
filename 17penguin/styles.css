@@ -67,41 +67,10 @@ body {
     z-index: 1;
 }
 
-.eye {
-    width: 15%;
-    height: 17%;
-    background-color: black;
-    position: absolute;
-    top: 45%;
-    /* Position 45% from the top of the parent */
-    border-radius: 50%;
-    /* Give all corners a radius of 50% */
-}
-
-.eye.left {
-    left: 25%;
-    /* Position 25% from the left of the parent */
-}
-
-.eye.right {
-    right: 25%;
-    /* Position 25% from the right of the parent */
-}
-
-.eye-lid {
-    width: 150%;
-    height: 100%;
-    background-color: var(--penguin-face);
-    /* Use the custom property for background color */
-}
-
-
-
 .face {
     width: 60%;
     height: 70%;
     background-color: var(--penguin-face);
-    /* Use the custom property for background color */
     border-radius: 70% 70% 60% 60%;
     top: 15%;
 }
@@ -121,6 +90,29 @@ body {
     top: 25%;
     left: 5%;
     border-radius: 70% 70% 100% 100%;
+}
+
+.eye {
+    width: 15%;
+    height: 17%;
+    background-color: black;
+    top: 45%;
+    border-radius: 50%;
+}
+
+.eye.left {
+    left: 25%;
+}
+
+.eye.right {
+    right: 25%;
+}
+
+.eye-lid {
+    width: 150%;
+    height: 100%;
+    background-color: var(--penguin-face);
+
 }
 
 .penguin-body {
