@@ -78,6 +78,16 @@ body {
     /* Give all corners a radius of 50% */
 }
 
+.eye.left {
+    left: 25%;
+    /* Position 25% from the left of the parent */
+}
+
+.eye.right {
+    right: 25%;
+    /* Position 25% from the right of the parent */
+}
+
 
 
 .face {
