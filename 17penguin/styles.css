@@ -112,8 +112,15 @@ body {
     width: 150%;
     height: 100%;
     background-color: var(--penguin-face);
-
+    position: absolute;
+    top: 25%;
+    /* Position 25% from the top of the parent */
+    left: -23%;
+    /* Position -23% from the left of the parent */
+    border-radius: 50%;
+    /* Give all corners a radius of 50% */
 }
+
 
 .penguin-body {
     width: 53%;
