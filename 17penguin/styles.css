@@ -132,6 +132,17 @@ body {
     /* Give all corners a radius of 50% */
 }
 
+.blush.left {
+    left: 15%;
+    /* Position 15% from the left of the parent */
+}
+
+.blush.right {
+    right: 15%;
+    /* Position 15% from the right of the parent */
+}
+
+
 
 .penguin-body {
     width: 53%;
