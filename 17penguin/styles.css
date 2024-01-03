@@ -100,6 +100,13 @@ body {
     border-radius: 50%;
 }
 
+.beak {
+    height: 10%;
+    background-color: orange;
+    border-radius: 50%;
+}
+
+
 .eye.left {
     left: 25%;
 }
