@@ -88,6 +88,13 @@ body {
     /* Position 25% from the right of the parent */
 }
 
+.eye-lid {
+    width: 150%;
+    height: 100%;
+    background-color: var(--penguin-face);
+    /* Use the custom property for background color */
+}
+
 
 
 .face {
