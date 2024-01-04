@@ -1,0 +1,31 @@
+body {
+    text-align: center;
+    background-color: aqua;
+}
+
+.container {
+    display: flex;
+    gap: 5rem;
+    margin: auto;
+    justify-content: center;
+
+}
+
+.example {
+    border: 3px solid whitesmoke;
+    padding: 1rem;
+    border-radius: 15px;
+}
+
+#btn {
+    border: 2px solid white;
+    cursor: pointer;
+}
+
+#hidden {
+    display: none;
+}
+
+#hidden.showText {
+    display: block;
+}
