@@ -1,7 +1,6 @@
 :root {
     --penguin-face: white;
     --penguin-picorna: orange;
-    /* New variable for beak and feet color */
 }
 
 body {
@@ -102,54 +101,6 @@ body {
     border-radius: 50%;
 }
 
-.beak {
-    height: 10%;
-    background-color: var(--penguin-picorna);
-    border-radius: 50%;
-}
-
-.beak.top {
-    width: 20%;
-    position: absolute;
-    top: 60%;
-    left: 40%;
-}
-
-.beak.bottom {
-    width: 16%;
-    position: absolute;
-    top: 65%;
-    left: 42%;
-}
-
-.shirt {
-    position: absolute;
-    top: 165px;
-    left: 127.5px;
-    z-index: 1;
-    font-size: 25px;
-    font-family: 'Helvetica', sans-serif;
-    font-weight: bold;
-    color: #6a6969;
-    /* Set the color */
-}
-
-.foot {
-    width: 15%;
-    height: 30%;
-    background-color: var(--penguin-picorna);
-    position: absolute;
-    top: 85%;
-    border-radius: 50%;
-}
-
-
-.shirt div {
-    position: absolute;
-    top: 22.5px;
-    left: 12px;
-}
-
 .eye.left {
     left: 25%;
 }
@@ -162,37 +113,58 @@ body {
     width: 150%;
     height: 100%;
     background-color: var(--penguin-face);
-    position: absolute;
     top: 25%;
-    /* Position 25% from the top of the parent */
     left: -23%;
-    /* Position -23% from the left of the parent */
     border-radius: 50%;
-    /* Give all corners a radius of 50% */
 }
 
 .blush {
     width: 15%;
     height: 10%;
     background-color: pink;
-    position: absolute;
     top: 65%;
-    /* Position 65% from the top of the parent */
     border-radius: 50%;
-    /* Give all corners a radius of 50% */
 }
 
 .blush.left {
     left: 15%;
-    /* Position 15% from the left of the parent */
 }
 
 .blush.right {
     right: 15%;
-    /* Position 15% from the right of the parent */
 }
 
+.beak {
+    height: 10%;
+    background-color: var(--penguin-picorna);
+    border-radius: 50%;
+}
 
+.beak.top {
+    width: 20%;
+    top: 60%;
+    left: 40%;
+}
+
+.beak.bottom {
+    width: 16%;
+    top: 65%;
+    left: 42%;
+}
+
+.shirt {
+    font: bold 25px Helvetica, sans-serif;
+    top: 165px;
+    left: 127.5px;
+    z-index: 1;
+    color: #6a6969;
+}
+
+.shirt div {
+    font-weight: initial;
+    top: 22.5px;
+    left: 12px;
+}
 
 .penguin-body {
     width: 53%;
@@ -216,6 +188,24 @@ body {
     left: 25%;
     border-radius: 0% 0% 100% 100%;
     opacity: 70%;
+}
+
+.foot {
+    width: 15%;
+    height: 30%;
+    background-color: var(--penguin-picorna);
+    top: 85%;
+    border-radius: 50%;
+}
+
+.foot.left {
+    left: 25%;
+
+}
+
+.foot.right {
+    right: 25%;
+
 }
 
 .ground {
