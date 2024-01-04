@@ -120,6 +120,13 @@ body {
     left: 42%;
 }
 
+.shirt {
+    font-size: 25px;
+    font-family: 'Helvetica', sans-serif;
+    font-weight: bold;
+}
+
+
 .eye.left {
     left: 25%;
 }
