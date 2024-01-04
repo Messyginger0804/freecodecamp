@@ -1,0 +1,23 @@
+body {
+    background-color: rgb(155, 238, 238);
+    text-align: center;
+    display: block;
+    margin: auto;
+    width: 50%;
+    font-size: large;
+}
+
+#sports {
+    border: 2px solid black;
+    width: fit-content;
+    align-content: center;
+    margin-top: 10%;
+    padding: 10px;
+}
+
+li {
+    list-style-type: none;
+    border: 2px solid black;
+    margin: 5px;
+    padding: 2px;
+}
