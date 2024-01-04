@@ -132,6 +132,12 @@ body {
     /* Set the color */
 }
 
+.foot {
+    width: 15%;
+    height: 30%;
+    background-color: orange;
+}
+
 
 .shirt div {
     position: absolute;
