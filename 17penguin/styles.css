@@ -1,5 +1,7 @@
 :root {
     --penguin-face: white;
+    --penguin-picorna: orange;
+    /* New variable for beak and feet color */
 }
 
 body {
@@ -102,7 +104,7 @@ body {
 
 .beak {
     height: 10%;
-    background-color: orange;
+    background-color: var(--penguin-picorna);
     border-radius: 50%;
 }
 
@@ -135,7 +137,7 @@ body {
 .foot {
     width: 15%;
     height: 30%;
-    background-color: orange;
+    background-color: var(--penguin-picorna);
     position: absolute;
     top: 85%;
     border-radius: 50%;
