@@ -1,0 +1,20 @@
+body {
+    background-color: brown;
+}
+
+.container {
+    margin: auto;
+    border: 8px solid black;
+    width: fit-content;
+    padding: 20px;
+    text-align: center;
+    border-radius: 15px;
+}
+
+
+.list-items {
+    list-style-type: none;
+    border: 2px solid whitesmoke;
+    background: white;
+    margin-top: 1%;
+}
