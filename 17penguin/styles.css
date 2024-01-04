@@ -127,7 +127,9 @@ body {
 }
 
 .shirt div {
-    font-weight: initial;
+    position: absolute;
+    top: 22.5px;
+    left: 12px;
 }
 
 .eye.left {
