@@ -199,11 +199,12 @@ body {
             rgb(209, 210, 199));
 }
 
-
 .arm.left {
     top: 35%;
     left: 5%;
+    transform-origin: top left;
 }
+
 
 .arm.right {
     top: 0%;
