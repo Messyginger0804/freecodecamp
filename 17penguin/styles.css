@@ -1,6 +1,7 @@
 :root {
     --penguin-face: white;
     --penguin-picorna: orange;
+
 }
 
 body {
@@ -188,6 +189,14 @@ body {
     left: 25%;
     border-radius: 0% 0% 100% 100%;
     opacity: 70%;
+}
+
+.arm {
+    width: 30%;
+    height: 60%;
+    background: linear-gradient(90deg,
+            gray,
+            rgb(209, 210, 199));
 }
 
 .foot {
