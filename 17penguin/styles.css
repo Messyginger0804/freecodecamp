@@ -214,7 +214,15 @@ body {
     transform: rotate(-45deg);
 }
 
-@keyframes wave {}
+@keyframes wave {
+    10% {}
+
+    20% {}
+
+    30% {}
+
+    40% {}
+}
 
 .foot {
     width: 15%;
