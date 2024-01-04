@@ -206,6 +206,7 @@ body {
     left: 5%;
     transform-origin: top left;
     transform: rotate(130deg) scaleX(-1);
+
 }
 
 .arm.right {
@@ -223,9 +224,13 @@ body {
         transform: rotate(130deg) scaleX(-1);
     }
 
-    30% {}
+    30% {
+        transform: rotate(110deg) scaleX(-1);
+    }
 
-    40% {}
+    40% {
+        transform: rotate(130deg) scaleX(-1);
+    }
 }
 
 .foot {
