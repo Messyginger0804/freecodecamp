@@ -126,6 +126,9 @@ body {
     font-weight: bold;
 }
 
+.shirt div {
+    font-weight: initial;
+}
 
 .eye.left {
     left: 25%;
