@@ -34,8 +34,8 @@ body {
 }
 
 .main-content {
-    width: 100%;
-    height: 300px;
+    /* width: 100%; */
+    /* height: 300px; */
     background: url(https://wallpapers.com/images/featured/spock-pictures-q6l7o94ak4m17ws2.jpg) no-repeat center center/cover;
     opacity: 40%;
     border-radius: 15px;
