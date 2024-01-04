@@ -125,10 +125,11 @@ body {
     top: 165px;
     left: 127.5px;
     z-index: 1;
-    /* Set the correct stacking order */
     font-size: 25px;
     font-family: 'Helvetica', sans-serif;
     font-weight: bold;
+    color: #6a6969;
+    /* Set the color */
 }
 
 
