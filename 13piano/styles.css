@@ -66,4 +66,31 @@ html {
     }
 }
 
-@media (max-width: 1199px) and (min-width: 769px) {}
+@media (max-width: 768px) {
+    #piano {
+        width: 358px;
+    }
+
+    .keys {
+        width: 318px;
+    }
+
+    .logo {
+        width: 150px;
+    }
+}
+
+@media (max-width: 1199px) and (min-width: 769px) {
+    #piano {
+        width: 675px;
+    }
+
+    .keys {
+        width: 633px;
+        /* Corrected width for the .keys selector */
+    }
+
+    .logo {
+        /* You can adjust .logo styles if needed */
+    }
+}
