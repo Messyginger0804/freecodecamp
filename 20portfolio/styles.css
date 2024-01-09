@@ -2,7 +2,6 @@
 body,
 h1,
 h2,
-p,
 ul,
 li,
 a {
@@ -89,6 +88,10 @@ img {
     margin-bottom: 20px;
 }
 
+/* p {
+    margin-top: 50px;
+} */
+
 #welcome-section p {
     font-size: large;
     margin-left: 15%;
@@ -114,11 +117,7 @@ img {
     display: flex;
     flex-direction: column;
     /* Stack content vertically on smaller screens */
-    gap: 1rem;
-}
-
-.project-tile h3 {
-    color: #61dafb;
+    /* gap: 1rem; */
 }
 
 .project-tile a {
@@ -134,6 +133,10 @@ img {
 #profile-link a {
     text-decoration: none;
     color: #61dafb;
+}
+
+.project-desc {
+    font-size: 0.9em;
 }
 
 #profile-link a:hover {
