@@ -1,11 +1,63 @@
-html {
-    background-color: black;
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: darkgrey;
     color: white;
-
 }
 
-@media screen and (min-width: 480px) {
-    body {
-        background-color: darkgrey;
+#navbar {
+    background-color: black;
+    padding: 10px;
+    text-align: center;
+}
+
+#navbar header {
+    font-size: 24px;
+}
+
+.nav-link {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+}
+
+.main-section {
+    padding: 20px;
+    margin: 20px;
+    background-color: black;
+    border-radius: 5px;
+}
+
+.main-section header {
+    font-size: 24px;
+    color: white;
+}
+
+.main-section p {
+    margin-bottom: 10px;
+    color: white;
+}
+
+.main-section code {
+    display: block;
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+@media screen and (min-width: 768px) {
+    #navbar {
+        display: flex;
+        justify-content: center;
+    }
+
+    .nav-link {
+        margin: 0 20px;
+    }
+
+    .main-section {
+        max-width: 800px;
+        margin: 20px auto;
     }
 }
