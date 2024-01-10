@@ -1,14 +1,14 @@
 /*
-// Step 23
-// Create another variable called currentWeapon and set it to 0.
+Step 24
+You have been declaring your variables with the var keyword. However, in modern JavaScript it is best practice to use the let keyword instead. This fixes several unusual behaviors with var that can make your code difficult to debug.
 
-// When a variable name has multiple words, the convention in JavaScript is to use what's called camelCase. The first word is lowercase, and the first letter of every following word is uppercase.
+Change all of your var keywords to let.
 */
-var health = 100;
+let health = 100;
 
-var gold = 50;
+let gold = 50;
 
-var xp = 0;
+let xp = 0;
 
-var currentWeapon = 0;
+let currentWeapon = 0;
 
