@@ -1,7 +1,3 @@
-/*/ 
-Step 33
-Use querySelector() to get the other two button elements using their ids: button2 and button3. Store them in variables called button2 and button3. Remember to use const.
-*/
 
 let xp = 0;
 let health = 100;
@@ -15,3 +11,19 @@ let inventory = ["stick"];
 const button1 = document.querySelector("#button1");
 const button2 = document.querySelector("#button2");
 const button3 = document.querySelector("#button3");
+
+/*/ 
+Step 34
+Just like you did with the buttons, create variables for the following ids and use querySelector() to give them the element as a value:
+
+text, xpText, healthText, goldText, monsterStats, and monsterName.
+
+Remember to declare these with the const keyword, and name the variables to match the ids.
+*/
+
+const text = document.querySelector('#text');
+const xpText = document.querySelector('#xpText');
+const healthText = document.querySelector('#healthText');
+const goldText = document.querySelector('#goldText');
+const monsterStats = document.querySelector('#monsterStats');
+const monsterName = document.querySelector('#monsterName');
