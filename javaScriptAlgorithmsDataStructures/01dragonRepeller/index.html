@@ -6,8 +6,8 @@
     <title>RPG - Dragon Repeller</title>
   </head>
   <!-- 
-    Step 5
-For your #controls element, create three button elements. The first should have the id set to button1, and the text Go to store. The second should have the id set to button2, and the text Go to cave. The third should have the id set to button3, and the text Fight dragon. 
+  Step 6
+Similar to your #stats element, your #monsterStats element needs two span elements. Give them the class stat and give the first element the text Monster Name: and the second the text Health: . After the text in each, add a strong element with an empty nested span element. Give the first inner span element an id of monsterName and the second inner span element an id of monsterHealth.
 -->
   <body>
     <div id="game">
@@ -17,11 +17,14 @@ For your #controls element, create three button elements. The first should have 
         <span class="stat">Gold: <strong><span id="goldText">50</span></strong></span>
       </div>
       <div id="controls">
-        <button id="button1">Go to store</button>
-        <button id="button2">Go to cave</button>
-        <button id="button3">Fight dragon</button>
+        <button id="button1">Go to store </button>
+        <button id="button2">Go to cave </button>
+        <button id="button3">Fight dragon </button>
       </div>
-      <div id="monsterStats"></div>
+      <div id="monsterStats">
+        <span class="stat">Monster Name: <strong><span id="monsterName"></span></strong></span>
+        <span class="stat">Health: <strong><span id="monsterHealth"></span></strong></span>
+      </div>
       <div id="text"></div>
     </div>
   </body>
