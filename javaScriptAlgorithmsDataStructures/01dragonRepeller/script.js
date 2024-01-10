@@ -8,15 +8,14 @@ let monsterHealth;
 let inventory = ["stick"];
 // let inventory = ["stick", 'dagger', "sword"];
 
-const button1 = document.querySelector("#button1");
+const button1 = document.querySelector("#button1"); // initialize buttons
 const button2 = document.querySelector("#button2");
 const button3 = document.querySelector("#button3");
 
-/*/ 
-Step 35
-Finally, use querySelector() to get the #monsterHealth element. Because you have already declared a monsterHealth variable earlier, you need to use a different variable name for this element.
+// hello world
 
-Declare a new variable with the const keyword and name it monsterHealthText.
+/*
+  hello world
 */
 
 const text = document.querySelector('#text');
