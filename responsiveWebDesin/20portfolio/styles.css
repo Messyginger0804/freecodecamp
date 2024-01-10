@@ -1,4 +1,3 @@
-/* General styles for all screens */
 body,
 h1,
 h2,
@@ -21,7 +20,6 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    /* Center vertically */
     width: fit-content;
     text-align: center;
     border-radius: 15px;
@@ -54,7 +52,6 @@ body {
 
 #navbar a:hover {
     color: #61dafb;
-    /* Change to your preferred hover color */
 }
 
 /* Welcome section styles */
@@ -78,9 +75,7 @@ body {
 
 img {
     width: 100%;
-    /* Ensure the image takes up the full width of the container */
     height: auto;
-    /* Maintain aspect ratio */
 }
 
 #welcome-section h1 {
@@ -116,7 +111,6 @@ img {
 .project-tile div {
     display: flex;
     flex-direction: column;
-    /* Stack content vertically on smaller screens */
     /* gap: 1rem; */
 }
 
@@ -164,19 +158,18 @@ footer {
 
 /* Media Queries for Tablets */
 @media only screen and (max-width: 768px) {
-    #navbar {
+    /* #navbar {
         /* left: 50%; */
-    }
+}
 
-    */ #welcome-section p {
-        margin-left: 5%;
-        margin-right: 5%;
-    }
+*/ */ #welcome-section p {
+    margin-left: 5%;
+    margin-right: 5%;
+}
 
-    .project-tile div {
-        align-items: flex-start;
-        /* Align project details to the left on smaller screens */
-    }
+.project-tile div {
+    align-items: flex-start;
+
 }
 
 /* Media Queries for Mobile */
@@ -197,12 +190,12 @@ footer {
 
     #navbar a {
         font-size: 0.8em;
-        /* Decrease font size for smaller screens */
+
     }
 
     #welcome-section h1 {
         font-size: 2em;
-        /* Decrease font size for smaller screens */
+
     }
 
     #welcome-section p {
@@ -212,7 +205,7 @@ footer {
 
     .project-tile div {
         align-items: flex-start;
-        /* Align project details to the left on smaller screens */
+
     }
 
     .footer-links {
