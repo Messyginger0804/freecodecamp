@@ -1,6 +1,6 @@
 /*
-Step 25
-Using the let keyword, declare a variable called fighting but do not initialize it with a value. Remember to end your line with a semi-colon.
+Step 26
+Declare two more variables named monsterHealth and inventory, but do not initialize them.
 */
 let health = 100;
 
@@ -12,3 +12,6 @@ let currentWeapon = 0;
 
 let fighting;
 
+let monsterHealth;
+
+let inventory;
