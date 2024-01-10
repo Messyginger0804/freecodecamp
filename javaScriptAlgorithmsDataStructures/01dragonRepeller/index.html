@@ -4,14 +4,12 @@
     <meta charset="utf-8">
     <link rel="stylesheet" href="./styles.css">
     <title>RPG - Dragon Repeller</title>
-    <script src="./script.js">
-    </script>
   </head>
   <!-- 
-    Step 18
-Before you start writing your project code, you should move it to its own file to keep things organized.
+    Step 31
+We have run in to a slight problem. You are trying to query your page for a button element, but your script tag is in the head of your HTML. This means your code runs before the browser has finished reading the HTML, and your document.querySelector() will not see the button - because the browser hasn't processed it yet.
 
-Remove your console.log("Hello World"); line. Then give your now empty script element a src attribute set to ./script.js. 
+To fix this, move your script element out of the head element, and place it at the end of your body element (just before the closing </body> tag.)
 -->
   <body>
     <div id="game">
@@ -33,5 +31,6 @@ Remove your console.log("Hello World"); line. Then give your now empty script el
         Welcome to Dragon Repeller. You must defeat the dragon that is preventing people from leaving the town. You are in the town square. Where do you want to go? Use the buttons above.
       </div>
     </div>
-  </body>
+    <script src="./script.js"></script>
+      </body>
 </html>
