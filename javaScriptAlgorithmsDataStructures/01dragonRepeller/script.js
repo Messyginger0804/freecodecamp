@@ -13,12 +13,10 @@ const button2 = document.querySelector("#button2");
 const button3 = document.querySelector("#button3");
 
 /*/ 
-Step 34
-Just like you did with the buttons, create variables for the following ids and use querySelector() to give them the element as a value:
+Step 35
+Finally, use querySelector() to get the #monsterHealth element. Because you have already declared a monsterHealth variable earlier, you need to use a different variable name for this element.
 
-text, xpText, healthText, goldText, monsterStats, and monsterName.
-
-Remember to declare these with the const keyword, and name the variables to match the ids.
+Declare a new variable with the const keyword and name it monsterHealthText.
 */
 
 const text = document.querySelector('#text');
@@ -27,3 +25,4 @@ const healthText = document.querySelector('#healthText');
 const goldText = document.querySelector('#goldText');
 const monsterStats = document.querySelector('#monsterStats');
 const monsterName = document.querySelector('#monsterName');
+const monsterHealthText = document.querySelector('#monsterHealth');
