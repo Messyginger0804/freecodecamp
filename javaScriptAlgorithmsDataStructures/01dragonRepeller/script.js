@@ -30,11 +30,11 @@ function goStore() {
     button1.onclick = buyHealth;
     button2.onclick = buyWeapon;
     button3.onclick = goTown;
-}
-// Step 45
-// You will also need to update the functions that run when the buttons are clicked again.
 
-// In your goStore() function, update the onclick property for each button to run buyHealth, buyWeapon, and goTown, respectively.
+    text.innerText = "You enter the store.";
+}
+// Step 46
+// Now you need to modify your display text. Change the innerText property of the text to be You enter the store..
 function goCave() {
     console.log("Going to cave.");
 }
