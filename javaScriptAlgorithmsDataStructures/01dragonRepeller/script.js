@@ -16,6 +16,8 @@ const goldText = document.querySelector("#goldText");
 const monsterStats = document.querySelector("#monsterStats");
 const monsterName = document.querySelector("#monsterName");
 const monsterHealthText = document.querySelector("#monsterHealth");
+const locations = [];
+
 
 // initialize buttons
 button1.onclick = goStore;
@@ -48,12 +50,16 @@ function goStore() {
     text.innerText = "You enter the store.";
 }
 /*
-Step 50
-You need to wrap the text Store in double quotes. Because your string is already wrapped in double quotes, you'll need to escape the quotes around Store. You can escape them with a backslash \. Here is an example:
+Step 51
+You have repetition in the goTown and goStore functions. When you have repetition in your code, this is a sign that you need another function. Functions can take parameters, which are values that are given to the function each time it is run. Here is a function that takes a parameter called param:
 
-const escapedString = "Naomi likes to play \"Zelda\" sometimes.";
-Wrap the text Store in double quotes within your text.innerText line.
+function myFunction(param) {
+    console.log(param);
+}
+Create an empty update function that takes a parameter called location.
 */
+function update(location) { }
+
 function goCave() {
     console.log("Going to cave.");
 }
