@@ -1,3 +1,12 @@
+/*
+Object properties are written as key: value pairs, where key is the name of the property (or the key), and value is the value that property holds. For example, here is an object with a key of name set to Quincy Larson.
+
+{
+  name: "Quincy Larson"
+}
+Add a name property to your empty object and give it a value of town square.
+
+*/
 let xp = 0;
 let health = 100;
 let gold = 50;
@@ -16,7 +25,7 @@ const goldText = document.querySelector("#goldText");
 const monsterStats = document.querySelector("#monsterStats");
 const monsterName = document.querySelector("#monsterName");
 const monsterHealthText = document.querySelector("#monsterHealth");
-const locations = [{}];
+const locations = [{ name: "town square", }];
 
 
 // initialize buttons
@@ -46,15 +55,6 @@ function goStore() {
 
     text.innerText = "You enter the store.";
 }
-/*
-Step 53
-You previously used an array to store strings. But arrays can store any data type. This time, your array will be storing objects. Objects are similar to arrays, but with a few differences. One difference is that objects use properties, or keys, to access and modify data.
-
-Objects are indicated by curly braces. An empty object would look like {}.
-
-Add an empty object to your locations array. 
-
-*/
 function update(location) { }
 
 function goCave() {
