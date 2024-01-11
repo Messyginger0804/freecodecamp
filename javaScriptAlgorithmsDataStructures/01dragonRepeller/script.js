@@ -34,7 +34,7 @@ function goTown() {
     button2.onclick = goCave;
     button3.onclick = fightDragon;
 
-    text.innerText = "You are in the town square. You see a sign that says Store.";
+    text.innerText = "You are in the town square. You see a sign that says \"Store\".";
 }
 function goStore() {
     button1.innerText = "Buy 10 health (10 gold)";
@@ -47,7 +47,13 @@ function goStore() {
 
     text.innerText = "You enter the store.";
 }
-// Step 49
+/*
+Step 50
+You need to wrap the text Store in double quotes. Because your string is already wrapped in double quotes, you'll need to escape the quotes around Store. You can escape them with a backslash \. Here is an example:
+
+const escapedString = "Naomi likes to play \"Zelda\" sometimes.";
+Wrap the text Store in double quotes within your text.innerText line.
+*/
 function goCave() {
     console.log("Going to cave.");
 }
