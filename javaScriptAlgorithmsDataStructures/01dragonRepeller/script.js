@@ -31,8 +31,12 @@ const locations = [
     }
 ];
 /*
-Step 60
-Now you can consolidate some of your code. Start by copying the code from inside the goTown function and paste it into your update function. Then, remove all the code from inside the goTown and goStore functions.
+Step 61
+Instead of assigning the innerText and onclick properties to specific strings and functions, the update function will use data from the location that is passed into it. First, that data needs to be passed.
+
+Inside the goTown function, call the update function. Here is an example of calling a function named myFunction:
+
+myFunction();
 */
 
 // initialize buttons
@@ -52,23 +56,10 @@ function update(location) {
 }
 
 function goTown() {
-    // button1.innerText = "Go to store";
-    // button2.innerText = "Go to cave";
-    // button3.innerText = "Fight dragon";
-    // button1.onclick = goStore;
-    // button2.onclick = goCave;
-    // button3.onclick = fightDragon;
-    // text.innerText = "You are in the town square. You see a sign that says \"Store\".";
+    update()
 }
 
 function goStore() {
-    // button1.innerText = "Buy 10 health (10 gold)";
-    // button2.innerText = "Buy weapon (30 gold)";
-    // button3.innerText = "Go to town square";
-    // button1.onclick = buyHealth;
-    // button2.onclick = buyWeapon;
-    // button3.onclick = goTown;
-    // text.innerText = "You enter the store.";
 }
 
 function goCave() {
