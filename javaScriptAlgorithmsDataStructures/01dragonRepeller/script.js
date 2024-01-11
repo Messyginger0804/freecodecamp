@@ -31,12 +31,11 @@ const locations = [
     }
 ];
 /*
-Step 61
-Instead of assigning the innerText and onclick properties to specific strings and functions, the update function will use data from the location that is passed into it. First, that data needs to be passed.
+Step 62
+You now need to pass the location argument into the update call. You pass arguments by including them within the parentheses of the function call. For example, calling myFunction with an arg argument would look like:
 
-Inside the goTown function, call the update function. Here is an example of calling a function named myFunction:
-
-myFunction();
+myFunction(arg)
+Pass your locations array into the update call.
 */
 
 // initialize buttons
@@ -56,7 +55,7 @@ function update(location) {
 }
 
 function goTown() {
-    update()
+    update(locations);
 }
 
 function goStore() {
