@@ -27,18 +27,30 @@ function goStore() {
     button2.innerText = "Buy weapon (30 gold)";
     button3.innerText = "Go to town square";
 
-    button1.onclick = buyHealth;
-    button2.onclick = buyWeapon;
-    button3.onclick = goTown;
+    // button1.onclick = buyHealth;
+    // button2.onclick = buyWeapon;
+    // button3.onclick = goTown;
 
     text.innerText = "You enter the store.";
 }
-// Step 46
-// Now you need to modify your display text. Change the innerText property of the text to be You enter the store..
+// Step 47
+// Create three new empty functions called buyHealth, buyWeapon, and goTown.
 function goCave() {
     console.log("Going to cave.");
 }
 
 function fightDragon() {
     console.log("Fighting dragon.");
+}
+
+function buyHealth() {
+
+}
+
+function buyWeapon() {
+
+}
+
+function goTown() {
+
 }
