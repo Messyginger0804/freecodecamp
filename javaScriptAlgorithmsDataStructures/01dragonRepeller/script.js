@@ -16,7 +16,7 @@ const goldText = document.querySelector("#goldText");
 const monsterStats = document.querySelector("#monsterStats");
 const monsterName = document.querySelector("#monsterName");
 const monsterHealthText = document.querySelector("#monsterHealth");
-const locations = [];
+const locations = [{}];
 
 
 // initialize buttons
@@ -47,7 +47,12 @@ function goStore() {
     text.innerText = "You enter the store.";
 }
 /*
+Step 53
+You previously used an array to store strings. But arrays can store any data type. This time, your array will be storing objects. Objects are similar to arrays, but with a few differences. One difference is that objects use properties, or keys, to access and modify data.
 
+Objects are indicated by curly braces. An empty object would look like {}.
+
+Add an empty object to your locations array. 
 
 */
 function update(location) { }
