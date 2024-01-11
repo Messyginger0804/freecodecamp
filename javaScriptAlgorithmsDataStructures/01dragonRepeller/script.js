@@ -19,20 +19,13 @@ const monsterHealthText = document.querySelector("#monsterHealth");
 const locations = [
     {
         name: "town square",
-        buttons: []  // Add a button text property with an empty array
+        "button text": ["Go to store", "Go to cave", "Fight dragon"]  // Add a button text property with an empty array
     },
 ];
 
 /*
-Step 55
-Just like array values, object properties are separated by a comma. Add a comma after your name property and add a button text property with the value of an empty array.
-
-Note that, because the property name has more than one word, you'll need to surround it in quotes. For example:
-
-{
-  name: "Naomi",
-  "favorite color": "purple"
-}
+Step 56
+Give your empty button text array three string elements. Use the three strings being assigned to the button innerText properties in the goTown function. Remember that array values are separated by commas.""
 */
 
 
