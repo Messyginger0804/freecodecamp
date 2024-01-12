@@ -3,10 +3,10 @@ let health = 100;
 let gold = 50;
 let currentWeapon = 0;
 let fighting;
-const button1 = document.querySelector('#button1');
 let monsterHealth;
 let inventory = ["stick"];
 
+const button1 = document.querySelector('#button1');
 const button2 = document.querySelector("#button2");
 const button3 = document.querySelector("#button3");
 const text = document.querySelector("#text");
@@ -33,20 +33,14 @@ const locations = [
         name: "cave",
         "button text": ["Fight slime", "Fight fanged beast", "Go to town square"],
         "button functions": [fightSlime, fightBeast, goTown],
-        text: "You enter the cave. You see some monsters.",
-
+        text: "You enter the cave. You see some monsters."
     }
-    // Step 71
-    // Add a third object to the locations array. Give it the same properties as the other two objects.
-
-    // Set name to cave. Set button text to an array with the strings Fight slime, Fight fanged beast, and Go to town square. Set the button functions to an array with the variables fightSlime, fightBeast, and goTown. Set the text property to You enter the cave. You see some monsters..
 ];
 
 // initialize buttons
-button1.onclick = locations["button text"][0];
-button2.onclick = locations["button text"][1];
-button3.onclick = locations["button text"][2];
-
+button1.onclick = goStore;
+button2.onclick = goCave;
+button3.onclick = fightDragon;
 
 function update(location) {
     button1.innerText = location["button text"][0];
@@ -66,11 +60,10 @@ function goStore() {
     update(locations[1]);
 }
 
-function fightSlime() { };
-function fightBeast() { };
 function goCave() {
-    console.log("Going to cave.");
+    update(locations[2]);
 }
+
 
 function fightDragon() {
     console.log("Fighting dragon.");
@@ -81,5 +74,13 @@ function buyHealth() {
 }
 
 function buyWeapon() {
+
+}
+
+function fightSlime() {
+
+}
+
+function fightBeast() {
 
 }
