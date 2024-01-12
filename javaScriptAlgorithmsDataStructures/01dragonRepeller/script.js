@@ -36,10 +36,6 @@ button1.onclick = locations["button text"][0];
 button2.onclick = locations["button text"][1];
 button3.onclick = locations["button text"][2];
 
-// Step 69
-// Now update your goStore function to call the update function. Pass the second element of the locations array as your argument.
-
-// To make sure your refactoring is correct, try clicking your first button again. You should see the same changes to your webpage that you saw earlier.
 
 function update(location) {
     button1.innerText = location["button text"][0];
@@ -58,7 +54,11 @@ function goTown() {
 function goStore() {
     update(locations[1]);
 }
+// Step 70
+// Create two more empty functions named fightSlime and fightBeast. These functions will be used in your upcoming cave object.
 
+function fightSlime() { };
+function fightBeast() { };
 function goCave() {
     console.log("Going to cave.");
 }
