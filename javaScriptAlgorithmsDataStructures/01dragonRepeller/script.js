@@ -16,6 +16,9 @@ const goldText = document.querySelector("#goldText");
 const monsterStats = document.querySelector("#monsterStats");
 const monsterName = document.querySelector("#monsterName");
 const monsterHealthText = document.querySelector("#monsterHealth");
+const weapons = [];
+// Step 81
+// Use const to create a weapons variable above your locations array. Assign it an empty array.
 const locations = [
     {
         name: "town square",
