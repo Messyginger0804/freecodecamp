@@ -36,10 +36,10 @@ button1.onclick = locations["button text"][0];
 button2.onclick = locations["button text"][1];
 button3.onclick = locations["button text"][2];
 
-// Step 68
-// Finally, update the text.innerText assignment to equal the text from the location object. However, instead of using bracket notation, use dot notation.
+// Step 69
+// Now update your goStore function to call the update function. Pass the second element of the locations array as your argument.
 
-// Here is an example of accessing the name property of an object called person:
+// To make sure your refactoring is correct, try clicking your first button again. You should see the same changes to your webpage that you saw earlier.
 
 function update(location) {
     button1.innerText = location["button text"][0];
@@ -56,7 +56,7 @@ function goTown() {
 }
 
 function goStore() {
-
+    update(locations[1]);
 }
 
 function goCave() {
