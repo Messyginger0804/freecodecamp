@@ -109,8 +109,7 @@ function buyHealth() {
 function buyWeapon() {
     if (gold >= 30) {
         gold -= 30;
-        currentWeapon += 1;  // Use compound assignment to add 1 to currentWeapon
-        // Add logic to update any relevant information about the player's weapon
+        currentWeapon++;
     } else {
         text.innerText = "You do not have enough gold to buy a weapon.";
     }
