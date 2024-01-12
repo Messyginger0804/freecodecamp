@@ -102,14 +102,20 @@ function buyHealth() {
     }
 }
 
-// Step 84
-// Similar to your buyHealth function, set gold equal to 30 less than its current value. Make sure this is inside your if statement.
+// Step 85
+// The value of the currentWeapon variable corresponds to an index in the weapons array. The player starts with a stick, since currentWeapon starts at 0 and weapons[0] is the stick weapon.
 
+// In the buyWeapon function, use compound assignment to add 1 to currentWeapon - the user is buying the next weapon in the weapons array.
 function buyWeapon() {
     if (gold >= 30) {
-
+        gold -= 30;
+        currentWeapon += 1;  // Use compound assignment to add 1 to currentWeapon
+        // Add logic to update any relevant information about the player's weapon
+    } else {
+        text.innerText = "You do not have enough gold to buy a weapon.";
     }
 }
+
 function fightSlime() {
 
 }
