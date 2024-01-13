@@ -85,6 +85,9 @@ function buyHealth() {
     }
 }
 
+// Step 94
+// At the end of the second text.innerText string you just added, use the concatenation operator to add the contents of inventory to the string.
+
 function buyWeapon() {
     if (gold >= 30) {
         gold -= 30;
