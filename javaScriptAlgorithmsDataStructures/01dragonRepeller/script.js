@@ -32,7 +32,7 @@ const locations = [
     {
         name: "store",
         "button text": ["Buy 10 health (10 gold)", "Buy weapon (30 gold)", "Go to town square"],
-        "button functions": [buyWeapon, buyWeapon, goTown],
+        "button functions": [buyHealth, buyWeapon, goTown],
         text: "You enter the store."
     },
     {
@@ -84,14 +84,13 @@ function buyHealth() {
         text.innerText = "You do not have enough gold to buy health.";
     }
 }
-// Step 88
-// You should tell the player what weapon they bought. In between the two lines you just wrote, use let to initialize a new variable called newWeapon. Set this to equal weapons.
+
 function buyWeapon() {
     if (gold >= 30) {
         gold -= 30;
         currentWeapon++;
         goldText.innerText = gold;
-        let newWeapon = weapons;
+        let newWeapon = weapons[currentWeapon].name;
         text.innerText = "You now have a new weapon.";
     }
 }
