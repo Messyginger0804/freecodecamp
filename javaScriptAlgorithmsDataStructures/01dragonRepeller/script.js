@@ -85,8 +85,8 @@ function buyHealth() {
     }
 }
 
-// Step 94
-// At the end of the second text.innerText string you just added, use the concatenation operator to add the contents of inventory to the string.
+// Step 95
+// Add an else statement to your buyWeapon function. In that statement, set text.innerText to equal You do not have enough gold to buy a weapon..
 
 function buyWeapon() {
     if (gold >= 30) {
@@ -96,6 +96,8 @@ function buyWeapon() {
         let newWeapon = weapons[currentWeapon].name;
         text.innerText = "You now have a " + newWeapon + ".";
         text.innerText += " In your inventory you have: " + inventory;
+    } else {
+        text.innerText = "You do not have enough gold to buy a weapon.";
     }
 }
 function fightSlime() {
