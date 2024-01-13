@@ -105,17 +105,14 @@ function buyWeapon() {
     }
 }
 
-// Step 106
-// After your currentWeapon, use the concatenation operator to set text.innerText to the string You sold a , then currentWeapon, then the string ..
-
 function sellWeapon() {
     if (inventory.length > 1) {
-        gold += 15
+        gold += 15;
         goldText.innerText = gold;
         let currentWeapon = inventory.shift();
-        text.innerText = "You sold a " + currentWeapon + ".";
+        text.innerText = "You sold a " + currentWeapon + ". ";
+        text.innerText += " In your inventory you have: " + inventory;
     }
-
 }
 
 function fightSlime() {
