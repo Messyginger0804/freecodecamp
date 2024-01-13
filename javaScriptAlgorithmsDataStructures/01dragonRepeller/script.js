@@ -85,13 +85,22 @@ function buyHealth() {
     }
 }
 
+
+// Step 91
+// You can insert variables into a string with the concatenation operator +. Update the You now have a new weapon. string to say You now have a and the name of the new weapon. Remember to end the sentence with a period.
+
+// Here is an example that creates the string Hello, our name is freeCodeCamp.:
+
+// const ourName = "freeCodeCamp";
+// const ourStr = "Hello, our name is " + ourName + ".";
+
 function buyWeapon() {
     if (gold >= 30) {
         gold -= 30;
         currentWeapon++;
         goldText.innerText = gold;
         let newWeapon = weapons[currentWeapon].name;
-        text.innerText = "You now have a new weapon.";
+        text.innerText = "You now have a " + newWeapon + ".";
     }
 }
 
