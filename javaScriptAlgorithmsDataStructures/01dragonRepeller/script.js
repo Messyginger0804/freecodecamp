@@ -105,13 +105,16 @@ function buyWeapon() {
     }
 }
 
-// Step 103
-// Inside the if statement, set gold equal to 15 more than its current value. Also update goldText.innerText to the new value.
+// Step 104
+// Use the let keyword to create a variable named currentWeapon. Don't assign it a value yet.
+
+// Notice that you already have a currentWeapon variable elsewhere in your code. Since you are using the let keyword instead of var, the new currentWeapon is scoped only to this if statement. At the close of the if statement, the old currentWeapon will be used again.
 
 function sellWeapon() {
     if (inventory.length > 1) {
         gold += 15
         goldText.innerText = gold;
+        let currentWeapon;
     }
 
 }
