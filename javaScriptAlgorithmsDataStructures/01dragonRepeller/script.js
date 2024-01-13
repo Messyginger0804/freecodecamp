@@ -85,19 +85,15 @@ function buyHealth() {
     }
 }
 
-// Step 97
-// Arrays have a length property that returns the number of items in the array. You may want to add new values to the weapons array in the future.
-
-// Change your if condition to check if currentWeapon is less than the length of the weapons array. An example of checking the length of an array myArray would look like myArray.length.
-
 function buyWeapon() {
-    if (currentWeapon < weapons.length) {
+    if (currentWeapon < weapons.length - 1) {
         if (gold >= 30) {
             gold -= 30;
             currentWeapon++;
             goldText.innerText = gold;
             let newWeapon = weapons[currentWeapon].name;
             text.innerText = "You now have a " + newWeapon + ".";
+            inventory.push(newWeapon);
             text.innerText += " In your inventory you have: " + inventory;
         } else {
             text.innerText = "You do not have enough gold to buy a weapon.";
