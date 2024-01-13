@@ -86,13 +86,15 @@ function buyHealth() {
 }
 
 
-// Step 91
-// You can insert variables into a string with the concatenation operator +. Update the You now have a new weapon. string to say You now have a and the name of the new weapon. Remember to end the sentence with a period.
+// Step 92
+// Back at the beginning of this project, you created the inventory array. Add the newWeapon to the end of the inventory array using the push() method.
 
-// Here is an example that creates the string Hello, our name is freeCodeCamp.:
+// Here is an example:
 
-// const ourName = "freeCodeCamp";
-// const ourStr = "Hello, our name is " + ourName + ".";
+// const arr = ["first"];
+// const next = "second";
+// arr.push(next);
+// arr would now have the value ["first", "second"].
 
 function buyWeapon() {
     if (gold >= 30) {
@@ -101,6 +103,7 @@ function buyWeapon() {
         goldText.innerText = gold;
         let newWeapon = weapons[currentWeapon].name;
         text.innerText = "You now have a " + newWeapon + ".";
+        inventory.push(newWeapon);
     }
 }
 
