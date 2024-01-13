@@ -17,25 +17,11 @@ const monsterStats = document.querySelector("#monsterStats");
 const monsterName = document.querySelector("#monsterName");
 const monsterHealthText = document.querySelector("#monsterHealth");
 const weapons = [
-    {
-        name: "stick",
-        power: 5,
-    },
-    {
-        name: "dagger",
-        power: 30,
-    },
-    {
-        name: "claw hammer",
-        power: 50,
-    },
-    {
-        name: "sword",
-        power: 100,
-    },
+    { name: 'stick', power: 5 },
+    { name: 'dagger', power: 30 },
+    { name: 'claw hammer', power: 50 },
+    { name: 'sword', power: 100 }
 ];
-// Step 82
-// Just like your locations array, your weapons array will hold objects. Add four objects to the weapons array, each with two properties: name and power. The first should have the name set to stick and the power set to 5. The second should be dagger and 30. The third, claw hammer and 50. The fourth, sword and 100.
 const locations = [
     {
         name: "town square",
@@ -46,7 +32,7 @@ const locations = [
     {
         name: "store",
         "button text": ["Buy 10 health (10 gold)", "Buy weapon (30 gold)", "Go to town square"],
-        "button functions": [buyHealth, buyWeapon, goTown],
+        "button functions": [buyWeapon, buyWeapon, goTown],
         text: "You enter the store."
     },
     {
@@ -88,9 +74,6 @@ function fightDragon() {
     console.log("Fighting dragon.");
 }
 
-// Step 80
-// Inside the else statement, set text.innerText to equal You do not have enough gold to buy health..
-
 function buyHealth() {
     if (gold >= 10) {
         gold -= 10;
@@ -102,16 +85,13 @@ function buyHealth() {
     }
 }
 
-// Step 85
-// The value of the currentWeapon variable corresponds to an index in the weapons array. The player starts with a stick, since currentWeapon starts at 0 and weapons[0] is the stick weapon.
-
-// In the buyWeapon function, use compound assignment to add 1 to currentWeapon - the user is buying the next weapon in the weapons array.
 function buyWeapon() {
     if (gold >= 30) {
         gold -= 30;
         currentWeapon++;
-    } else {
-        text.innerText = "You do not have enough gold to buy a weapon.";
+        goldText.innerText = gold;
+
+        text.innerText = "You now have a new weapon.";
     }
 }
 
