@@ -85,6 +85,9 @@ function buyHealth() {
     }
 }
 
+// Step 99
+// Add an else statement for your outer if statement. Inside this new else statement, set text.innerText to You already have the most powerful weapon!.
+
 function buyWeapon() {
     if (currentWeapon < weapons.length - 1) {
         if (gold >= 30) {
@@ -98,6 +101,8 @@ function buyWeapon() {
         } else {
             text.innerText = "You do not have enough gold to buy a weapon.";
         }
+    } else {
+        text.innerText = "You already have the most powerful weapon!";
     }
 }
 
