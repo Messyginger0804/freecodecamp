@@ -105,16 +105,15 @@ function buyWeapon() {
     }
 }
 
-// Step 104
-// Use the let keyword to create a variable named currentWeapon. Don't assign it a value yet.
-
-// Notice that you already have a currentWeapon variable elsewhere in your code. Since you are using the let keyword instead of var, the new currentWeapon is scoped only to this if statement. At the close of the if statement, the old currentWeapon will be used again.
+// Step 105
+// The shift() method on an array removes the first element in the array and returns it. Use this method to take the first element from the inventory array and assign it to your currentWeapon variable.
 
 function sellWeapon() {
     if (inventory.length > 1) {
         gold += 15
         goldText.innerText = gold;
-        let currentWeapon;
+        let currentWeapon = inventory.shift();
+
     }
 
 }
