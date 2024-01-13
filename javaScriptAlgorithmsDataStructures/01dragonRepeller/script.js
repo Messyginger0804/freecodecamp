@@ -16,34 +16,28 @@ const goldText = document.querySelector("#goldText");
 const monsterStats = document.querySelector("#monsterStats");
 const monsterName = document.querySelector("#monsterName");
 const monsterHealthText = document.querySelector("#monsterHealth");
-// Step 109
-// Now you can start the code to fight monsters. To keep your code organized, your fightDragon function has been moved for you to be near the other fight functions.
-
-// Below your weapons array, define a monsters variable and assign it an array. Set that array to have three objects, each with a name, level, and health properties. The first object's values should be slime, 2, and 15, in order. The second should be fanged beast, 8, and 60. The third should be dragon, 20, and 300.
 const weapons = [
     { name: 'stick', power: 5 },
     { name: 'dagger', power: 30 },
     { name: 'claw hammer', power: 50 },
     { name: 'sword', power: 100 }
 ];
-
 const monsters = [
     {
         name: "slime",
         level: 2,
-        health: 15,
+        health: 15
     },
     {
         name: "fanged beast",
         level: 8,
-        health: 60,
+        health: 60
     },
     {
         name: "dragon",
         level: 20,
-        health: 300,
-    },
-
+        health: 300
+    }
 ]
 const locations = [
     {
@@ -93,10 +87,6 @@ function goCave() {
     update(locations[2]);
 }
 
-function fightDragon() {
-    console.log("Fighting dragon.");
-}
-
 function buyHealth() {
     if (gold >= 10) {
         gold -= 10;
@@ -128,15 +118,12 @@ function buyWeapon() {
     }
 }
 
-// Step 108
-// Use an else statement to run when the inventory length is not more than one. Set the text.innerText to say Don't sell your only weapon!.
-
 function sellWeapon() {
     if (inventory.length > 1) {
         gold += 15;
         goldText.innerText = gold;
         let currentWeapon = inventory.shift();
-        text.innerText = "You sold a " + currentWeapon + ". ";
+        text.innerText = "You sold a " + currentWeapon + ".";
         text.innerText += " In your inventory you have: " + inventory;
     } else {
         text.innerText = "Don't sell your only weapon!";
@@ -150,3 +137,9 @@ function fightSlime() {
 function fightBeast() {
 
 }
+
+function fightDragon() {
+    console.log("Fighting dragon.");
+}
+
+function goFight() { };
