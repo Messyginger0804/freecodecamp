@@ -134,8 +134,7 @@ function fightSlime() {
     fighting = 0;
     goFight();
 }
-// Step 112
-// Following the same pattern, use that code in the fightBeast and fightDragon functions. Remember that beast is at index 1 and dragon is at index 2. Also, remove the console.log call from your fightDragon function.
+
 function fightBeast() {
     fighting = 1;
     goFight();
@@ -150,3 +149,10 @@ function fightDragon() {
 function goFight() {
 
 };
+
+function attack() { }
+
+function dodge() { }
+
+// Step 113
+// At the end of your code, create two empty functions named attack and dodge.
