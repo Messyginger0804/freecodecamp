@@ -151,19 +151,16 @@ function fightDragon() {
     goFight();
 }
 
-// Step 118
-// Now, set the innerText property of monsterName to be the name property of the current monster. Do the same for monsterHealthText and the health property.
-
 function goFight() {
     update(locations[3]);
-    let monsterHealth = monsters[fighting].health;
+    monsterHealth = monsters[fighting].health;
     monsterStats.style.display = "block";
-    monsterName.innerText = "Monster: " + monsters[fighting].name;
-    monsterHealthText.innerText = "Health: " + monsterHealth;
+    monsterName.innerText = monsters[fighting].name;
+    monsterHealthText.innerText = monsterHealth;
 }
 
 function attack() {
-
+    text.innerText = "The " + monsters[fighting].name + " attacks."
 }
 
 function dodge() {
