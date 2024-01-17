@@ -151,12 +151,17 @@ function fightDragon() {
     goFight();
 }
 
-// Step 116
-// Below your update call, set the monsterHealth to be the health of the current monster. You can get this value by accessing the health property of monsters[fighting] with dot notation.
+// Step 117
+// The HTML element that shows the monster's stats has been hidden with CSS. Display the monsterStats element by updating the display property of the style property to block. For example, updating the first property of the name property of user would look like:
+
+// user.name.first = "Naomi";
 
 function goFight() {
     update(locations[3]);
     let monsterHealth = monsters[fighting].health;
+    monsterStats.style.display = "block";
+    monsterName.innerText = "Monster: " + monsters[fighting].name;
+    monsterHealthText.innerText = "Health: " + monsterHealth;
 }
 
 function attack() {
