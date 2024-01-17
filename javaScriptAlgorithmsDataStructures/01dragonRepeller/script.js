@@ -151,10 +151,8 @@ function fightDragon() {
     goFight();
 }
 
-// Step 117
-// The HTML element that shows the monster's stats has been hidden with CSS. Display the monsterStats element by updating the display property of the style property to block. For example, updating the first property of the name property of user would look like:
-
-// user.name.first = "Naomi";
+// Step 118
+// Now, set the innerText property of monsterName to be the name property of the current monster. Do the same for monsterHealthText and the health property.
 
 function goFight() {
     update(locations[3]);
