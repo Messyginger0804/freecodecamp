@@ -159,12 +159,15 @@ function goFight() {
     monsterHealthText.innerText = monsterHealth;
 }
 
-// Step 121
-// Next, set health to equal health minus the monster's level. Remember you can get this from the monsters[fighting].level property.
+// Step 122
+// Set monsterHealth to monsterHealth minus the power of the player's current weapon. Remember you have the currentWeapon variable and the power property.
 
 function attack() {
     text.innerText = "The " + monsters[fighting].name + " attacks.";
     text.innerText += " You attack it with your " + weapons[currentWeapon].name + ".";
+    health -= monsters[fighting].level;
+
+    monsterHealth -= weapons[currentWeapon].power;
 }
 
 
