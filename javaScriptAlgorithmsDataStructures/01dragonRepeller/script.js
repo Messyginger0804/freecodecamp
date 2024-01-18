@@ -63,6 +63,12 @@ const locations = [
         "button text": ["Attack", "Dodge", "Run"],
         "button functions": [attack, dodge, goTown],
         text: "You are fighting a monster."
+    },
+    {
+        name: 'kill monster',
+        "button text": ["Go to town square", "Go to town square", "Go to town square",],
+        "button functions": [goTown, goTown, goTown],
+        text: "The monster screams Arg! as it dies. You gain experience points and find gold."
     }
 ];
 
@@ -159,16 +165,13 @@ function goFight() {
     monsterHealthText.innerText = monsterHealth;
 }
 
-
 function attack() {
     text.innerText = "The " + monsters[fighting].name + " attacks.";
     text.innerText += " You attack it with your " + weapons[currentWeapon].name + ".";
     health -= monsters[fighting].level;
     monsterHealth -= weapons[currentWeapon].power + Math.floor(Math.random() * xp) + 1;
-
     healthText.innerText = health;
     monsterHealthText.innerText = monsterHealth;
-
     if (health <= 0) {
         lose();
     } else if (monsterHealth <= 0) {
@@ -177,18 +180,17 @@ function attack() {
 }
 
 function dodge() {
-    text.innerText = "You dodge the attack from the " + monsters[fighting].name + ".";
+    text.innerText = "You dodge the attack from the " + monsters[fighting].name;
 }
-
-// Step 132
-// Finish the defeatMonster function by calling the update function with locations[4] as the argument.
 
 function defeatMonster() {
     gold += Math.floor(monsters[fighting].level * 6.7);
-    xp = xp += monsters[fighting].level;
-
+    xp += monsters[fighting].level;
     goldText.innerText = gold;
     xpText.innerText = xp;
+    update(locations[4]);
 }
 
-function lose() { }
+function lose() {
+
+}
