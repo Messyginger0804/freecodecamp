@@ -175,21 +175,20 @@ function attack() {
         defeatMonster();
     }
 }
-// Step 129
-// In your defeatMonster function, set gold equal to gold plus the monster's level times 6.7. You can get the monster's level with the level property.
-
-// Here is an example of setting num to num plus 5 * 8: num += 5 * 8. Use Math.floor() to round the result down.
 
 function dodge() {
     text.innerText = "You dodge the attack from the " + monsters[fighting].name + ".";
 }
 
-// Step 130
-// Set xp to xp plus the monster's level
+// Step 131
+// Now update goldText and xpText to display the updated values.
 
 function defeatMonster() {
     gold += Math.floor(monsters[fighting].level * 6.7);
     xp = xp += monsters[fighting].level;
+
+    goldText.innerText = gold;
+    xpText.innerText = xp;
 }
 
 function lose() { }
