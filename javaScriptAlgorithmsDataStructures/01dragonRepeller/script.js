@@ -175,15 +175,17 @@ function attack() {
         defeatMonster();
     }
 }
-// Step 128
-// Inside the dodge function, set text.innerText equal to the string You dodge the attack from the <monster>. Replace <monster> with the name of the monster, using the name property.
+// Step 129
+// In your defeatMonster function, set gold equal to gold plus the monster's level times 6.7. You can get the monster's level with the level property.
+
+// Here is an example of setting num to num plus 5 * 8: num += 5 * 8. Use Math.floor() to round the result down.
 
 function dodge() {
     text.innerText = "You dodge the attack from the " + monsters[fighting].name + ".";
 }
 
 function defeatMonster() {
-
+    gold += Math.floor(monsters[fighting].level * 6.7);
 }
 
 function lose() { }
