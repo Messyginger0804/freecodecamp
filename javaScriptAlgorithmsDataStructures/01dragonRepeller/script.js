@@ -158,8 +158,10 @@ function goFight() {
     monsterName.innerText = monsters[fighting].name;
     monsterHealthText.innerText = monsterHealth;
 }
-// Step 124
-// Update healthText.innerText and monsterHealthText.innerText to equal health and monsterHealth.
+
+
+// Step 125
+// Add an if statement to check if health is less than or equal to 0. If it is, call the lose function.
 
 function attack() {
     text.innerText = "The " + monsters[fighting].name + " attacks.";
@@ -169,6 +171,10 @@ function attack() {
 
     healthText.innerText = health;
     monsterHealthText.innerText = monsterHealth;
+
+    if (health <= 0) {
+        lose();
+    }
 }
 
 function dodge() {
