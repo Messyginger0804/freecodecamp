@@ -180,8 +180,8 @@ function dodge() {
     text.innerText = "You dodge the attack from the " + monsters[fighting].name + ".";
 }
 
-// Step 131
-// Now update goldText and xpText to display the updated values.
+// Step 132
+// Finish the defeatMonster function by calling the update function with locations[4] as the argument.
 
 function defeatMonster() {
     gold += Math.floor(monsters[fighting].level * 6.7);
