@@ -175,16 +175,15 @@ function attack() {
         defeatMonster();
     }
 }
-// Step 126
-// You can make an else statement conditional by using else if. Here's an example:
-
-// if (num > 10) {
-
-// } else if (num < 5) {
-
-// }
-// At the end of your if statement, add an else if statement to check if monsterHealth is less than or equal to 0. In your else if, call the defeatMonster function.
+// Step 127
+// At the end of your code, create the defeatMonster and lose functions. Leave them empty for now.
 
 function dodge() {
 
 }
+
+function defeatMonster() {
+
+}
+
+function lose() { }
