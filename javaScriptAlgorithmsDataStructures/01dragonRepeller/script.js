@@ -159,8 +159,8 @@ function goFight() {
     monsterHealthText.innerText = monsterHealth;
 }
 
-// Step 120
-// On a new line, add the string You attack it with your <weapon>. to the text value, replacing <weapon> with the player's current weapon.
+// Step 121
+// Next, set health to equal health minus the monster's level. Remember you can get this from the monsters[fighting].level property.
 
 function attack() {
     text.innerText = "The " + monsters[fighting].name + " attacks.";
