@@ -184,8 +184,12 @@ function dodge() {
     text.innerText = "You dodge the attack from the " + monsters[fighting].name + ".";
 }
 
+// Step 130
+// Set xp to xp plus the monster's level
+
 function defeatMonster() {
     gold += Math.floor(monsters[fighting].level * 6.7);
+    xp = xp += monsters[fighting].level;
 }
 
 function lose() { }
