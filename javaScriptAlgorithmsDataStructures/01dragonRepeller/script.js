@@ -175,11 +175,11 @@ function attack() {
         defeatMonster();
     }
 }
-// Step 127
-// At the end of your code, create the defeatMonster and lose functions. Leave them empty for now.
+// Step 128
+// Inside the dodge function, set text.innerText equal to the string You dodge the attack from the <monster>. Replace <monster> with the name of the monster, using the name property.
 
 function dodge() {
-
+    text.innerText = "You dodge the attack from the " + monsters[fighting].name + ".";
 }
 
 function defeatMonster() {
