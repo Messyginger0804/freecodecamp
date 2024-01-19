@@ -196,14 +196,19 @@ function attack() {
     }
 }
 
-// Step 147
-// Functions run specific blocks of code when they are called, but they can also return a value. This value can be assigned to a variable and used elsewhere in your code.
+// Step 148
+// If you play the game in its current state you might notice a bug. If your xp is high enough, the getMonsterAttackValue function will return a negative number, which will actually add to your total health when fighting a monster!
 
-// Use the return keyword to return the value of hit at the end of the function.
+// In getMonsterAttackValue, change return hit to a ternary operator that returns hit if hit is greater than 0, or returns 0 if it is not.
+
+// Here is an example of returning a value based on condition with a ternary:
+
+// return condition ? true : false;
 
 function getMonsterAttackValue(level) {
     const hit = (level * 5) - (Math.floor(Math.random() * xp));
-    return hit
+    console.log(hit);
+    return hit > 0 ? hit : 0;
 }
 
 function dodge() {
