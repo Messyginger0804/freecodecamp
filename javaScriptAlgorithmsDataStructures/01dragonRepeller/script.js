@@ -69,7 +69,8 @@ const locations = [
         "button text": ["Go to town square", "Go to town square", "Go to town square"],
         "button functions": [goTown, goTown, goTown],
         text: 'The monster screams "Arg!" as it dies. You gain experience points and find gold.'
-    }
+    },
+
 ];
 
 // initialize buttons
@@ -192,9 +193,18 @@ function defeatMonster() {
     update(locations[4]);
 }
 
-// Step 136
-// In the lose function, call the update function and pass in the sixth object of your locations array. Note that you haven't created this object just yet.
-
 function lose() {
     update(locations[5]);
+}
+
+function restart() {
+    xp = 0;
+    health = 100;
+    gold = 50;
+    currentWeapon = 0;
+    inventory = ["stick"];
+    goldText.innerText = gold;
+    healthText.innerText = health;
+    xpText.innerText = xp;
+    goTown();
 }
