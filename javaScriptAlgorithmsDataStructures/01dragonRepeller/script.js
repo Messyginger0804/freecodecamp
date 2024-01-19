@@ -260,17 +260,12 @@ function pickEight() {
     pick(8);
 }
 
-// Step 163
-// After your numbers array, create a while loop. A while loop accepts a condition, and will run the code in the block until the condition is no longer true.
-
-// Your while loop should run while numbers.length is less than 10.
-
-// Here is an example of a while loop that runs while i is less than five.
-
-// while (i < 5) {
-
-// }
+// Step 164
+// Inside your while loop, push a random number between 0 and 10 to the end of the numbers array. You can create this random number with Math.floor(Math.random() * 11).
 
 function pick(guess) {
     const numbers = [];
+    while (numbers.length < 10) {
+        numbers.push(Math.floor(Math.random() * 11))
+    }
 }
