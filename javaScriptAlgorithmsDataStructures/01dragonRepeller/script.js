@@ -260,8 +260,12 @@ function pickEight() {
     pick(8);
 }
 
-// Step 166
-// At the end of the string, before the final quote, insert the new line escape character \n. This will cause the next part you add to text.innerText to appear on a new line
+// Step 167
+// A for loop runs for a specific number of times. We will break down how a for loop runs in the next several steps. For now, copy this loop below and paste it at the end of your pick function.
+
+// for (let x = 1; x < 5; x++) {
+
+// }
 function pick(guess) {
     const numbers = [];
     while (numbers.length < 10) {
