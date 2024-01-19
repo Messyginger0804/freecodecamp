@@ -81,9 +81,8 @@ const locations = [
         "button text": ["REPLAY?", "REPLAY?", "REPLAY?"],
         "button functions": [restart, restart, restart],
         text: "You defeat the dragon! YOU WIN THE GAME! 🎉"
-    },
+    }
 ];
-
 
 // initialize buttons
 button1.onclick = goStore;
@@ -185,7 +184,6 @@ function attack() {
     health -= getMonsterAttackValue(monsters[fighting].level);
     if (isMonsterHit()) {
         monsterHealth -= weapons[currentWeapon].power + Math.floor(Math.random() * xp) + 1;
-
     } else {
         text.innerText += " You miss.";
     }
@@ -197,26 +195,18 @@ function attack() {
         fighting === 2 ? winGame() : defeatMonster();
     }
     if (Math.random() <= .1 && inventory.length !== 1) {
-        text.innerText += " Your " + inventory.pop() + " breaks."
-        currentWeapon--
+        text.innerText += " Your " + inventory.pop() + " breaks.";
+        currentWeapon--;
     }
 }
-// Step 158
-// Now you can add a small easter egg (hidden feature) to your game.
 
-// Create a new function called easterEgg which calls the update function with locations[7] as the argument.
 function getMonsterAttackValue(level) {
     const hit = (level * 5) - (Math.floor(Math.random() * xp));
     console.log(hit);
     return hit > 0 ? hit : 0;
 }
 
-function easterEgg() {
-    update(locations[7]);
-}
-
 function isMonsterHit() {
-
     return Math.random() > .2 || health < 20;
 }
 
@@ -250,4 +240,12 @@ function restart() {
     healthText.innerText = health;
     xpText.innerText = xp;
     goTown();
+}
+
+function easterEgg() {
+    update(locations[7]);
+}
+
+function pick(guess) {
+
 }
