@@ -65,17 +65,12 @@ const locations = [
         text: "You are fighting a monster."
     },
     {
-        name: 'kill monster',
-        "button text": ["Go to town square", "Go to town square", "Go to town square",],
+        name: "kill monster",
+        "button text": ["Go to town square", "Go to town square", "Go to town square"],
         "button functions": [goTown, goTown, goTown],
-        text: "The monster screams Arg! as it dies. You gain experience points and find gold."
+        text: 'The monster screams "Arg!" as it dies. You gain experience points and find gold.'
     }
 ];
-
-// Step 134
-// The word Arg! should have quotes around it. Besides escaping quotes, there is another way you can include quotation marks inside a string.
-
-// Change the double quotes around the string The monster screams Arg! as it dies. You gain experience points and find gold. to single quotes ', then add double quotes around Arg!.
 
 // initialize buttons
 button1.onclick = goStore;
@@ -83,6 +78,7 @@ button2.onclick = goCave;
 button3.onclick = fightDragon;
 
 function update(location) {
+    monsterStats.style.display = "none";
     button1.innerText = location["button text"][0];
     button2.innerText = location["button text"][1];
     button3.innerText = location["button text"][2];
