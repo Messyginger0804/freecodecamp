@@ -259,19 +259,17 @@ function pickTwo() {
 function pickEight() {
     pick(8);
 }
-// Step 169
-// The second statement in a for loop, the condition statement, is evaluated at the beginning of every loop iteration.The loop will continue as long as the condition evaluates to be true.
+// Step 170
+// The last statement in a for loop, the final expression, is executed at the end of each loop iteration.
 
-// We want the loop to run 10 times, so change x < 5 to i < 10.
+// Since we changed the initialization statement to use i instead of x, change x++ to i++. This will increment the initializer i by 1 after each loop.
 function pick(guess) {
     const numbers = [];
     while (numbers.length < 10) {
         numbers.push(Math.floor(Math.random() * 11));
     }
     text.innerText = "You picked " + guess + ". Here are the random numbers:\n";
-    for (let i = 0; i < 10; x++) {
+    for (let i = 0; i < 10; i++) {
 
     }
-
-
 }
