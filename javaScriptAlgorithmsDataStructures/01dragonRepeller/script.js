@@ -84,8 +84,6 @@ const locations = [
     },
 ];
 
-// Step 142
-// Add another object in the locations array. Everything should be the same as the lose object, except the name should be win and the text should be You defeat the dragon! YOU WIN THE GAME! 🎉.
 
 // initialize buttons
 button1.onclick = goStore;
@@ -181,10 +179,15 @@ function goFight() {
     monsterHealthText.innerText = monsterHealth;
 }
 
+// Step 143
+// Your game could be complete now, but you can also make it more interesting.
+
+// Inside your attack function, change your health -= monsters[fighting].level; line to health -= getMonsterAttackValue(monsters[fighting].level);. This sets health equal to health minus the return value of the getMonsterAttackValue function, and passes the level of the monster as an argument.
+
 function attack() {
     text.innerText = "The " + monsters[fighting].name + " attacks.";
     text.innerText += " You attack it with your " + weapons[currentWeapon].name + ".";
-    health -= monsters[fighting].level;
+    health -= getMonsterAttackValue(monsters[fighting];
     monsterHealth -= weapons[currentWeapon].power + Math.floor(Math.random() * xp) + 1;
     healthText.innerText = health;
     monsterHealthText.innerText = monsterHealth;
