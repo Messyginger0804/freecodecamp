@@ -70,8 +70,16 @@ const locations = [
         "button functions": [goTown, goTown, goTown],
         text: 'The monster screams "Arg!" as it dies. You gain experience points and find gold.'
     },
-
+    {
+        name: "lose",
+        "button text": ["REPLAY?", "REPLAY?", "REPLAY?"],
+        "button functions": [restart, restart, restart],
+        text: "You die. ☠️"
+    }
 ];
+
+// Step 138
+// In the locations array, add another object at the end. Set the name property to lose, set button text to an array with three REPLAY? strings, set button functions to an array with three restart variables, and set text to You die. ☠️. You can copy that text to use the emote.
 
 // initialize buttons
 button1.onclick = goStore;
