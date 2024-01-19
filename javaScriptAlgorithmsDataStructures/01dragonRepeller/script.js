@@ -179,15 +179,13 @@ function goFight() {
     monsterHealthText.innerText = monsterHealth;
 }
 
-// Step 143
-// Your game could be complete now, but you can also make it more interesting.
-
-// Inside your attack function, change your health -= monsters[fighting].level; line to health -= getMonsterAttackValue(monsters[fighting].level);. This sets health equal to health minus the return value of the getMonsterAttackValue function, and passes the level of the monster as an argument.
+// Step 144
+// Below your attack function, create an empty function named getMonsterAttackValue. It should take level as a parameter.
 
 function attack() {
     text.innerText = "The " + monsters[fighting].name + " attacks.";
     text.innerText += " You attack it with your " + weapons[currentWeapon].name + ".";
-    health -= getMonsterAttackValue(monsters[fighting];
+    health -= getMonsterAttackValue(monsters[fighting].level);
     monsterHealth -= weapons[currentWeapon].power + Math.floor(Math.random() * xp) + 1;
     healthText.innerText = health;
     monsterHealthText.innerText = monsterHealth;
@@ -197,6 +195,8 @@ function attack() {
         fighting === 2 ? winGame() : defeatMonster();
     }
 }
+
+function getMonsterAttackValue(level) { }
 
 function dodge() {
     text.innerText = "You dodge the attack from the " + monsters[fighting].name;
