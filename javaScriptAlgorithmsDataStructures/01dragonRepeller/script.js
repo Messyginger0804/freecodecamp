@@ -179,8 +179,8 @@ function goFight() {
     monsterHealthText.innerText = monsterHealth;
 }
 
-// Step 150
-// Move your monsterHealth assignment into your if block.
+// Step 151
+// Add an else statement to the first if statement inside your attack() function. In the else statement, use the += operator to add the text You miss. to the end of text.innerText.
 function attack() {
     text.innerText = "The " + monsters[fighting].name + " attacks.";
     text.innerText += " You attack it with your " + weapons[currentWeapon].name + ".";
@@ -188,6 +188,8 @@ function attack() {
     if (isMonsterHit()) {
         monsterHealth -= weapons[currentWeapon].power + Math.floor(Math.random() * xp) + 1;
 
+    } else {
+        text.innerText += " You miss.";
     }
     healthText.innerText = health;
     monsterHealthText.innerText = monsterHealth;
