@@ -78,9 +78,6 @@ const locations = [
     }
 ];
 
-// Step 138
-// In the locations array, add another object at the end. Set the name property to lose, set button text to an array with three REPLAY? strings, set button functions to an array with three restart variables, and set text to You die. ☠️. You can copy that text to use the emote.
-
 // initialize buttons
 button1.onclick = goStore;
 button2.onclick = goCave;
@@ -185,7 +182,11 @@ function attack() {
     if (health <= 0) {
         lose();
     } else if (monsterHealth <= 0) {
-        defeatMonster();
+        if (fighting === 2) {
+            winGame();
+        } else {
+            defeatMonster();
+        }
     }
 }
 
