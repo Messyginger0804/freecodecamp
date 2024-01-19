@@ -196,11 +196,14 @@ function attack() {
     }
 }
 
-// Step 146
-// Log the value of hit to the console to use in debugging. Remember that you can do this with console.log().
+// Step 147
+// Functions run specific blocks of code when they are called, but they can also return a value. This value can be assigned to a variable and used elsewhere in your code.
+
+// Use the return keyword to return the value of hit at the end of the function.
 
 function getMonsterAttackValue(level) {
     const hit = (level * 5) - (Math.floor(Math.random() * xp));
+    return hit
 }
 
 function dodge() {
