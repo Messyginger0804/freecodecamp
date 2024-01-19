@@ -192,6 +192,9 @@ function defeatMonster() {
     update(locations[4]);
 }
 
-function lose() {
+// Step 136
+// In the lose function, call the update function and pass in the sixth object of your locations array. Note that you haven't created this object just yet.
 
+function lose() {
+    update(locations[5]);
 }
