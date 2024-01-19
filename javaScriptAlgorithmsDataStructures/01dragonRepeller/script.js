@@ -179,13 +179,15 @@ function goFight() {
     monsterHealthText.innerText = monsterHealth;
 }
 
-// Step 144
-// Below your attack function, create an empty function named getMonsterAttackValue. It should take level as a parameter.
-
+// Step 149
+// In your attack function, below the health variable, create an if statement. Set the condition to call the isMonsterHit function.
 function attack() {
     text.innerText = "The " + monsters[fighting].name + " attacks.";
     text.innerText += " You attack it with your " + weapons[currentWeapon].name + ".";
     health -= getMonsterAttackValue(monsters[fighting].level);
+    if (isMonsterHit()) {
+
+    }
     monsterHealth -= weapons[currentWeapon].power + Math.floor(Math.random() * xp) + 1;
     healthText.innerText = health;
     monsterHealthText.innerText = monsterHealth;
@@ -196,14 +198,6 @@ function attack() {
     }
 }
 
-// Step 148
-// If you play the game in its current state you might notice a bug. If your xp is high enough, the getMonsterAttackValue function will return a negative number, which will actually add to your total health when fighting a monster!
-
-// In getMonsterAttackValue, change return hit to a ternary operator that returns hit if hit is greater than 0, or returns 0 if it is not.
-
-// Here is an example of returning a value based on condition with a ternary:
-
-// return condition ? true : false;
 
 function getMonsterAttackValue(level) {
     const hit = (level * 5) - (Math.floor(Math.random() * xp));
