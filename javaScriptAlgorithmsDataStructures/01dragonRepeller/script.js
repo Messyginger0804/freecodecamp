@@ -75,8 +75,17 @@ const locations = [
         "button text": ["REPLAY?", "REPLAY?", "REPLAY?"],
         "button functions": [restart, restart, restart],
         text: "You die. ☠️"
-    }
+    },
+    {
+        name: "win",
+        "button text": ["REPLAY?", "REPLAY?", "REPLAY?"],
+        "button functions": [restart, restart, restart],
+        text: "You defeat the dragon! YOU WIN THE GAME! 🎉"
+    },
 ];
+
+// Step 142
+// Add another object in the locations array. Everything should be the same as the lose object, except the name should be win and the text should be You defeat the dragon! YOU WIN THE GAME! 🎉.
 
 // initialize buttons
 button1.onclick = goStore;
@@ -205,9 +214,6 @@ function lose() {
 function winGame() {
     update(locations[6]);
 }
-
-// Step 141
-// After the lose function, create a function called winGame. Inside the winGame function, call the update function and pass in locations[6].
 
 function restart() {
     xp = 0;
