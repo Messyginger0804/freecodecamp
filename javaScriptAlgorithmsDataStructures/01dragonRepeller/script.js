@@ -259,19 +259,17 @@ function pickTwo() {
 function pickEight() {
     pick(8);
 }
-// Step 168
-// for loops are declared with three expressions separated by semicolons. for (a; b; c), where a is the initialization expression, b is the condition, and c is the final expression.
+// Step 169
+// The second statement in a for loop, the condition statement, is evaluated at the beginning of every loop iteration.The loop will continue as long as the condition evaluates to be true.
 
-// The initialization expression is executed only once, before the loop starts, and is often used to define and set up the loop variable. Think of it like declaring a counter to use in your loop.
-
-// Many for loops use i as the counter and start from 0, so change let x = 1; to let i = 0;.
+// We want the loop to run 10 times, so change x < 5 to i < 10.
 function pick(guess) {
     const numbers = [];
     while (numbers.length < 10) {
         numbers.push(Math.floor(Math.random() * 11));
     }
     text.innerText = "You picked " + guess + ". Here are the random numbers:\n";
-    for (let i = 0; x < 5; x++) {
+    for (let i = 0; i < 10; x++) {
 
     }
 
