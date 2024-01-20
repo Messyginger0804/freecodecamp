@@ -1,5 +1,5 @@
-// Step 20
-// Declare a cleanStrArray variable and assign it an empty array. You will use this to store your valid number characters.
+// Step 21
+// Use a for loop to iterate through each character in your strArray array.
 
 const calorieCounter = document.getElementById('calorie-counter');
 const budgetNumberInput = document.getElementById('budget');
@@ -12,4 +12,7 @@ let isError = false;
 function cleanInputString(str) {
     const strArray = str.split('');
     const cleanStrArray = [];
+    for (let i = 0; i < strArray.length; i++) {
+
+    };
 }
