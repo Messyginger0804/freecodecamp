@@ -1,5 +1,12 @@
-// Step 15
-// Get your #budget element and assign it to budgetNumberInput, and your #entry-dropdown element and assign it to entryDropdown.
+// Step 17
+// Declare an isError variable and set it to false, but use let so you can reassign it later.
+
+
 const calorieCounter = document.getElementById('calorie-counter');
 const budgetNumberInput = document.getElementById('budget');
 const entryDropdown = document.getElementById('entry-dropdown');
+const addEntryButton = document.getElementById('add-entry');
+const clearButton = document.getElementById('clear');
+const output = document.getElementById('output');
+
+let isError = false;
