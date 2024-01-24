@@ -7,13 +7,10 @@ const output = document.getElementById('output');
 let isError = false;
 
 
-// Step 23
-// While looping through the string works, creating a new array is inefficient for memory and runtime performance. Instead, you can use Regular Expressions (referred to as "regex") to match specific characters.
+// Step 24
+// The pattern you currently have will match the exact text hello, which is not what you want to match. You want to look for +, -, or spaces. Replace the pattern in your regex variable with \+- to look for plus and minus characters.
 
-// Regex in JavaScript is indicated by a pattern wrapped in forward slashes – for example:
-
-// const regex = /hello/;
-// Remove your existing code within the cleanInputString function. Declare a regex variable and assign it the value from the example above.
+// Note that you need to use the \ to escape the +, because a + has a special meaning in regular expressions.
 function cleanInputString(str) {
-    const regex = /hello/;
+    const regex = /\+-/;
 }
