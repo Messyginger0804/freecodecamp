@@ -7,8 +7,7 @@ const output = document.getElementById('output');
 let isError = false;
 
 
-// Step 25
-// In regex, shorthand character classes allow you to match specific characters without having to write those characters in your pattern. Shorthand character classes are preceded with a backslash (\). The character class \s will match any whitespace character. Add this to your regex pattern.
+
 function cleanInputString(str) {
-    const regex = /\+-\s/;
+    const regex = /[+-\s]/;
 }
