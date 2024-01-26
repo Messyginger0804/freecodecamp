@@ -7,10 +7,10 @@ const output = document.getElementById('output');
 let isError = false;
 
 
-// Step 29
-// In HTML, number inputs allow for exponential notation (such as 1e10). You need to filter those out.
+// Step 35
+// Strings have a .match() method, which takes a regex argument. .match() will return an array of match results – containing either the first match, or all matches if the global flag is used.
 
-// Start by creating a function called isInvalidInput – it should take a single str parameter.
+// Return the result of calling the .match() method on str and passing your regex variable as the argument. You'll use this match result later on.
 function cleanInputString(str) {
     const regex = /[+-\s]/g;
     return str.replace(regex, '');
@@ -18,4 +18,6 @@ function cleanInputString(str) {
 
 function isInvalidInput(str) {
     const regex = /\d+e\d+/i;
+
+    return str.match(regex);
 }
