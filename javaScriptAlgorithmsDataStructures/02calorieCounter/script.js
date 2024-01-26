@@ -7,10 +7,8 @@ const output = document.getElementById('output');
 let isError = false;
 
 
-// Step 35
-// Strings have a .match() method, which takes a regex argument. .match() will return an array of match results – containing either the first match, or all matches if the global flag is used.
-
-// Return the result of calling the .match() method on str and passing your regex variable as the argument. You'll use this match result later on.
+// Step 36
+// Your next step is to allow users to add entries to the calorie counter. Declare an empty function addEntry. This function should not take any parameters.
 function cleanInputString(str) {
     const regex = /[+-\s]/g;
     return str.replace(regex, '');
@@ -21,3 +19,5 @@ function isInvalidInput(str) {
 
     return str.match(regex);
 }
+
+function addEntry() { }
