@@ -6,8 +6,14 @@ const clearButton = document.getElementById('clear');
 const output = document.getElementById('output');
 let isError = false;
 
+
+// Step 29
+// In HTML, number inputs allow for exponential notation (such as 1e10). You need to filter those out.
+
+// Start by creating a function called isInvalidInput – it should take a single str parameter.
 function cleanInputString(str) {
     const regex = /[+-\s]/g;
     return str.replace(regex, '');
 }
 
+function isInvalidInput(str) { }
