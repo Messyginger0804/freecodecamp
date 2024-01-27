@@ -20,5 +20,9 @@ function addEntry() {
     const targetInputContainer = document.querySelector(`#${entryDropdown.value} .input-container`);
     const entryNumber = targetInputContainer.querySelectorAll('input[type="text"]').length;
     const HTMLString = `
-  <label>Entry ${entryNumber} Name</label>`;
+      <label for="${entryDropdown.value}-${entryNumber}-name">Entry ${entryNumber} Name</label>`;
 }
+
+
+// Step 45
+// Give your label element a for attribute with the value X-#-name, where X is the value of the entryDropdown element and # is the value of entryNumber. Remember that HTML attributes should be wrapped in double quotes.
