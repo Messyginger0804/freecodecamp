@@ -20,11 +20,12 @@ function addEntry() {
     const targetInputContainer = document.querySelector(`#${entryDropdown.value} .input-container`);
     const entryNumber = targetInputContainer.querySelectorAll('input[type="text"]').length;
     const HTMLString = `
-      <label for="${entryDropdown.value}-${entryNumber}-name">Entry ${entryNumber} Name</label>
-      <input type="text" placeholder="Name" id="${entryDropdown.value}-${entryNumber}-name">
-      <label >Entry #${entryDropdown.value} Calories</label>
-      `;
+    <label for="${entryDropdown.value}-${entryNumber}-name">Entry ${entryNumber} Name</label>
+    <input type="text" id="${entryDropdown.value}-${entryNumber}-name" placeholder="Name" />
+    <label for="${entryDropdown.value}-${entryNumber}-calories">Entry ${entryNumber} Calories</label>
+          <input type="number" min="0" placeholder="Calories" id="${entryDropdown.value}-${entryNumber}-calories"></input>
+    `;
 }
 
-// Step 47
-// Create another label element (on a new line) at the end of your HTMLString. This label should have the text Entry # Calories, using your template literal syntax to replace # with the value of entryNumber, and the for attribute set to X-#-calories, where X is the value of entryDropdown and # is the value of entryNumber.
+// Step 48
+// Finally, on a new line after your second label, create another input element. Give this one a type attribute set to number, a min attribute set to 0 (to ensure negative calories cannot be added), a placeholder attribute set to Calories, and an id attribute that matches the for attribute of your second label element.
