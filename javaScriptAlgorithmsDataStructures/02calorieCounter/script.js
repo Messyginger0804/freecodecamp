@@ -22,5 +22,9 @@ function addEntry() {
     const HTMLString = `
       <label for="${entryDropdown.value}-${entryNumber}-name">Entry ${entryNumber} Name</label>
       <input type="text" placeholder="Name" id="${entryDropdown.value}-${entryNumber}-name">
+      <label >Entry #${entryDropdown.value} Calories</label>
       `;
 }
+
+// Step 47
+// Create another label element (on a new line) at the end of your HTMLString. This label should have the text Entry # Calories, using your template literal syntax to replace # with the value of entryNumber, and the for attribute set to X-#-calories, where X is the value of entryDropdown and # is the value of entryNumber.
