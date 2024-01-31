@@ -30,5 +30,11 @@ function addEntry() {
     placeholder="Calories"
   />`;
     targetInputContainer.innerHTML += HTMLString;
-}
 
+};
+addEntryButton.addEventListener('click', addEntry);
+
+// Step 50
+// In the Role Playing Game project, you learned how to set a button's behavior by editing its onclick property. You can also edit an element's behavior by adding an event listener.
+
+// Call the .addEventListener() method of the addEntryButton. It takes two arguments. The first is the event to listen to – you should pass the string click. The second is the callback function, or the function that runs when the event is triggered. Pass the addEntry function as the second argument. Note that you should not call addEntry, but pass the variable (or function reference) directly.
