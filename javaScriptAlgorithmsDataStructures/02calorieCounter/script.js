@@ -18,7 +18,7 @@ function isInvalidInput(str) {
 
 function addEntry() {
     const targetInputContainer = document.querySelector(`#${entryDropdown.value} .input-container`);
-    const entryNumber = targetInputContainer.querySelectorAll('input[type="text"]').length;
+    const entryNumber = targetInputContainer.querySelectorAll('input[type="text"]').length + 1;
     const HTMLString = `
   <label for="${entryDropdown.value}-${entryNumber}-name">Entry ${entryNumber} Name</label>
   <input type="text" id="${entryDropdown.value}-${entryNumber}-name" placeholder="Name" />
@@ -30,11 +30,11 @@ function addEntry() {
     placeholder="Calories"
   />`;
     targetInputContainer.innerHTML += HTMLString;
+}
 
-};
-addEntryButton.addEventListener('click', addEntry);
+addEntryButton.addEventListener("click", addEntry);
 
-// Step 50
-// In the Role Playing Game project, you learned how to set a button's behavior by editing its onclick property. You can also edit an element's behavior by adding an event listener.
+// Step 51
+// Try adding a couple of entries to the Breakfast category, and you may notice some bugs! The first thing we need to fix is the entry counts – the first entry should have a count of 1, not 0.
 
-// Call the .addEventListener() method of the addEntryButton. It takes two arguments. The first is the event to listen to – you should pass the string click. The second is the callback function, or the function that runs when the event is triggered. Pass the addEntry function as the second argument. Note that you should not call addEntry, but pass the variable (or function reference) directly.
+// This bug occurs because you are querying for input[type="text"] elements before adding the new entry to the page. To fix this, update your entryNumber variable to be the value of the length of the query plus 1. Add this on your declaration line, not in your template strings.
