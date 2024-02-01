@@ -32,13 +32,12 @@ function addEntry() {
     targetInputContainer.insertAdjacentHTML('beforeend', HTMLString);
 }
 
-function getCarloriesFromInputs(list) { }
+function getCarloriesFromInputs(list) {
+    let calories = 0;
 
-// Step 54
-// Great! Now you can add entries without losing your previous inputs.
+}
 
-// Your next step is to write a function that will get the calorie counts from the user's entries.
-
-// Declare a getCaloriesFromInputs function, and give it a parameter called list.
+// Step 55
+// In your new function, declare a calories variable and assign it the value 0. Use let to declare it, since you will be reassigning it later.
 
 addEntryButton.addEventListener("click", addEntry);
