@@ -43,11 +43,11 @@ function getCaloriesFromInputs(list) {
             isError = true;
             return null;
         }
+
+        calories += Number(currVal);
     }
 }
 
 
-// Step 62
-// Still within your if block, set isError to true and return null.
 
 addEntryButton.addEventListener("click", addEntry);
