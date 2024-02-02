@@ -37,12 +37,13 @@ function getCaloriesFromInputs(list) {
 
     for (let i = 0; i < list.length; i++) {
         const currVal = cleanInputString(list[i].value);
+        const invalidInputMatch = isInvalidInput(currVal);
+
 
     }
 }
 
-// Step 58
-// Remember that you wrote a function earlier to clean the user's input? You'll need to use that function here.
+// Step 59
+// You also need to confirm the input is valid. Declare an invalidInputMatch variable, and assign it the result of calling your isInvalidInput function with currVal as the argument.
 
-// Update your currVal declaration to be the result of calling cleanInputString with list[i].value.
 addEntryButton.addEventListener("click", addEntry);
