@@ -36,13 +36,14 @@ function getCaloriesFromInputs(list) {
     let calories = 0;
 
     for (let i = 0; i < list.length; i++) {
+        const currVal = list[i].value;
 
     }
 }
 
-// Step 56
-// The list parameter is going to be the result of a query selector, which will return a NodeList. A NodeList is an array-like which contains the elements that match the query selector.
+// Step 57
+// The NodeList values you will pass to list will consist of input elements. So you will want to look at the value attribute of each element.
 
-// You'll need to loop through these elements, so start by creating a for loop. Your iterator i should start at 0, continue while it is less than the length of the list, and increment by 1 each iteration.
+// Assign the value of the element in list at index i to a variable called currVal.
 
 addEntryButton.addEventListener("click", addEntry);
