@@ -32,12 +32,17 @@ function addEntry() {
     targetInputContainer.insertAdjacentHTML('beforeend', HTMLString);
 }
 
-function getCarloriesFromInputs(list) {
+function getCaloriesFromInputs(list) {
     let calories = 0;
 
+    for (let i = 0; i < list.length; i++) {
+
+    }
 }
 
-// Step 55
-// In your new function, declare a calories variable and assign it the value 0. Use let to declare it, since you will be reassigning it later.
+// Step 56
+// The list parameter is going to be the result of a query selector, which will return a NodeList. A NodeList is an array-like which contains the elements that match the query selector.
+
+// You'll need to loop through these elements, so start by creating a for loop. Your iterator i should start at 0, continue while it is less than the length of the list, and increment by 1 each iteration.
 
 addEntryButton.addEventListener("click", addEntry);
