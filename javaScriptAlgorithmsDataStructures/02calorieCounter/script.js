@@ -36,14 +36,13 @@ function getCaloriesFromInputs(list) {
     let calories = 0;
 
     for (let i = 0; i < list.length; i++) {
-        const currVal = list[i].value;
+        const currVal = cleanInputString(list[i].value);
 
     }
 }
 
-// Step 57
-// The NodeList values you will pass to list will consist of input elements. So you will want to look at the value attribute of each element.
+// Step 58
+// Remember that you wrote a function earlier to clean the user's input? You'll need to use that function here.
 
-// Assign the value of the element in list at index i to a variable called currVal.
-
+// Update your currVal declaration to be the result of calling cleanInputString with list[i].value.
 addEntryButton.addEventListener("click", addEntry);
