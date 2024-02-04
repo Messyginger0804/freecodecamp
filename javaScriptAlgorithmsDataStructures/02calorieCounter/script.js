@@ -58,7 +58,7 @@ function calculateCalories(e) {
     const surplusOrDeficit = remainingCalories < 0 ? 'Surplus' : 'Deficit';
     output.innerHTML = `
   <span class="${surplusOrDeficit.toLowerCase()}">${Math.abs(remainingCalories)} Calorie ${surplusOrDeficit}</span>
-  <hr/>
+  <hr>
   <p>${budgetCalories} Calories Budgeted</p>
   <p>${consumedCalories} Calories Consumed</p>
   <p>${exerciseCalories} Calories Burned</p>
@@ -84,18 +84,16 @@ function getCaloriesFromInputs(list) {
     return calories;
 }
 
-// Step 90
-// It is time for another loop. Use a for loop to iterate through the inputContainers array.
-
-// Inside the loop, set the innerHTML property of the element at the current index to an empty string. This will clear all of the contents of that input container.
-
 function clearForm() {
     const inputContainers = Array.from(document.querySelectorAll('.input-container'));
 
     for (let i = 0; i < inputContainers.length; i++) {
         inputContainers[i].innerHTML = '';
     }
-    clearForm(budgetNumberInput);
+
+    budgetNumberInput.value = '';
+    output.innerText = '';
+
 }
 
 addEntryButton.addEventListener("click", addEntry);
