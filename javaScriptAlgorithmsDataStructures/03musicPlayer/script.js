@@ -115,9 +115,8 @@ userData?.songs.sort((a, b) => {
     if (a.title > b.title) {
         return 1;
     }
+    return 0;
 
 });
-
-// dljfdlkjflkdsjflkdsjfkldsjflkdsajlkfjdsalkfjdslkafjdslkafj ojferiolkdsfjdoisajfoierwfmvdskafnvdsoaif efj dsalk
 
 renderSongs(userData?.songs);
