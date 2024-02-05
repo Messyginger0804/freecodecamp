@@ -104,8 +104,10 @@ const renderSongs = (array) => {
       `;
         })
         .join("");
-    playlistSongs.innerHTML = songsHTML;
 
+    playlistSongs.innerHTML = songsHTML;
 };
+
+userData?.songs.sort((a, b) => { });
 
 renderSongs(userData?.songs);
