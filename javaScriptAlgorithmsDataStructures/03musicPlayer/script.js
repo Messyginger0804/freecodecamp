@@ -165,8 +165,10 @@ playButton.addEventListener("click", () => {
 pauseButton.addEventListener("click", pauseSong);
 
 nextButton.addEventListener("click", playNextSong);
+previousButton.addEventListener("click", playPreviousSong);
 
-
+// Step 51
+// Add a click event listener to the previousButton element, then pass in playPreviousSong as the second argument.
 
 userData?.songs.sort((a, b) => {
     if (a.title < b.title) {
