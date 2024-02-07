@@ -95,6 +95,8 @@ const playSong = (id) => {
     } else {
         audio.currentTime = userData?.songCurrentTime;
     }
+
+    song = userData?.currentSong;
 };
 
 const renderSongs = (array) => {
