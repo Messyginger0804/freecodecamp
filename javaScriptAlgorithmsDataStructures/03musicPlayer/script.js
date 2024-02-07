@@ -119,7 +119,10 @@ const playNextSong = () => {
         playSong(nextSong.id);
     }
 };
+// Step 48
+// Use const and arrow syntax to create an empty playPreviousSong function.
 
+const playPreviousSong = () => { };
 
 
 const renderSongs = (array) => {
