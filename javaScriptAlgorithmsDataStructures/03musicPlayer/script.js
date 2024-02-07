@@ -119,10 +119,18 @@ const playNextSong = () => {
         playSong(nextSong.id);
     }
 };
-// Step 48
-// Use const and arrow syntax to create an empty playPreviousSong function.
+// Step 49
+// Within the playPreviousSong function, add an if statement with a condition of userData?.currentSong === null. This will check if there is currently no song playing. If there isn't any, exit the function using a return.
 
-const playPreviousSong = () => { };
+// Inside the else block, create a constant named currentSongIndex and assign it getCurrentSongIndex().
+
+const playPreviousSong = () => {
+    if (userData?.currentSong === null) {
+        return;
+    } else {
+        const currentSongIndex = getCurrentSongIndex();
+    }
+};
 
 
 const renderSongs = (array) => {
