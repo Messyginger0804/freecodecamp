@@ -108,6 +108,13 @@ const pauseSong = () => {
     audio.pause();
 };
 
+// Step 43
+// You need to work on playing the next song and the previous song. For this, you will need a playNextSong and playPreviousSong function.
+
+// Use const and arrow syntax to create an empty playNextSong function.
+
+const playNextSong = () => { }
+
 const renderSongs = (array) => {
     const songsHTML = array
         .map((song) => {
@@ -129,13 +136,8 @@ const renderSongs = (array) => {
 
     playlistSongs.innerHTML = songsHTML;
 };
-// Step 41
-// Before you start working on playing the next and previous song, you need to get the index of each song in the songs property of userData.
 
-// Start by creating an arrow function called getCurrentSongIndex.
-
-const getCurrentSongIndex = () => { }
-
+const getCurrentSongIndex = () => userData?.songs.indexOf(userData?.currentSong);
 
 playButton.addEventListener("click", () => {
     if (userData?.currentSong === null) {
