@@ -129,6 +129,13 @@ const renderSongs = (array) => {
 
     playlistSongs.innerHTML = songsHTML;
 };
+// Step 41
+// Before you start working on playing the next and previous song, you need to get the index of each song in the songs property of userData.
+
+// Start by creating an arrow function called getCurrentSongIndex.
+
+const getCurrentSongIndex = () => { }
+
 
 playButton.addEventListener("click", () => {
     if (userData?.currentSong === null) {
@@ -138,13 +145,7 @@ playButton.addEventListener("click", () => {
     }
 });
 
-pauseButton.addEventListener('click', pauseSong);
-
-// Step 40
-// You need to hook up the pauseSong function to an event listener to make it work.
-
-// Add a click event listener to the pauseButton element, then pass in pauseSong as the second argument of the event listener. This is the function the event listener will run.
-
+pauseButton.addEventListener("click", pauseSong);
 
 userData?.songs.sort((a, b) => {
     if (a.title < b.title) {
