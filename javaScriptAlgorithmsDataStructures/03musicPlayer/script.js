@@ -119,18 +119,16 @@ const playNextSong = () => {
         playSong(nextSong.id);
     }
 };
-// Step 50
-// To get the previous song, subtract 1 from the currentSongIndex of userData?.songs and assign it to the constant previousSong. After that, call the playSong function and pass previousSong.id as an argument.
 
 const playPreviousSong = () => {
-    if (userData?.currentSong === null) {
-        return;
-    } else {
+    if (userData?.currentSong === null) return;
+    else {
         const currentSongIndex = getCurrentSongIndex();
-        const previousSong = userData?.songs[previousSongIndex];
+        const previousSong = userData?.songs[currentSongIndex - 1];
+
+        playSong(previousSong.id);
     }
 };
-
 
 const renderSongs = (array) => {
     const songsHTML = array
@@ -167,6 +165,8 @@ playButton.addEventListener("click", () => {
 pauseButton.addEventListener("click", pauseSong);
 
 nextButton.addEventListener("click", playNextSong);
+
+
 
 userData?.songs.sort((a, b) => {
     if (a.title < b.title) {
