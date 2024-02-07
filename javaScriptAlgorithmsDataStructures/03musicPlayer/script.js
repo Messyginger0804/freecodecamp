@@ -108,12 +108,12 @@ const pauseSong = () => {
     audio.pause();
 };
 
-// Step 43
-// You need to work on playing the next song and the previous song. For this, you will need a playNextSong and playPreviousSong function.
+const playNextSong = () => {
+    if (userData?.currentSong === null) {
+        playSong(userData?.songs[0].id);
+    }
 
-// Use const and arrow syntax to create an empty playNextSong function.
-
-const playNextSong = () => { }
+}
 
 const renderSongs = (array) => {
     const songsHTML = array
