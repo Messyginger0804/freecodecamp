@@ -138,6 +138,12 @@ playButton.addEventListener("click", () => {
     }
 });
 
+pauseButton.addEventListener('click', pauseSong);
+
+// Step 40
+// You need to hook up the pauseSong function to an event listener to make it work.
+
+// Add a click event listener to the pauseButton element, then pass in pauseSong as the second argument of the event listener. This is the function the event listener will run.
 
 
 userData?.songs.sort((a, b) => {
