@@ -109,11 +109,14 @@ const pauseSong = () => {
 };
 
 const playNextSong = () => {
+
     if (userData?.currentSong === null) {
         playSong(userData?.songs[0].id);
     } else {
         const currentSongIndex = getCurrentSongIndex();
+        const nextSong = userData?.songs[currentSongIndex + 1];
 
+        playSong(nextSong.id);
     }
 };
 
@@ -150,6 +153,8 @@ playButton.addEventListener("click", () => {
 });
 
 pauseButton.addEventListener("click", pauseSong);
+
+
 
 userData?.songs.sort((a, b) => {
     if (a.title < b.title) {
