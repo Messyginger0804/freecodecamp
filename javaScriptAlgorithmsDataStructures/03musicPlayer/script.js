@@ -98,6 +98,7 @@ const playSong = (id) => {
     userData.currentSong = song;
     playButton.classList.add("playing");
 
+
     audio.play();
 };
 
@@ -136,8 +137,10 @@ const highlightCurrentSong = () => {
     );
 
     playlistSongElements.forEach((songEl) => {
-        songEl.removeAttribute("aria-current")
+        songEl.removeAttribute("aria-current");
     });
+
+    if (songToHighlight) songToHighlight.setAttribute("aria-current", "true");
 };
 
 const renderSongs = (array) => {
