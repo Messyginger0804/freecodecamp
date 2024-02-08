@@ -100,9 +100,13 @@ const playSong = (id) => {
 
     highlightCurrentSong();
     setPlayerDisplay();
+    setPlayButtonAccessibleText();
 
     audio.play();
 };
+
+// Step 66
+// Now, call the setPlayButtonAccessibleText function inside the playSong function.
 
 const pauseSong = () => {
     userData.songCurrentTime = audio.currentTime;
