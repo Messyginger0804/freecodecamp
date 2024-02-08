@@ -129,8 +129,19 @@ const playPreviousSong = () => {
         playSong(previousSong.id);
     }
 };
-// Step 60
-// Access the userData?.currentSong?.title and userData?.currentSong?.artist properties and assign them to a currentTitle and currentArtist variables respectively.
+// Step 61
+// textContent sets the text of a node and allows you to set or retrieve the text content of an HTML element.
+
+// <div id="example">This is some text content</div>
+// const element = document.getElementById('example');
+// console.log(element.textContent); // Output: This is some text content
+
+// Use a ternary operator to check if currentTitle is truthy. If so, implicitly return currentTitle otherwise implicitly return an empty string. Assign this result to playingSong.textContent.
+
+// Then, use a ternary operator to check if currentArtist is truthy. If so, implicitly return currentArtist otherwise implicitly return an empty string. Assign this result to songArtist.textContent.
+
+playingSong.textContent = currentTitle ? currentTitle : '';
+songArtist.textContent = currentArtist ? currentArtist : '';
 
 const setPlayerDisplay = () => {
     const playingSong = document.getElementById("player-song-title");
