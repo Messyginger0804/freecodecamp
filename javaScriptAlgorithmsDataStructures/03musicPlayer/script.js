@@ -98,10 +98,15 @@ const playSong = (id) => {
     userData.currentSong = song;
     playButton.classList.add("playing");
 
+    highlightCurrentSong();
 
     audio.play();
 };
 
+// Step 57
+// Inside the playSong function, call the highlightCurrentSong function.
+
+// After that, play around with the control buttons to see how the highlightCurrentSong function works.
 const pauseSong = () => {
     userData.songCurrentTime = audio.currentTime;
 
