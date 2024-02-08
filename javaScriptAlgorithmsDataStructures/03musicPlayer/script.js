@@ -102,10 +102,6 @@ const playSong = (id) => {
     setPlayerDisplay();
     audio.play();
 };
-// Step 62
-// To ensure the player's display updates whenever a new song begins playing, call the setPlayerDisplay() function within the playSong() function.
-
-// Now you should see the song title and the artist show up in the display.
 
 const pauseSong = () => {
     userData.songCurrentTime = audio.currentTime;
@@ -178,6 +174,10 @@ const renderSongs = (array) => {
         .join("");
 
     playlistSongs.innerHTML = songsHTML;
+};
+
+const setPlayButtonAccessibleText = () => {
+
 };
 
 const getCurrentSongIndex = () => userData?.songs.indexOf(userData?.currentSong);
