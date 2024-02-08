@@ -129,11 +129,12 @@ const playPreviousSong = () => {
         playSong(previousSong.id);
     }
 };
-// Step 58
-// Next, you need to display the current song title and artist in the player display. Use const and arrow syntax to create an empty setPlayerDisplay function.
 
-const setPlayerDisplay = () => { }
+const setPlayerDisplay = () => {
+    const playingSong = document.getElementById("player-song-title");
+    const songArtist = document.getElementById("player-song-artist");
 
+};
 
 const highlightCurrentSong = () => {
     const playlistSongElements = document.querySelectorAll(".playlist-song");
