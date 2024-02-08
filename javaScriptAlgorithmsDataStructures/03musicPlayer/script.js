@@ -129,10 +129,15 @@ const playPreviousSong = () => {
         playSong(previousSong.id);
     }
 };
+// Step 60
+// Access the userData?.currentSong?.title and userData?.currentSong?.artist properties and assign them to a currentTitle and currentArtist variables respectively.
 
 const setPlayerDisplay = () => {
     const playingSong = document.getElementById("player-song-title");
     const songArtist = document.getElementById("player-song-artist");
+
+    const currentTitle = userData?.currentSong?.title;
+    const currentArtist = userData?.currentSong?.artist;
 
 };
 
