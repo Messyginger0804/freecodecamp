@@ -99,14 +99,9 @@ const playSong = (id) => {
     playButton.classList.add("playing");
 
     highlightCurrentSong();
-
     audio.play();
 };
 
-// Step 57
-// Inside the playSong function, call the highlightCurrentSong function.
-
-// After that, play around with the control buttons to see how the highlightCurrentSong function works.
 const pauseSong = () => {
     userData.songCurrentTime = audio.currentTime;
 
@@ -134,6 +129,11 @@ const playPreviousSong = () => {
         playSong(previousSong.id);
     }
 };
+// Step 58
+// Next, you need to display the current song title and artist in the player display. Use const and arrow syntax to create an empty setPlayerDisplay function.
+
+const setPlayerDisplay = () => { }
+
 
 const highlightCurrentSong = () => {
     const playlistSongElements = document.querySelectorAll(".playlist-song");
