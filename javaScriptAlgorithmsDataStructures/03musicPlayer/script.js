@@ -99,8 +99,13 @@ const playSong = (id) => {
     playButton.classList.add("playing");
 
     highlightCurrentSong();
+    setPlayerDisplay();
     audio.play();
 };
+// Step 62
+// To ensure the player's display updates whenever a new song begins playing, call the setPlayerDisplay() function within the playSong() function.
+
+// Now you should see the song title and the artist show up in the display.
 
 const pauseSong = () => {
     userData.songCurrentTime = audio.currentTime;
@@ -129,27 +134,15 @@ const playPreviousSong = () => {
         playSong(previousSong.id);
     }
 };
-// Step 61
-// textContent sets the text of a node and allows you to set or retrieve the text content of an HTML element.
-
-// <div id="example">This is some text content</div>
-// const element = document.getElementById('example');
-// console.log(element.textContent); // Output: This is some text content
-
-// Use a ternary operator to check if currentTitle is truthy. If so, implicitly return currentTitle otherwise implicitly return an empty string. Assign this result to playingSong.textContent.
-
-// Then, use a ternary operator to check if currentArtist is truthy. If so, implicitly return currentArtist otherwise implicitly return an empty string. Assign this result to songArtist.textContent.
-
-playingSong.textContent = currentTitle ? currentTitle : '';
-songArtist.textContent = currentArtist ? currentArtist : '';
 
 const setPlayerDisplay = () => {
     const playingSong = document.getElementById("player-song-title");
     const songArtist = document.getElementById("player-song-artist");
-
     const currentTitle = userData?.currentSong?.title;
     const currentArtist = userData?.currentSong?.artist;
 
+    playingSong.textContent = currentTitle ? currentTitle : "";
+    songArtist.textContent = currentArtist ? currentArtist : "";
 };
 
 const highlightCurrentSong = () => {
