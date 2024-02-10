@@ -134,17 +134,18 @@ const playPreviousSong = () => {
     }
 };
 
-// Step 69
-// When the shuffle button is pressed, you want to set the currentSong to nothing and the songCurrentTime to 0.
+// Step 70
+// You should also re-render the songs, pause the currently playing song, set the player display, and set the play button accessible text again.
 
-// Set userData.currentSong to null and userData.songCurrentTime to 0.
-
-// Note: You should not use optional chaining for this step because you are explicitly setting the currentSong and songCurrentTime properties to be null and 0 respectively.
-
+// Call the renderSongs function and pass in userData?.songs as an argument. Also, call the pauseSong, setPlayerDisplay, and setPlayButtonAccessibleText functions.
 const shuffle = () => {
     userData?.songs.sort(() => Math.random() - 0.5);
     userData.currentSong = null;
     userData.songCurrentTime = 0;
+    renderSongs(userData?.songs);
+    pauseSong();
+    setPlayerDisplay();
+    setPlayButtonAccessibleText();
 }
 
 const setPlayerDisplay = () => {
