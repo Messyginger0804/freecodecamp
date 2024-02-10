@@ -101,10 +101,8 @@ const playSong = (id) => {
     highlightCurrentSong();
     setPlayerDisplay();
     setPlayButtonAccessibleText();
-
     audio.play();
 };
-
 
 const pauseSong = () => {
     userData.songCurrentTime = audio.currentTime;
@@ -134,18 +132,22 @@ const playPreviousSong = () => {
     }
 };
 
-
 const shuffle = () => {
     userData?.songs.sort(() => Math.random() - 0.5);
     userData.currentSong = null;
     userData.songCurrentTime = 0;
+
     renderSongs(userData?.songs);
     pauseSong();
     setPlayerDisplay();
     setPlayButtonAccessibleText();
-}
+};
 
-const deleteSong = (id) => { };
+const deleteSong = (id) => {
+    userData.songs = userData?.songs.filter((song) => song.id !== id);
+
+};
+
 
 const setPlayerDisplay = () => {
     const playingSong = document.getElementById("player-song-title");
