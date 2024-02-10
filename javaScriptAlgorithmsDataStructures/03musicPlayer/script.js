@@ -159,24 +159,20 @@ const deleteSong = (id) => {
 
     if (userData?.songs.length === 0) {
         const resetButton = document.createElement('button');
+        const resetText = document.createTextNode('Reset Playlist');
     }
 
 };
-// Step 79
-// If the playlist is empty, you need to create a resetButton element and a text for it. This button will only show up if the playlist is empty.
+// Step 80
+// Now that you've created the button, you need to assign it a text. To do this, you need to use the createTextNode() method of DOM.
 
-// createElement() is a DOM method you can use to dynamically create an element using JavaScript. To use createElement(), you call it, then pass in the tag name as a string:
+// The createTextNode() method is used to create a text node. To use it, you call it and pass in the text as a string:
 
-// // syntax
-// document.createElement(tagName)
-
-// // example
-// document.createElement('div')
+// document.createTextNode("your text")
 // You can also assign it to a variable:
 
-// const divElement = document.createElement('div')
-// Inside your if statement, declare a resetButton constant, then use createElement() to create a button.
-
+// const myText = document.createTextNode("your text")
+// Use the createTextNode() method to create a Reset Playlist text, then assign it to a resetText constant.
 
 const setPlayerDisplay = () => {
     const playingSong = document.getElementById("player-song-title");
