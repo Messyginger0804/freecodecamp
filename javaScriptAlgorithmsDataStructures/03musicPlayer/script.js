@@ -163,25 +163,18 @@ const deleteSong = (id) => {
 
         resetButton.id = "reset";
         resetButton.ariaLabel = "Reset playlist";
-        // Use appendChild() to attach resetText to resetButton element, and resetButton to the playlistSongs element.
-
         resetButton.appendChild(resetText);
         playlistSongs.appendChild(resetButton);
 
+        resetButton.addEventListener("click", () => { })
+
     }
+    //     Step 83
+    // Now, it's time to add the reset functionality to the resetButton. This will bring back the songs in the playlist when clicked.
+
+    // Add a click event listener to the resetButton variable. Pass in a callback using arrow syntax and leave it empty for now.
 
 };
-
-// Step 82
-// You need to add the resetText to the resetButton element as a child, and also the resetButton to the playlistSongs element as a child. For this, there is an appendChild() method to use.
-
-// appendChild() lets you add a node or an element as the child of another element. In the example below, the text "Click me" would be attached to the button:
-
-// const parentElement = document.createElement("button")
-// const parentElementText = document.createTextNode("Click me")
-
-// // attach the text "Click me" to the button
-// parentElement.appendChild(parentElementText)
 
 const setPlayerDisplay = () => {
     const playingSong = document.getElementById("player-song-title");
