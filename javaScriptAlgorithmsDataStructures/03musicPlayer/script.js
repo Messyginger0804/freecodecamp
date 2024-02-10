@@ -166,13 +166,15 @@ const deleteSong = (id) => {
         resetButton.appendChild(resetText);
         playlistSongs.appendChild(resetButton);
 
-        resetButton.addEventListener("click", () => { })
+        resetButton.addEventListener("click", () => {
+            userData.songs = [...allSongs];
+        })
 
     }
-    //     Step 83
-    // Now, it's time to add the reset functionality to the resetButton. This will bring back the songs in the playlist when clicked.
+    //     Step 84
+    // To reset the playlist to its original state, spread allSongs into an array and assign it to userData.songs.
 
-    // Add a click event listener to the resetButton variable. Pass in a callback using arrow syntax and leave it empty for now.
+    // Note: You should not use optional chaining for the userData.songs because the song will not be null or undefined at this point.
 
 };
 
