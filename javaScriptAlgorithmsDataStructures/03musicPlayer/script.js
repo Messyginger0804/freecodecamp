@@ -158,21 +158,15 @@ const deleteSong = (id) => {
     setPlayButtonAccessibleText();
 
     if (userData?.songs.length === 0) {
-        const resetButton = document.createElement('button');
-        const resetText = document.createTextNode('Reset Playlist');
+        const resetButton = document.createElement("button");
+        const resetText = document.createTextNode("Reset Playlist");
+
+        resetButton.id = "reset";
+        resetButton.ariaLabel = "Reset playlist";
+
     }
 
 };
-// Step 80
-// Now that you've created the button, you need to assign it a text. To do this, you need to use the createTextNode() method of DOM.
-
-// The createTextNode() method is used to create a text node. To use it, you call it and pass in the text as a string:
-
-// document.createTextNode("your text")
-// You can also assign it to a variable:
-
-// const myText = document.createTextNode("your text")
-// Use the createTextNode() method to create a Reset Playlist text, then assign it to a resetText constant.
 
 const setPlayerDisplay = () => {
     const playingSong = document.getElementById("player-song-title");
