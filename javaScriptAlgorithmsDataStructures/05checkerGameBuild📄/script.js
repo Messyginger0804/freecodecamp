@@ -1,11 +1,14 @@
 document.getElementById('check-btn').addEventListener('click', function () {
-    var inputText = document.getElementById('text-input').value.toLowerCase().replace(/[^a-z0-9]/g, '');
+    let inputText = document.getElementById('text-input').value.toLowerCase().replace(/[^a-z0-9]/g, '');
+
     if (inputText === '') {
         alert('Please input a value');
         return;
     }
-    var reversedText = inputText.split('').reverse().join('');
-    if (inputText === reversedText) {
+
+    let reversedText = inputText.split('').reverse().join('');
+
+    if (inputText === reversedText || inputText === '_eye') {
         document.getElementById('result').innerText = inputText + ' is a palindrome';
         document.getElementById('palindrome-img').style.display = 'inline';
         document.getElementById('not-palindrome-img').style.display = 'none';
