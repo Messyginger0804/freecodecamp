@@ -1,7 +1,5 @@
-// Step 5
-// Now it is time to build out the data structure that will hold all of the information for your football team.
-
-// Below the variables you just created, create a new const variable called myFavoriteFootballTeam and assign it an empty object.
+// Step 6
+// Inside the myFavoriteFootballTeam object, add a new property with a key named team and a string value of Argentina.
 
 const teamName = document.getElementById("team");
 const typeOfSport = document.getElementById("sport");
@@ -11,4 +9,6 @@ const headCoach = document.getElementById('head-coach');
 const playerCards = document.getElementById('player-cards');
 const playersDropdownList = document.getElementById('players');
 
-const myFavoriteFootballTeam = {};
+const myFavoriteFootballTeam = {
+    team: 'Argentina',
+};
