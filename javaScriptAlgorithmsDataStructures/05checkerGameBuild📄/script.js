@@ -7,7 +7,11 @@ document.getElementById('check-btn').addEventListener('click', function () {
     var reversedText = inputText.split('').reverse().join('');
     if (inputText === reversedText) {
         document.getElementById('result').innerText = inputText + ' is a palindrome';
+        document.getElementById('palindrome-img').style.display = 'inline';
+        document.getElementById('not-palindrome-img').style.display = 'none';
     } else {
         document.getElementById('result').innerText = inputText + ' is not a palindrome';
+        document.getElementById('palindrome-img').style.display = 'none';
+        document.getElementById('not-palindrome-img').style.display = 'inline';
     }
 });
