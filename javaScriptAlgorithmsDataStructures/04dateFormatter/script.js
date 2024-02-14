@@ -10,4 +10,6 @@ const minutes = date.getMinutes();
 
 const formattedDate = `${day}-${month}-${year}`;
 
-console.log(formattedDate);
+currentDateParagraph.textContent = formattedDate;
+
+dateOptionsSelectElement.addEventListener('change', () => { });
