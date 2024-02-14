@@ -1,15 +1,12 @@
-// Step 6
-// Inside the myFavoriteFootballTeam object, add a new property with a key named team and a string value of Argentina.
-
 const teamName = document.getElementById("team");
 const typeOfSport = document.getElementById("sport");
 const worldCupYear = document.getElementById("year");
-
-const headCoach = document.getElementById('head-coach');
-const playerCards = document.getElementById('player-cards');
-const playersDropdownList = document.getElementById('players');
-
+const headCoach = document.getElementById("head-coach");
+const playerCards = document.getElementById("player-cards");
+const playersDropdownList = document.getElementById("players");
 const myFavoriteFootballTeam = {
-    team: 'Argentina',
-    sport: 'Football'
+    team: "Argentina",
+    sport: "Football",
+    year: 1986,
+
 };
