@@ -175,5 +175,11 @@ Object.freeze(myFavoriteFootballTeam);
 const { sport, team, year, players } = myFavoriteFootballTeam;
 const { coachName } = myFavoriteFootballTeam.headCoach;
 
+typeOfSport.textContent = sport;
 
+// Step 20
+// Now you need to start displaying the team's information on the screen.
 
+// Below your destructuring assignments, assign the sport variable to typeOfSport.textContent.
+
+// Once you complete that task, you should see the result in the preview window.
