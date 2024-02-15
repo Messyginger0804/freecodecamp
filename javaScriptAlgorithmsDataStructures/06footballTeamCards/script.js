@@ -177,6 +177,12 @@ const { coachName } = myFavoriteFootballTeam.headCoach;
 
 typeOfSport.textContent = sport;
 teamName.textContent = team;
+worldCupYear.textContent = year;
+headCoach.textContent = coachName;
 
-// Step 21
-// Next, assign the team variable to teamName.textContent.
+// Step 22
+// Assign the year variable to worldCupYear.textContent.
+
+// Below that, assign the coachName variable to headCoach.textContent.
+
+// You should now see all of that information displayed on the screen below Team stats.
