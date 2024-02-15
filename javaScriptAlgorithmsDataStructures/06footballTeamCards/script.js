@@ -172,11 +172,8 @@ const myFavoriteFootballTeam = {
 };
 
 Object.freeze(myFavoriteFootballTeam);
-// Step 18
-// Next, add the year and players to your destructuring assignment.
-
-
 const { sport, team, year, players } = myFavoriteFootballTeam;
+const { coachName } = myFavoriteFootballTeam.headCoach;
 
 
 
