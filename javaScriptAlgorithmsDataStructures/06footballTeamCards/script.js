@@ -181,16 +181,14 @@ worldCupYear.textContent = year;
 headCoach.textContent = coachName;
 
 const setPlayerCards = (arr = players) => {
-
+    arr.map(() => {
+        playerCards.innerHTML
+    })
 }
-// Step 24
-// Function parameters can be initialized with default values. If a function is called without an argument, then the default value will be used:
 
-// const greeting = (name = "Anonymous") => {
-//   return "Hello " + name;
-// } 
+// Step 25
+// The next step is to create a new array that will be responsible for adding the player card information to the page.
 
-// console.log(greeting("John")); // Hello John
-// console.log(greeting()); // Hello Anonymous
-// Add a new parameter to your setPlayerCards function called arr and assign it a default value of players.
+// Inside the setPlayerCards function, start by adding the map method to arr that will take in an empty callback function. Then, use the addition assignment += operator to assign the new array to playerCards.innerHTML.
 
+// Remember that the innerHTML property gets, or in this case, sets the HTML markup for the playerCards element.
