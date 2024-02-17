@@ -198,8 +198,9 @@ const setPlayerCards = (arr = players) => {
 
 
 };
+playersDropdownList.addEventListener('change', () => { })
 
-// Step 34
-// The .map() method will return a new array of player-card items separated by commas.
+// Step 35
+// The next step is to create a function that will detect when a user makes a selection from the playersDropdownList.
 
-// To remove the commas between each player-card so it does not show up on screen, chain the .join() method to the .map() method. Pass an empty string as the argument for the .join() method.
+// Use the .addEventListener() method on playersDropdownList. Inside the event listener, pass in a change event type and an empty callback function.
