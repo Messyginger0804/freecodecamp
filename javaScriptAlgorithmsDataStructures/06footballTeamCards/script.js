@@ -201,15 +201,12 @@ playersDropdownList.addEventListener("change", (e) => {
 
     switch (e.target.value) {
         case "nickname":
-
+            setPlayerCards(players.filter(player => player.nickname != null));
     }
-
-
-
 
 });
 
-// Step 40
-// If the user selects Nicknames from the dropdown menu you will want to filter out player cards that have a nickname.
+// Step 41
+// Call the setPlayerCards function with an argument of players.filter().
 
-// Start by adding a case clause for nickname inside your switch statement.
+// Inside the filter method, add a callback function with a parameter called player and implicitly return player.nickname is not null.
