@@ -198,11 +198,15 @@ const setPlayerCards = (arr = players) => {
 
 
 };
-playersDropdownList.addEventListener('change', (e) => {
 
+playersDropdownList.addEventListener('change', (e) => {
+    console.log(e.target.value);
 })
 
-// Step 36
-// For the callback function, pass in e as a parameter.
 
-// e represents an object which contains the information for that event.
+// Step 37
+// Inside the callback function, add a console.log with the value of e.target.value.
+
+// Open the console, and make a selection from the teammates dropdown menu. You should see the value of that selection in the console.
+
+// e.target.value represents the value property from the playersDropdownList element. In future steps, you will use this value to show player cards based on the position they play.
