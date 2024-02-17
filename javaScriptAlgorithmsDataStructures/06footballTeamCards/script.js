@@ -199,13 +199,17 @@ const setPlayerCards = (arr = players) => {
 playersDropdownList.addEventListener("change", (e) => {
     playerCards.innerHTML = "";
 
-    switch (e.target.value) { }
+    switch (e.target.value) {
+        case "nickname":
+
+    }
 
 
 
 
 });
-// Step 39
-// The next step would be to add a switch statement which will check for the user's selection from the player dropdown menu and filter out cards based on the player's positions.
 
-// Add a switch statement and use e.target.value for the expression.
+// Step 40
+// If the user selects Nicknames from the dropdown menu you will want to filter out player cards that have a nickname.
+
+// Start by adding a case clause for nickname inside your switch statement.
