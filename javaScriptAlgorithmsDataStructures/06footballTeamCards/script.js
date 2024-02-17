@@ -190,6 +190,7 @@ const setPlayerCards = (arr = players) => {
           <h2>${name} ${isCaptain ? "(Captain)" : ""}</h2>
           <p>Position: ${position}</p>
           <p>Number: ${number}</p>
+          <p>Nickname: </p>
         </div>
       `;
         }
@@ -198,5 +199,5 @@ const setPlayerCards = (arr = players) => {
 
 };
 
-// Step 31
-// Below the paragraph element, add another paragraph element with the text Number: and an embedded expression that contains the number parameter.
+// Step 32
+// Below your existing paragraph elements, add another paragraph element with the text Nickname: .
