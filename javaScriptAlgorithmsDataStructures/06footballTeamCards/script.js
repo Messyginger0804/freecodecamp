@@ -199,8 +199,13 @@ const setPlayerCards = (arr = players) => {
 playersDropdownList.addEventListener("change", (e) => {
     playerCards.innerHTML = "";
 
+    switch (e.target.value) { }
 
 
 
 
 });
+// Step 39
+// The next step would be to add a switch statement which will check for the user's selection from the player dropdown menu and filter out cards based on the player's positions.
+
+// Add a switch statement and use e.target.value for the expression.
