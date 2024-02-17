@@ -194,12 +194,12 @@ const setPlayerCards = (arr = players) => {
         </div>
       `;
         }
-    );
+    ).join('');
 
 
 };
 
-// Step 33
-// Next to the Nickname: text, add an embedded expression that will show the player's nickname if they have one.
+// Step 34
+// The .map() method will return a new array of player-card items separated by commas.
 
-// Use a ternary operator to check if nickname is not null. If the player has a nickname, display nickname otherwise display "N/A".
+// To remove the commas between each player-card so it does not show up on screen, chain the .join() method to the .map() method. Pass an empty string as the argument for the .join() method.
