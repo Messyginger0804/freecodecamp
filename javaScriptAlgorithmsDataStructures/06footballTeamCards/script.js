@@ -185,10 +185,16 @@ const setPlayerCards = (arr = players) => {
 
     playerCards.innerHTML += arr.map(
         ({ name, position, number, isCaptain, nickname }) => {
-            `<div class='player-card'></div>`
+            `<div class='player-card'>
+            <h2>${name}</h2>
+            </div>`
 
         }
     );
 
 
 };
+// Step 28
+// Inside the div, add an h2 element which contains the name parameter. Since you are working with template literals, you will need to use an embedded expression for the name parameter:
+
+// ${expression goes here}
