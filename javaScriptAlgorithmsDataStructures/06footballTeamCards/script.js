@@ -185,16 +185,14 @@ const setPlayerCards = (arr = players) => {
 
     playerCards.innerHTML += arr.map(
         ({ name, position, number, isCaptain, nickname }) => {
-            `<div class='player-card'>
-            <h2>${name}${isCaptain ? '(Captain)' : ''}</h2>
-            </div>`
-
+            `
+        <div class="player-card">
+          <h2>${name} ${isCaptain ? "(Captain)" : ""}</h2>
+          <p>Position: ${position}</p>
+        </div>
+      `;
         }
     );
 
 
 };
-// Step 29
-// The next step would be to display the word (Captain) next to the player if they are listed as a captain for the team.
-
-// Right next to the ${name} expression, add a new embedded expression. Inside that expression, use a ternary operator to check if isCaptain is true. If so, return (Captain) otherwise return an empty string.
