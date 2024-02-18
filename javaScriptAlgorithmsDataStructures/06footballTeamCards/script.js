@@ -209,9 +209,12 @@ playersDropdownList.addEventListener("change", (e) => {
         case "midfielder":
             setPlayerCards(players.filter((player) => player.position === "midfielder"));
             break;
-
-
+        case "defender":
+            setPlayerCards(players.filter((player) => player.position === "defender"));
+            break;
 
 
     }
 });
+// Step 45
+// Add a new case for defender that checks if player.position equals defender following the same pattern as the previous step.
