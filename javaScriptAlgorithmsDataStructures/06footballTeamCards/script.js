@@ -201,17 +201,17 @@ playersDropdownList.addEventListener("change", (e) => {
 
     switch (e.target.value) {
         case "nickname":
-            setPlayerCards(players.filter(player => player.nickname != null));
+            setPlayerCards(players.filter((player) => player.nickname !== null));
             break;
         case "forward":
-            setPlayerCards(players.filter(player => player.position === "forward"));
+            setPlayerCards(players.filter((player) => player.position === "forward"));
             break;
+        case "midfielder":
+            setPlayerCards(players.filter((player) => player.position === "midfielder"));
+            break;
+
+
+
+
     }
-
 });
-
-// Step 43
-// Next, add a case clause for forward.
-// Inside that case, call the setPlayerCards function with an argument of players.filter().
-// Inside the filter() method, add a callback function with a parameter of player that will check if player.position equals forward.
-// Lastly, add a break statement below the setPlayerCards function call.
