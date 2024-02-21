@@ -43,10 +43,9 @@ taskForm.addEventListener("submit", (e) => {
     if (dataArrIndex === -1) {
         taskData.unshift(taskObj)
     }
-    taskData.forEach(({ id, title, date, description }));
+    taskData.forEach(({ id, title, date, description }) => {
+        tasksContainer.innerHTML += `
+        `;
+    });
+
 });
-
-// Step 16
-// Now that you have saved the task in the taskData array, you should display the task on the page by looping through it.
-
-// Use forEach() on taskData, then destructure id, title, date, description as the parameters. Don't return anything yet.
