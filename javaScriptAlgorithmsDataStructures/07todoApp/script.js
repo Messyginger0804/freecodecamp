@@ -43,12 +43,10 @@ taskForm.addEventListener("submit", (e) => {
     if (dataArrIndex === -1) {
         taskData.unshift(taskObj)
     }
+    taskData.forEach(({ id, title, date, description }));
 });
 
-// Step 15
-// Now that you have obtained the values from the input fields and generated an id, you want to add them to your taskData array to keep track of each task. However, you should only do this if the task is new. If the task already exists, you will set it up for editing. This is why you have the dataArrIndex variable, which provides the index of each task.
+// Step 16
+// Now that you have saved the task in the taskData array, you should display the task on the page by looping through it.
 
-// Create an if statement with the condition dataArrIndex === -1. Within the if statement, use the unshift() method to add the taskObj object to the beginning of the taskData array.
-
-// unshift() is an array method that is used to add one or more elements to the beginning of an array.
-// N.B: Try adding a task and log taskData to the console to see what it looks like.
+// Use forEach() on taskData, then destructure id, title, date, description as the parameters. Don't return anything yet.
