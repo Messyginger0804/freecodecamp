@@ -1,13 +1,16 @@
 
-# Step 12
-# Key aspects of variable naming in Python are:
+# Step 13
+# You are going to use the .find() method to find the position in the alphabet of each letter in your message. A method is similar to a function, but it belongs to an object.
 
-# * Some words are reserved keywords (e.g. for, while, True). They have a special meaning in Python, so you cannot use them for variable names.
-# * Variable names cannot start with a number, and they can only contain alpha-numeric characters or underscores.
-# * Variable names are case sensitive, i.e. my_var is different from my_Var and MY_VAR.
-# * Finally, it is a common convention to write variable names using snake_case, where each space is replaced by an underscore character and the words are written in lowercase letters.
-# * Remove both calls to print() and declare another variable called alphabet. Assign the string 'abcdefghijklmnopqrstuvwxyz' to this variable.
+# Example Code
+# sentence = 'My brain hurts!'
+# sentence.find('r')
+# Above, the .find() method is called on sentence (the string to search in), and 'r' (the character to locate) is passed as the argument. The sentence.find('r') call will return 4, which is the index of the first occurrence of 'r' in sentence.
+
+# At the end of your code, call .find() on alphabet and pass 'z' as the argument to the method.
 
 text = 'Hello World'
 shift = 3
 alphabet = 'abcdefghijklmnopqrstuvwxyz'
+
+alphabet.find('z')
