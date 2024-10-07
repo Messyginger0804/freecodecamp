@@ -1,18 +1,22 @@
-# Step 23
-# A loop allows you to systematically go through a sequence of elements and execute actions on each one.
 
-# In this case, you'll employ a for loop. Here's how you can iterate over text:
+# Step 24
+# The code to execute at each iteration — placed after the : — constitutes the body of the loop. This code must be indented. In Python, it is recommended to use 4 spaces per indentation level. This indented level is a code block.
 
 # Example Code
 # for i in text:
-# for is the keyword denoting the loop type. i is a variable that sequentially takes the value of the elements in text. The statement ends with a colon, :.
+#     print(i)
+# Python relies on indentation to indicate blocks of code. A colon at the end of a line is a signal that a new indented block of code will follow.
 
-# Below the line where you declared alphabet, write a for loop to iterate over text. Use i as the loop variable.
+# So, when no indented block is found after the final colon, the code execution stops and an IndentationError is thrown. This code will not show the output and instead raise an IndentationError:
 
-# Doing so, there is an error in the terminal. You will learn about it in the next step.
+# Example Code
+# for i in text:
+# print(i)
+# Give your for loop a body by adding a call to print(i). Remember to indent the loop body.
 
 text = 'Hello World'
 shift = 3
 alphabet = 'abcdefghijklmnopqrstuvwxyz'
 
 for i in text:
+    print(i)
