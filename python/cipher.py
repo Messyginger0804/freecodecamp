@@ -1,11 +1,10 @@
-# Step 2
-# Variables can store values of different data types. You just assigned an integer value, but if you want to represent some text, you need to assign a string. Strings are sequences of characters enclosed by single or double quotes, but you cannot start a string with a single quote and end it with a double quote or vice versa:
+# Step 3
+# You can use the built-in function print() to print the output of your code on the terminal.
 
-# Example Code
-# string_1 = "I am a string"
-# string_2 = 'I am also a string'
-# string_3 = 'This is not valid"
-# Delete your number variable and its value. Then, declare another variable called text and assign the string 'Hello World' to this variable.
+# Functions are reusable code blocks that you can call, or invoke, to run their code when you need them. To call a function, you just need to write a pair of parentheses next to its name. You will learn more about functions very soon.
+
+# For now, go to a new line and add an empty call to the print() function. You should not see any output yet.
 
 
 text = 'Hello World'
+print()
