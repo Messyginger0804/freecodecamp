@@ -1,5 +1,6 @@
-# Step 34
-# Next, print new_char and see the output.
+# Step 35
+# Clean the output a bit. Delete print(char, index), and turn the last print() call into print('char:', char, 'new char:', new_char).
+
 
 text = 'Hello World'
 shift = 3
