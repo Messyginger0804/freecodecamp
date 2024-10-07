@@ -1,13 +1,12 @@
-# Step 4
-# An argument is an object or an expression passed to a function — added between the opening and closing parentheses — when it is called:
+# Step 5
+# Each string character can be referenced by a numerical index. The index count starts at zero. So the first character of a string has an index of 0. For example, in the string 'Hello World', 'H' is at index 0, 'e' is at index 1, and so on.
+
+# Each character of a string can be accessed by using bracket notation. You need to write the variable name followed by square brackets and add the index of the character between the brackets:
 
 # Example Code
-# greet = 'Hello!'
-# print(greet)
-# The code in the example above would print the string 'Hello!', which is the value of the variable greet passed to print() as the argument.
-
-# Print your text variable to the screen by passing the text variable as the argument to the print() function.
-
+# text = 'Hello World'
+# r = text[8]
+# Now, instead of printing text, print just the character at index 6.
 
 text = 'Hello World'
-print(text)
+print(text[6])
