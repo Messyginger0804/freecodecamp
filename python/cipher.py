@@ -1,7 +1,6 @@
 
-# # Step 18
-# Remove the last print() call. Then, instead of text[0], pass text[0].lower() as the argument to your .find() call and see the output.
-
+# Step 19
+# Declare a new variable named shifted. Use the bracket notation to access the value of alphabet at index index and assign it to your new variable.
 
 text = 'Hello World'
 shift = 3
