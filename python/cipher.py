@@ -1,17 +1,10 @@
 
-# Step 43
-# A conditional statement can also have an else clause. This clause can be added to the end of an if statement to execute alternative code if the condition of the if statement is false:
+# Step 44
+# Try to assign the string 'Hello Zaira' to your text variable and see what happens in the terminal.
 
-# Example Code
-# if x != 0:
-#     print(x)
-# else:
-#     print('x = 0')
-# As you can see in your output, when the loop iterations reach the space, a space is added to the encrypted string. Then the code outside the if block executes and a c is added to the encrypted string.
+# You'll see a string index out of range exception. Don't worry, you'll figure out how to fix it soon!
 
-# To fix it, add an else clause after encrypted_text += char and indent all the subsequent lines of code except the print() call.
-
-text = 'Hello World'
+text = 'Hello Zaira'
 shift = 3
 alphabet = 'abcdefghijklmnopqrstuvwxyz'
 encrypted_text = ''
