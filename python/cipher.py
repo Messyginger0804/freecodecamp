@@ -1,16 +1,17 @@
-# Step 30
-# Strings are immutable, which means they cannot be changed once created. For example, you might think that the following code changes the value of my_string into the string 'train', but this is not valid:
+# Step 31
+# When you try to change the individual characters of a string as you did in the previous step, you get a TypeError, which occurs when an object of inappropriate type is used in your code.
+
+# As you can see from the error message, strings do not support item assignment, because they are immutable. However, a variable can be reassigned another string:
 
 # Example Code
-# my_string = 'brain'
-# my_string[0] = 't'
-# Confirm that by using the bracket notation to access the first letter in text and try to change it into a character of your choice. You will see the ouput disappear and an error appear.
+# message = 'Hello World'
+# message = 'Hello there!'
+# Delete the text[0] line and reassign text the string 'Albatross'.
 
 
 
 text = 'Hello World'
-text[0] = 'J'
-
+text = 'Albatross'
 shift = 3
 alphabet = 'abcdefghijklmnopqrstuvwxyz'
 
@@ -18,3 +19,4 @@ for char in text.lower():
     index = alphabet.find(char)
     print(char, index)
     new_index = index + shift
+
