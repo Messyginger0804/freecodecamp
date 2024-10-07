@@ -1,14 +1,14 @@
-# Step 36
-# At the moment, the encrypted character is updated in every iteration. It would be better to store the encrypted string in a new variable. Before your for loop, declare a variable called encrypted_text and assign an empty string ('') to this variable.
+# Step 37
+# Now, replace new_char with encrypted_text. Also, modify the print() call into print('char:', char, 'encrypted text:', encrypted_text) to reflect this change.
+
 
 text = 'Hello World'
 shift = 3
 alphabet = 'abcdefghijklmnopqrstuvwxyz'
-
 encrypted_text = ''
 
 for char in text.lower():
-    index = alphabet.find(char)
+    index = alphabet.find(char)    
     new_index = index + shift
-    new_char = alphabet[new_index]
-    print('char:', char, 'new char:', new_char)
+    encrypted_text = alphabet[new_index]
+    print('char:', char, 'encrypted text:', encrypted_text)
