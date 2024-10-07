@@ -1,8 +1,8 @@
 
-# Step 7
-# You can access the number of characters in a string with the built-in len() function.
+# Step 8
+# You can see 11 printed on the terminal because 'Hello World' contains 11 characters.
 
-# Modify your existing print() call by passing len(text) instead of text[-1].
+# Another useful built-in function is type(), which returns the data type of a variable. Modify your print() call to print the data type of text.
 
 text = 'Hello World'
-print(len(text))
+print(type(text))
