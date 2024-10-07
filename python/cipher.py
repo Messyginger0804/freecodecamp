@@ -1,8 +1,8 @@
 
-# Step 44
-# Try to assign the string 'Hello Zaira' to your text variable and see what happens in the terminal.
+# Step 46
+# If you wish to incorporate additional characters into the alphabet string, such as digits or special characters, you'll find it's necessary to manually modify the right operand of the modulo operation.
 
-# You'll see a string index out of range exception. Don't worry, you'll figure out how to fix it soon!
+# Replace 26 with len(alphabet) to avoid this issue.
 
 text = 'Hello Zaira'
 shift = 3
@@ -14,6 +14,6 @@ for char in text.lower():
         encrypted_text += char
     else:
         index = alphabet.find(char)
-        new_index = index + shift
+        new_index = (index + shift) % len(alphabet)
         encrypted_text += alphabet[new_index]
     print('char:', char, 'encrypted text:', encrypted_text)
