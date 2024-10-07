@@ -1,16 +1,10 @@
 
-# Step 13
-# You are going to use the .find() method to find the position in the alphabet of each letter in your message. A method is similar to a function, but it belongs to an object.
+# Step 14
+# The first kind of cipher you are going to build is called a Caesar cipher. Specifically, you will take each letter in your message, find its position in the alphabet, take the letter located after 3 positions in the alphabet, and replace the original letter with the new letter.
 
-# Example Code
-# sentence = 'My brain hurts!'
-# sentence.find('r')
-# Above, the .find() method is called on sentence (the string to search in), and 'r' (the character to locate) is passed as the argument. The sentence.find('r') call will return 4, which is the index of the first occurrence of 'r' in sentence.
-
-# At the end of your code, call .find() on alphabet and pass 'z' as the argument to the method.
+# To implement this, you will use the .find() method discussed in the previous step. Modify your existing .find() call passing it text[0] as the argument instead of 'z'.
 
 text = 'Hello World'
 shift = 3
 alphabet = 'abcdefghijklmnopqrstuvwxyz'
-
-alphabet.find('z')
+alphabet.find(text[0])
