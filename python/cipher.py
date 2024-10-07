@@ -1,8 +1,8 @@
 
-# Step 6
-# You can also access string characters starting from the end of the string. The last character has an index of -1, the second to last -2 and so on.
+# Step 7
+# You can access the number of characters in a string with the built-in len() function.
 
-# Now modify your existing print() call to print the last character in your string.
+# Modify your existing print() call by passing len(text) instead of text[-1].
 
 text = 'Hello World'
-print(text[6])
+print(len(text))
