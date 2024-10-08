@@ -16,8 +16,12 @@ def caesar():
     print('plain text:', text)
     print('encrypted text:', encrypted_text)
 
+caesar()
 
 
+# Step 52
+# To execute, a function needs to be called (or invoked) by appending a pair of parentheses after its name, like this:
 
-# Step 51
-# Now, fix the error by removing the line that tries to print the alphabet variable outside of the caesar function.
+# Example Code
+# function_name()
+# At the end of your code, call your caesar function. Pay attention to the indentation.
