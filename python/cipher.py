@@ -1,21 +1,11 @@
 
-# Step 49
-# A function is essentially a reusable block of code. You have already met some built-in functions, like print(), find() and len(). But you can also define custom functions like this:
-
-# Example Code
-# def function_name():
-#     <code>
-# A function declaration starts with the def keyword followed by the function name — a valid variable name — and a pair of parentheses. The declaration ends with a colon.
-
-# Right after your shift variable, declare a function called caesar and indent all the following lines to give your new function a body.
-
 text = 'Hello Zaira'
 shift = 3
 
 def caesar():
     alphabet = 'abcdefghijklmnopqrstuvwxyz'
     encrypted_text = ''
-    
+
     for char in text.lower():
         if char == ' ':
             encrypted_text += char
@@ -23,9 +13,19 @@ def caesar():
             index = alphabet.find(char)
             new_index = (index + shift) % len(alphabet)
             encrypted_text += alphabet[new_index]
-    
     print('plain text:', text)
     print('encrypted text:', encrypted_text)
 
-# Call the function to run the encryption
-caesar()
+print(alphabet)
+
+
+# Step 50
+# In Python, the scope of a variable determines where that variable can be accessed:
+
+# Variables defined outside a function have a global scope and they can be accessed from any part of your code.
+
+# Variables defined inside a function are local to that function and cannot be accessed outside of it.
+
+# To see this in action, try to print the alphabet variable at the end of your code. This will raise a NameError exception.
+
+# You should see an error message indicating that alphabet is not defined. This is because alphabet is defined inside the caesar function and is not accessible outside of it.
