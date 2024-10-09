@@ -23,11 +23,10 @@ def vigenere(message, key, direction=1):
             final_message += alphabet[new_index]
     
     return final_message
+def encrypt(message, key):
+    return vigenere(message, key)
 
 encryption = vigenere(text, custom_key)
 print(encryption)
 decryption = vigenere(encryption, custom_key, -1)
 print(decryption)
-
-def encrypt(message, key):
-    pass
