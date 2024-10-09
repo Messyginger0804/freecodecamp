@@ -1,4 +1,7 @@
-Step 79
-Right now, punctuation, special characters or digits are not encoded/decoded correctly.
+Step 80
+The .isalpha() method returns True if all of the characters of the string on which it is called are letters. For example, the code below returns True:
 
-Check this by adding an exclamation mark at the end of the text string.
+Example Code
+'freeCodeCamp'.isalpha()
+# True
+Delete the condition char == ' ' and replace it by calling the .isalpha() method on char.

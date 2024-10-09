@@ -1,14 +1,14 @@
 text = 'Hello Zaira!'
 custom_key = 'python'
+
 def vigenere(message, key, direction=1):
     key_index = 0
     alphabet = 'abcdefghijklmnopqrstuvwxyz'
     final_message = ''
 
     for char in message.lower():
-    
         # Append space to the message
-        if char == ' ':
+        if char.isalpha():
             final_message += char
         else:        
             # Find the right key character to encode/decode
