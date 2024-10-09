@@ -31,7 +31,7 @@ def encrypt(message, key):
 def decrypt(message, key):
     return vigenere(message, key, -1)
 
-# Test the functions
+# Call the encrypt and decrypt functions
 encryption = encrypt(text, custom_key)
 print("Encrypted:", encryption)
 

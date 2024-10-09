@@ -1,2 +1,2 @@
-Step 85
-Define another function named decrypt with the same parameters as encrypt. This time return vigenere(message, key, -1).
+Step 86
+Next, modify your encryption and decryption variables by calling encrypt and decrypt, respectively, in place of vigenere.
