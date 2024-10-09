@@ -8,13 +8,16 @@ def vigenere(message, key):
     encrypted_text = ''
 
     for char in message.lower():
+    
         # Append space to the message
         if char == ' ':
             encrypted_text += char
         else:
-            #Find the right key character to encode
+            # Find the right key character to encode
             key_char = key[key_index % len(key)]
             key_index += 1
+            offset = alphabet.index(key_char)
+            
             index = alphabet.find(char)
             new_index = (index + offset) % len(alphabet)
             encrypted_text += alphabet[new_index]
