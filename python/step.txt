@@ -1,7 +1,2 @@
-Step 80
-The .isalpha() method returns True if all of the characters of the string on which it is called are letters. For example, the code below returns True:
-
-Example Code
-'freeCodeCamp'.isalpha()
-# True
-Delete the condition char == ' ' and replace it by calling the .isalpha() method on char.
+Step 82
+Modify your comment into Append any non-letter character to the message.
