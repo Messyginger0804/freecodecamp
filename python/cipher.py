@@ -7,8 +7,8 @@ def vigenere(message, key, direction=1):
     final_message = ''
 
     for char in message.lower():
-        # Append space to the message
-        if char.isalpha():
+        # Append any non-letter character to the message
+        if not char.isalpha():
             final_message += char
         else:        
             # Find the right key character to encode/decode
@@ -27,3 +27,6 @@ encryption = vigenere(text, custom_key)
 print(encryption)
 decryption = vigenere(encryption, custom_key, -1)
 print(decryption)
+
+
+## I really like python!!!
