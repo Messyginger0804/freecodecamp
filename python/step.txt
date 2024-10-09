@@ -1,4 +1,4 @@
-Step 88
-Since this time you are starting from an encrypted string to decrypt, you won't need the encryption variable anymore.
+Step 89
+Two or more strings can be concatenated by using the + operator. For example: 'Hello' + ' there!' results in 'Hello there!'.
 
-Delete encryption and the print(encryption) call. Also, comment out the last two lines of your code.
+Call the print() function and use the + operator to concatenate the text variable to the string 'Encrypted text: '. Pay attention to the spacing.
