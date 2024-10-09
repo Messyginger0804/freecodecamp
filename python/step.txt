@@ -1,2 +1,2 @@
-Step 62
-Next, inside the else block, declare a variable called key_char and assign it the value of key at the index key_index mod(%) the length of key.
+Step 63
+You will need to increase the key_index count for the next iteration. To do this, after the line you just added and in the same code block, use the addition assignment operator to increment key_index by one.

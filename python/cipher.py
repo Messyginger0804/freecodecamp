@@ -13,6 +13,7 @@ def vigenere(message, key):
             encrypted_text += char
         else:
             key_char = key[key_index % len(key)]
+            key_index +=
             index = alphabet.find(char)
             new_index = (index + offset) % len(alphabet)
             encrypted_text += alphabet[new_index]
