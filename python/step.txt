@@ -1,2 +1,4 @@
-Step 15
-Inside the print_expenses function, create a for loop that iterates over each item in the expenses list. Use expense as the loop variable and move pass inside the loop body.
+Step 16
+Next, you are going to display the details for each expense.
+
+Inside the for loop, replace pass with a print() call and pass it the following f-string: f'Amount: {expense}, Category: {expense}'.
