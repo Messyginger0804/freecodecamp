@@ -1,2 +1,4 @@
-Step 10
-Create an empty list named expenses. You will use it to store each of your expenses.
+Step 11
+The expenses parameter of your add_expense function will be a list of expenses. You want to be able to add items at the end of your list. For that you'll use the .append() list method.
+
+Add a call to the .append() method on the expenses list. Don't pass any arguments to .append() for now.
