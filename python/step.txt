@@ -1,10 +1,2 @@
-Step 10
-You have accessed elements (characters) of a string before, using the index operator []. You can also use the index operator to access a range of characters in a string with string[start:stop:step]:
-
-Example Code
-my_string = 'camperbot'
-my_string[0:6] == 'camper' # True
-my_string[0:6:3] == 'cp' # True
-Where start is the starting index (inclusive), stop is the ending index (exclusive), and step is the amount of characters to skip over. If not specified, step is default to 1.
-
-Create a variable named card_number_reversed and assign it the value of the first 4 characters of card_number.
+Step 11
+Print the value of the card_number_reversed variable to the console.
