@@ -1,2 +1,2 @@
-Step 33
-Adjust the verify_card_number call such that if it returns True, print 'VALID!' to the console. Otherwise, print 'INVALID!'.
+Step 34
+Change the value of card_number such that 'INVALID!' is printed to the console.
