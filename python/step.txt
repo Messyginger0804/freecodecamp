@@ -1,2 +1,2 @@
-Step 31
-Below the second for loop of the verify_card_number function, create a variable named total, and assign it the value of the sum of the odd and even digits. Print total to the console.
+Step 32
+Return the result of comparing 0 to total modulo 10.
