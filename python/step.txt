@@ -1,4 +1,4 @@
-Step 96
-Wait a minute! You cannot decrypt anything with the wrong key. Try with 'happycoding'.
+Step 1
+In this project, you will implement the Luhn Algorithm. This algorithm is a formula to validate a variety of identification numbers.
 
-With that, your cipher project is complete.
+Start by declaring a function called main, this will serve as the entry point of the program. Use the pass keyword to avoid an error.
