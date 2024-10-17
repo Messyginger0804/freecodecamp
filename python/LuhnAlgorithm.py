@@ -4,4 +4,5 @@ def main():
     translated_card_number = card_number.translate(card_translation)
 
     print(translated_card_number)
-        
+
+main()
