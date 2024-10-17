@@ -11,8 +11,9 @@ def verify_card_number(card_number):
     for digit in even_digits:
         number = int(digit) * 2
         if number >= 10:
-            print(number)     
-        
+            print(number)
+            number = (number // 10) + (number % 10)
+            
 def main():
     card_number = '4111-1111-4555-1142'
     card_translation = str.maketrans({'-': '', ' ': ''})
