@@ -1,2 +1,2 @@
-Step 15
-Remove the print call from the verify_card_number function.
+Step 16
+Remove the print call from the main function.
