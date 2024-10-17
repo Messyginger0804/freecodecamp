@@ -1,2 +1,7 @@
-Step 34
-Change the value of card_number such that 'INVALID!' is printed to the console.
+Step 35
+Well done on completing this project.
+
+As a final step, remove the print call from the verify_card_number function, and change the card_number back to something valid.
+
+
+4111-1111-4555-1142
