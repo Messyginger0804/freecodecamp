@@ -1,4 +1,4 @@
-Step 22
-You should see something like <map object at 0xd273a8> printed on the console, which is the string representation of the map object returned by map().
+Step 23
+The sum() function returns the sum of the items in the iterable which is passed as its argument. You are going to use sum() together with map() and lambda functions to get the total amount of expenses.
 
-To obtain a readable output you need to turn the map object into a list. Do it by passing the map() call as the argument to the list() function.
+For now, make a little test and modify your current print() call replacing the list() call with a call to the sum() function passing it the current map() call as the argument.
