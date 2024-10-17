@@ -1,8 +1,4 @@
-Step 19
-Lambda functions are brief, anonymous functions in Python, ideal for simple, one-time tasks. They are defined by the lambda keyword, and they use the following syntax:
+Step 20
+To call a lambda function you can use the usual function syntax with a pair of parentheses after the variable name.
 
-Example Code
-lambda x: expr
-In the example above, x represents a parameter to be used in the expression expr, and it acts just like any parameter in a traditional function. expr is the expression that gets evaluated and returned when the lambda function is called.
-
-Create a variable named test and assign it a lambda function that takes an x parameter and returns x * 2.
+Call your test lambda function and pass 3 as the argument. Then, print the result.
