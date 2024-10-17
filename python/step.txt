@@ -1,2 +1,2 @@
-Step 23
-Create a variable even_digits and assign it the even digits of the reversed card number.
+Step 25
+Remove the print call for the sum of the odd digits.
