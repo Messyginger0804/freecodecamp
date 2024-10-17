@@ -8,4 +8,6 @@ def main():
 
     print(translated_card_number)
 
+    verify_card_number(translated_card_number)
+
 main()

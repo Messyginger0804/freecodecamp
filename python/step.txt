@@ -1,2 +1,2 @@
-Step 7
-Define a function verify_card_number with a parameter card_number, and use the pass keyword to make the function do nothing.
+Step 8
+Within your main function, call the verify_card_number function and pass in the translated_card_number variable as an argument.
