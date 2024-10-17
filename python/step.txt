@@ -1,2 +1,2 @@
-Step 29
-Move the print call below the number reassignment.
+Step 30
+Outside of the if statement, add number to sum_of_even_digits. Also, remove the print call.
