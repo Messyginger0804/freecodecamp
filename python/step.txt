@@ -1,2 +1,2 @@
-Step 27
-Finally, pass your map() call to the sum() function to obtain the total expenses and return the result.
+Step 28
+Next, define a function named filter_expenses_by_category that takes two parameters: expenses and category. Use pass to fill the function body.
