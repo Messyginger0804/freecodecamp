@@ -1,7 +1,2 @@
-Step 14
-Just as the step is optional, a start at 0 and an end at the end of the slice are optional:
-
-Example Code
-my_string = 'camperbot'
-camperbot = my_string[::]
-Assign the reverse of the full card_number string to the card_number_reversed variable.
+Step 15
+Remove the print call from the verify_card_number function.
