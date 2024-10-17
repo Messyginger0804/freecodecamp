@@ -1,2 +1,2 @@
-Step 32
-Return the result of comparing 0 to total modulo 10.
+Step 33
+Adjust the verify_card_number call such that if it returns True, print 'VALID!' to the console. Otherwise, print 'INVALID!'.
