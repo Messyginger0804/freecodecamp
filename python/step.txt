@@ -1,4 +1,4 @@
-Step 23
-The sum() function returns the sum of the items in the iterable which is passed as its argument. You are going to use sum() together with map() and lambda functions to get the total amount of expenses.
+Step 24
+Next, you are going to implement the same logic within the total_expenses function.
 
-For now, make a little test and modify your current print() call replacing the list() call with a call to the sum() function passing it the current map() call as the argument.
+For now, delete both the test function and the print() call.
