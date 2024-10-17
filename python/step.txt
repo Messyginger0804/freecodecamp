@@ -1,4 +1,2 @@
-Step 14
-Next, define a function named print_expenses that takes one parameter expenses. This function will later be used to display each expense in your list.
-
-Fill the body of your new function with a pass statement.
+Step 15
+Inside the print_expenses function, create a for loop that iterates over each item in the expenses list. Use expense as the loop variable and move pass inside the loop body.
