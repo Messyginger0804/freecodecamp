@@ -1,4 +1,8 @@
-Step 18
-You will need a function to calculate the total amount of expenses.
+Step 19
+Lambda functions are brief, anonymous functions in Python, ideal for simple, one-time tasks. They are defined by the lambda keyword, and they use the following syntax:
 
-Define a function named total_expenses that takes one parameter expenses. Fill the function body with a pass statement for now.
+Example Code
+lambda x: expr
+In the example above, x represents a parameter to be used in the expression expr, and it acts just like any parameter in a traditional function. expr is the expression that gets evaluated and returned when the lambda function is called.
+
+Create a variable named test and assign it a lambda function that takes an x parameter and returns x * 2.
