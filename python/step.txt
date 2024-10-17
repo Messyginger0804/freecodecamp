@@ -1,10 +1,12 @@
-Step 6
-The insert method can add an element at any position in a list. The first argument is the position at which the element has to be added, and the second argument is the element to add. For example, here's how to add a new element in the third position of example_list:
+Step 7
+The pop() method can be used to remove an element from a list. By default, it removes the last element of the list. You can pass an index as the argument to the method, and it will remove the element at the given index.
 
 Example Code
-example_list = [4, 5, 6, 7]
+fruits_list = ["cherry", "lemon", "tomato", "apple", "orange"]
 
-example_list.insert(2, 5.5)
+fruits_list.pop(2)
 
-print(example_list) # [4, 5, 5.5, 6, 7]
-Using insert(), add 1 to my_list in the proper position so that it is counting upward, then print the list.
+print(fruits_list) # ["cherry", "lemon", "apple", "orange"]
+In this case, fruits_list.pop(2) removes the element at index 2 of the list.
+
+Use pop() to remove the last element from my_list, then print my_list.

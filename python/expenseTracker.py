@@ -11,3 +11,6 @@ print(my_list)
 my_list.insert(1, 1)
 print(my_list)
 
+my_list.pop()
+print(my_list)
+
