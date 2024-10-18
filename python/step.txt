@@ -1,4 +1,7 @@
-Step 32
-The next step is to define the main function, which will be the entry point of the interactive expense tracker program.
+Step 33
+A while loop is another kind of loop that runs a portion of code as long as a specified condition is True. The loop terminates when the condition becomes False:
 
-Define a function named main without parameters. Fill the function body with the expenses list you created at the beginning of this project. You will use this list to store the expense records.
+Example Code
+while condition:
+    <code>
+Below the expenses list, create a while loop. Use True for the condition, and print the string '\nExpense Tracker' inside the loop body to show the title of the program.
