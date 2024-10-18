@@ -10,7 +10,7 @@ def total_expenses(expenses):
     
 def filter_expenses_by_category(expenses, category):
     return filter(lambda expense: expense['category'] == category, expenses)
-
+    
 def main():
     expenses = []
     while True:
@@ -21,4 +21,5 @@ def main():
         print('4. Filter expenses by category')
         print('5. Exit')
 
+        choice = input('Enter your choice: ')
         

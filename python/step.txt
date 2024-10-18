@@ -1,2 +1,4 @@
-Step 36
-Provide the other menu options by printing the following three strings in your while loop: '3. Show total expenses', '4. Filter expenses by category', and '5. Exit'. Keep adding the print() calls in order.
+Step 37
+The input() function takes a user input and it returns the user input in the form of a string.
+
+Inside your while loop, call the input() function passing the string 'Enter your choice: ' as the argument, and assign the result to a variable named choice.
