@@ -1,6 +1,4 @@
-Step 38
-You are going to use conditional statements to check the user's choice. If the choice is '1', it means the user wants to add an expense.
+Step 39
+Inside the if statement, you should ask the user to enter the amount for the expense and store it in a variable.
 
-Still in the while loop, under the choice variable, write an if statement to check if choice equals the string '1'. If it's true, it will be the starting point for adding a new expense.
-
-Inside the if statement body, declare a variable amount and assign it an empty input() call.
+Pass the string 'Enter amount: ' to your empty input() call, so you can store the expense.
