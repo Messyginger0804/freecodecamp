@@ -22,5 +22,6 @@ def main():
         print('5. Exit')
         
         choice = input('Enter your choice: ')
+        
         if choice == '1':
-            amount = input('Enter amount: ')
+            amount = float(input('Enter amount: '))

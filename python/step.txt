@@ -1,4 +1,4 @@
-Step 39
-Inside the if statement, you should ask the user to enter the amount for the expense and store it in a variable.
+Step 40
+The amount of the expense needs to be converted before performing any calculation. The float() function takes a string or an integer number as argument and returns a floating point number.
 
-Pass the string 'Enter amount: ' to your empty input() call, so you can store the expense.
+Pass input('Enter amount: ') to the float() function.
