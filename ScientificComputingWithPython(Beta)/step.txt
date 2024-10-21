@@ -1,2 +1,4 @@
-Step 3
-Declare two new variables named digits and symbols and assign them string.digits and string.punctuation, respectively.
+Step 4
+These three variables constitute the possible characters to choose from when generating the password.
+
+Just before them, add a comment saying Define the possible characters for the password.
