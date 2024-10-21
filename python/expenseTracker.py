@@ -23,10 +23,14 @@ def main():
         print('5. Exit')
         
         choice = input('Enter your choice: ')
+
         if choice == '1':
             amount = float(input('Enter amount: '))
             category = input('Enter category: ')
             add_expense(expenses, amount, category)
         elif choice == '2':
             print('\nAll Expenses:')
-        
+            print_expenses(expenses)
+        elif choice == '3':
+            print('\nTotal Expenses: ', total_expenses(expenses))
+            

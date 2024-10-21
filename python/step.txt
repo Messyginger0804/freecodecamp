@@ -1,4 +1,2 @@
-Step 43
-To list all expenses, you can use an elif clause after an if statement. The elif checks additional conditions and only works following an if statement.
-
-Create an elif clause to check if the user's choice equals the string '2'. Inside the elif clause, print the string '\nAll Expenses:'.
+Step 44
+After the print() call, call the print_expenses function to display all the expenses that have been added so far. Pass the expenses list as the argument.
