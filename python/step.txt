@@ -1,4 +1,4 @@
-Step 13
-In order to display the output of the convert_to_snake_case() function, you need to call the main() function.
+Step 17
+Instead of returning the list snake_cased_char_list, you will need to join its elements into a single string using an empty string '' as the separator.
 
-At the same level as the two existing functions, add a call to the main() function. You should see the given camel or pascal cased string converted to snake case upon execution.
+Modify the return statement to return the result of joining snake_cased_char_list with an empty string as a separator.
