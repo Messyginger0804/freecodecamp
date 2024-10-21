@@ -1,4 +1,4 @@
-Step 9
-The random module contains a pseudo-random number generator. Most of its functionalities depend on the random() function, which returns a floating point number in the range between 0.0 (inclusive) and 1.0 (exclusive).
+Step 10
+The choice() function from the random module takes a sequence and returns a random item of the sequence.
 
-Call the random() function from the random module and print the result.
+Modify your print() call to use the choice() function and pass all_characters as the argument.
