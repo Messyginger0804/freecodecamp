@@ -1,4 +1,4 @@
-Step 8
-Next, you are going to work on the cases where the square_target is a positive number apart from 1 or 0.
+Step 12
+Inside the for loop, calculate the midpoint of the interval ranging from low to high. Assign this value to a variable mid.
 
-Create an else clause to handle these cases.
+Also, calculate the square of the midpoint (mid) and store it in the variable square_mid.
