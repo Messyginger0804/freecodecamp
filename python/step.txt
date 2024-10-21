@@ -1,6 +1,6 @@
-Step 1
-In this project, you will find the approximate square root of a given number using the bisection method.
+Step 2
+Give the square_root_bisection function the following parameters:
 
-The bisection method is a technique for finding the roots of a real-valued function. It works by narrowing down an interval where the square root lies until it converges to a value within a specified tolerance.
-
-Begin by creating a function named square_root_bisection. Leave the parameters empty for now.
+square_target: The number for which you want to find the square root.
+tolerance (optional): The acceptable difference between the square of the approximate root value and the actual target value (default is 1e-7). The tolerance 1e-7 implies that the solution will be accurate to within 0.0000001 of the true value and is a good default choice that balances accuracy and performance.
+max_iterations (optional): The maximum number of iterations to perform (default is 100). If the method doesn't converge within this limit, you'll assume the solution is not found.
