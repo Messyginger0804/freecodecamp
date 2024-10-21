@@ -18,5 +18,5 @@ def generate_password(length):
         
     return password
     
-new_password = generate_password(8)
-print(new_password)
+# new_password = generate_password(8)
+# print(new_password)
