@@ -1,8 +1,2 @@
-Step 21
-Still, the final result is not exactly what you want to achieve. You need to execute a different expression for the characters filtered out by the if clause. You'll use an else clause for that:
-
-Example Code
-spam = [i * 2 if i > 0 else -1 for i in iterable]
-Note that, differently from the if clause, the if/else construct must be placed between the expression and the for keyword.
-
-Modify your list comprehension so that when a character is not uppercase it remains unchanged.
+Step 22
+Get rid of the commented lines of code inside the convert_to_snake_case() function to clean up the function definition.
