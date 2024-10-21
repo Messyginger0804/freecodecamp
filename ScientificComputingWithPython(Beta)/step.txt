@@ -1,6 +1,4 @@
-Step 11
-Every time the code runs, you should see a random character from the all_characters string. This is exactly what you want to achieve to create a random password.
+Step 12
+Although the effect might seem equal to random.choice(), secrets ensure you the most secure source of randomness that your operating system can provide.
 
-However, the algorithm on which random relies makes the generated pseudo-random numbers predictable. Therefore, although the random module is suitable for the most common applications, it cannot be used for cryptographic purposes, due to its deterministic nature.
-
-Instead of importing random, import the secrets module. Then change the print() call to use secrets.choice(all_characters).
+Now, delete your two print() calls.
