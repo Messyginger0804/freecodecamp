@@ -1,11 +1,8 @@
-Step 18
-After joining the elements of the list snake_cased_char_list, you will need to remove any leading or trailing underscores from the resulting string. For this, use the strip method with the underscore character _ as an argument.
-
-Method calls can be chained together, which means that the result of one method call can be used as the object for another method call.
+Step 20
+List comprehensions accept conditional statements, to evaluate the provided expression only if certain conditions are met:
 
 Example Code
-words_list = ['hello', 'world', 'this', 'is', 'chained', 'methods']
-result = ' '.join(words_list).upper()
-In the example above, the .upper() method is chained to ' '.join(words_list), therefore .upper() is called on the result of the .join() call.
+spam = [i * 2 for i in iterable if i > 0]
+As you can see from the output, the list of characters generated from pascal_or_camel_cased_string has been joined. Since the expression inside the list comprehension is evaluated for each character, the result is a lowercase string with all the characters separated by an underscore.
 
-Modify the return statement by chaining to ''.join(snake_cased_char_list) a call to the .strip() method to remove any leading or trailing underscores.
+Follow the example above to add an if clause to your list comprehension so that the expression is executed only if the character is uppercase.
