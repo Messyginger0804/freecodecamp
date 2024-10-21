@@ -14,5 +14,9 @@ def square_root_bisection(square_target, tolerance=1e-7, max_iterations=100):
         root = None
         
         for _ in range(max_iterations):
-            mid = (low + high)/2
+            mid = (low + high) / 2
             square_mid = mid**2
+            
+            if abs(square_mid - square_target) < tolerance:
+                pass
+            

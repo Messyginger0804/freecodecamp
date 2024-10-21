@@ -1,4 +1,4 @@
-Step 12
-Inside the for loop, calculate the midpoint of the interval ranging from low to high. Assign this value to a variable mid.
+Step 13
+The abs() function returns the absolute value of a number, which is always positive, regardless of the number sign. You will use it to check that the estimated square root is close enough to the actual value.
 
-Also, calculate the square of the midpoint (mid) and store it in the variable square_mid.
+Now, create an if statement to check if the absolute value of the difference between square_mid and square_target is within the specified tolerance.
