@@ -1,4 +1,2 @@
-Step 5
-You'll create separate cases for when square_target is 0 or 1.
-
-Begin by creating an if statement to check if square_target is equal to 1.
+Step 6
+If the square_target is equal to 1, declare a variable root and assign it the value 1 . Also, print the message 'The square root of {square_target} is 1'. Remember to format the message using an f-string.
