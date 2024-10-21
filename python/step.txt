@@ -1,4 +1,10 @@
-Step 7
-You need to handle the characters that are already in lowercase by adding them to the list of converted characters.
+Step 8
+By this point, the variable snake_cased_char_list holds the list of converted characters. To combine these characters into a single string, you can utilize the .join() method.
 
-Right after the if statement within the for loop, add an else clause and use the .append() method to add char to the snake_cased_char_list variable.
+The join method works by concatenating each element of a list into a string, separated by a designated string, known as the separator.
+
+Example Code
+result_string = ''.join(characters)
+The example above joins together the elements of the characters list into a single string where each element is concatenated together using an empty string as the separator.
+
+Now, right after the for loop, use the .join() method to join the elements in snake_cased_char_list using an empty string as the separator. Assign the result to a new variable named snake_cased_string.
