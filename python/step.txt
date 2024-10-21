@@ -1,4 +1,11 @@
-Step 17
-Instead of returning the list snake_cased_char_list, you will need to join its elements into a single string using an empty string '' as the separator.
+Step 18
+After joining the elements of the list snake_cased_char_list, you will need to remove any leading or trailing underscores from the resulting string. For this, use the strip method with the underscore character _ as an argument.
 
-Modify the return statement to return the result of joining snake_cased_char_list with an empty string as a separator.
+Method calls can be chained together, which means that the result of one method call can be used as the object for another method call.
+
+Example Code
+words_list = ['hello', 'world', 'this', 'is', 'chained', 'methods']
+result = ' '.join(words_list).upper()
+In the example above, the .upper() method is chained to ' '.join(words_list), therefore .upper() is called on the result of the .join() call.
+
+Modify the return statement by chaining to ''.join(snake_cased_char_list) a call to the .strip() method to remove any leading or trailing underscores.
