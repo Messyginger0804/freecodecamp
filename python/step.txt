@@ -1,4 +1,2 @@
-Step 13
-The abs() function returns the absolute value of a number, which is always positive, regardless of the number sign. You will use it to check that the estimated square root is close enough to the actual value.
-
-Now, create an if statement to check if the absolute value of the difference between square_mid and square_target is within the specified tolerance.
+Step 14
+If the difference is within the specified tolerance, set the value of root to mid and break out of the loop.
