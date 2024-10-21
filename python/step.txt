@@ -1,4 +1,8 @@
-Step 40
-The amount of the expense needs to be converted before performing any calculation. The float() function takes a string or an integer number as argument and returns a floating point number.
+Step 42
+Once you have the expense details, you need to call the add_expense function to add the new expense to the expenses list.
 
-Pass input('Enter amount: ') to the float() function.
+After getting the amount and category using input(), call the add_expense function, passing three arguments: expenses, amount and category.
+
+expenses is the empty list created in the main function earlier in this project.
+amount is the amount of the expense.
+category is the category of the expense.
