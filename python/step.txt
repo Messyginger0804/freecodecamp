@@ -1,6 +1,4 @@
-Step 6
-Within the if statement body, you are going to add the converted character to the list you created earlier.
+Step 7
+You need to handle the characters that are already in lowercase by adding them to the list of converted characters.
 
-For this, the .append() method will be used. This method adds a given object to the end of the list it is invoked on.
-
-Use the .append() method on the snake_cased_char_list to add the converted_character to the list.
+Right after the if statement within the for loop, add an else clause and use the .append() method to add char to the snake_cased_char_list variable.
