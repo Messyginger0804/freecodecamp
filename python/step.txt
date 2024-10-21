@@ -1,2 +1,6 @@
-Step 20
-Outside the function definiton, create a variable N and assign the value of 16 to it.
+Step 21
+Call the square_root_bisection function with the N variable as the argument. This will print the result to the console.
+
+Experiment with larger values.
+
+With this, you have successfully implemented the bisection method to find the square root of a number.
