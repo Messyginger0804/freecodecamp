@@ -1,8 +1,4 @@
-Step 42
-Once you have the expense details, you need to call the add_expense function to add the new expense to the expenses list.
+Step 43
+To list all expenses, you can use an elif clause after an if statement. The elif checks additional conditions and only works following an if statement.
 
-After getting the amount and category using input(), call the add_expense function, passing three arguments: expenses, amount and category.
-
-expenses is the empty list created in the main function earlier in this project.
-amount is the amount of the expense.
-category is the category of the expense.
+Create an elif clause to check if the user's choice equals the string '2'. Inside the elif clause, print the string '\nAll Expenses:'.
