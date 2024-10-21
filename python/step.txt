@@ -1,12 +1,4 @@
-Step 9
-In pascal case, strings begin with a capital letter. After converting all the characters to lowercase and adding an underscore to them, there's a chance of having an extra underscore at the start of your string.
+Step 10
+To wrap up the function, return the clean_snake_cased_string. This will complete the function and allow you to use it to convert strings from pascal or camel case to snake case.
 
-The easiest way to fix this is by using the .strip() string method, which removes from a string any leading or trailing characters among a set of characters passed as its argument. For example:
-
-Example Code
-original_string = "_example_string_"
-
-clean_string = original_string.strip('_')
-The strip() method is applied to original_string. This removes any leading and trailing underscore. The result of the example above would be the string 'example_string'.
-
-Declare a new variable named clean_snake_cased_string and assign it the result of the .strip() method applied to snake_cased_string , passing '_' as the argument to the method.
+Add a return statement at the end of the function to return the clean_snake_cased_string.
