@@ -1,2 +1,6 @@
-Step 22
-Get rid of the commented lines of code inside the convert_to_snake_case() function to clean up the function definition.
+Step 23
+Finally try out this new implementation by executing the program. Change the input string to 'IAmAPascalCasedString' and see if it comes out as 'i_am_a_pascal_cased_string', even though that's a lie.
+
+If you've done everything correctly, you should see the input string converted into snake case, like before.
+
+Congratulations! Now your convert_to_snake_case() function is ready.
