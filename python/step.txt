@@ -1,10 +1,12 @@
-Step 8
-By this point, the variable snake_cased_char_list holds the list of converted characters. To combine these characters into a single string, you can utilize the .join() method.
+Step 9
+In pascal case, strings begin with a capital letter. After converting all the characters to lowercase and adding an underscore to them, there's a chance of having an extra underscore at the start of your string.
 
-The join method works by concatenating each element of a list into a string, separated by a designated string, known as the separator.
+The easiest way to fix this is by using the .strip() string method, which removes from a string any leading or trailing characters among a set of characters passed as its argument. For example:
 
 Example Code
-result_string = ''.join(characters)
-The example above joins together the elements of the characters list into a single string where each element is concatenated together using an empty string as the separator.
+original_string = "_example_string_"
 
-Now, right after the for loop, use the .join() method to join the elements in snake_cased_char_list using an empty string as the separator. Assign the result to a new variable named snake_cased_string.
+clean_string = original_string.strip('_')
+The strip() method is applied to original_string. This removes any leading and trailing underscore. The result of the example above would be the string 'example_string'.
+
+Declare a new variable named clean_snake_cased_string and assign it the result of the .strip() method applied to snake_cased_string , passing '_' as the argument to the method.
