@@ -1,2 +1,4 @@
-Step 14
-If the difference is within the specified tolerance, set the value of root to mid and break out of the loop.
+Step 15
+If the difference is not within the specified tolerance, create an elif statement to check if square_mid is less than square_target.
+
+Assign the value of mid to low as the square root would now lie between low and mid.
