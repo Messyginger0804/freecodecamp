@@ -2,7 +2,7 @@ import secrets
 import string
 
 
-def generate_password(length):    
+def generate_password(length):
     # Define the possible characters for the password
     letters = string.ascii_letters
     digits = string.digits
@@ -10,3 +10,4 @@ def generate_password(length):
 
     # Combine all characters
     all_characters = letters + digits + symbols
+    password = ''
