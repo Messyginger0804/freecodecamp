@@ -1,4 +1,4 @@
-Step 1
-In this project, you are going to build a program that takes a camelCase or PascalCase formatted string as input and converts that to a snake_case formatted string using two approaches. First, you'll use a for loop and then list comprehension to achieve the same results. You'll see how list comprehension can make your code more concise.
+Step 2
+You need to add an empty list that will hold the characters of the string after you have converted them to snake case.
 
-Start defining a new function named convert_to_snake_case() that accepts a string named pascal_or_camel_cased_string as input. For now, add a pass statement inside the function.
+Inside the function, replace the pass statement by creating an empty list named snake_cased_char_list.
