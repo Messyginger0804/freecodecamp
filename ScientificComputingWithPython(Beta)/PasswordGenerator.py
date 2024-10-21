@@ -10,6 +10,7 @@ def generate_password(length):
 
     # Combine all characters
     all_characters = letters + digits + symbols
+
     password = ''
     # Generate password
     for _ in range(length):
@@ -17,3 +18,4 @@ def generate_password(length):
         
     return password
     
+new_password = generate_password(8)
