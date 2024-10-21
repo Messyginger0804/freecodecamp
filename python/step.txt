@@ -1,4 +1,2 @@
-Step 15
-If the difference is not within the specified tolerance, create an elif statement to check if square_mid is less than square_target.
-
-Assign the value of mid to low as the square root would now lie between low and mid.
+Step 16
+If both the if and elif conditions are not met, the value of mid would be greater than square_target. In this case, create an else clause and assign the value of mid to high.
