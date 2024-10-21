@@ -1,4 +1,4 @@
-Step 10
-To wrap up the function, return the clean_snake_cased_string. This will complete the function and allow you to use it to convert strings from pascal or camel case to snake case.
+Step 11
+With the function complete, you can now use it inside another function.
 
-Add a return statement at the end of the function to return the clean_snake_cased_string.
+Create a new function called main() with pass as the body of the function.
