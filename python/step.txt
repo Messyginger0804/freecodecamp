@@ -1,8 +1,8 @@
-Step 20
-List comprehensions accept conditional statements, to evaluate the provided expression only if certain conditions are met:
+Step 21
+Still, the final result is not exactly what you want to achieve. You need to execute a different expression for the characters filtered out by the if clause. You'll use an else clause for that:
 
 Example Code
-spam = [i * 2 for i in iterable if i > 0]
-As you can see from the output, the list of characters generated from pascal_or_camel_cased_string has been joined. Since the expression inside the list comprehension is evaluated for each character, the result is a lowercase string with all the characters separated by an underscore.
+spam = [i * 2 if i > 0 else -1 for i in iterable]
+Note that, differently from the if clause, the if/else construct must be placed between the expression and the for keyword.
 
-Follow the example above to add an if clause to your list comprehension so that the expression is executed only if the character is uppercase.
+Modify your list comprehension so that when a character is not uppercase it remains unchanged.
