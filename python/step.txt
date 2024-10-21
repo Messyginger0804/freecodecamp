@@ -1,4 +1,2 @@
-Step 17
-In Python, the is keyword checks for object identity. It's used to determine if two variables point to the same object in memory. In contrast to is, the equality operator (==) determines if the values of two objects are the same, regardless of whether they are the same object in memory.
-
-Outside the for loop, create an if statement to check if root is None. If it is, print the message 'Failed to converge within {max_iterations} iterations.'. Remember to format the message using an f-string.
+Step 18
+Create an else clause to handle the case where the value of root is not None, indicating that a root has been found. If it is not None, print the message 'The square root of {square_target} is approximately {root}'. Remember to format using an f-string.
