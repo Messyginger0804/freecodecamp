@@ -1,4 +1,6 @@
-Step 2
-You need to add an empty list that will hold the characters of the string after you have converted them to snake case.
+Step 4
+In both camel case and pascal case, uppercase characters mark the beginning of new words. To convert the input string to snake case, you will need to check if the characters in the input string are uppercase.
 
-Inside the function, replace the pass statement by creating an empty list named snake_cased_char_list.
+You can use the .isupper() string method to check if a character is uppercase. This method returns True if the character is uppercase and False if it is not.
+
+Inside the for loop, add an if statement to check if the current character is uppercase. Move the pass statement inside the new if statement.
