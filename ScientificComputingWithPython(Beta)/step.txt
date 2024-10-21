@@ -1,4 +1,6 @@
-Step 10
-The choice() function from the random module takes a sequence and returns a random item of the sequence.
+Step 11
+Every time the code runs, you should see a random character from the all_characters string. This is exactly what you want to achieve to create a random password.
 
-Modify your print() call to use the choice() function and pass all_characters as the argument.
+However, the algorithm on which random relies makes the generated pseudo-random numbers predictable. Therefore, although the random module is suitable for the most common applications, it cannot be used for cryptographic purposes, due to its deterministic nature.
+
+Instead of importing random, import the secrets module. Then change the print() call to use secrets.choice(all_characters).

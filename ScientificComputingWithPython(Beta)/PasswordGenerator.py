@@ -1,4 +1,4 @@
-import random
+import secrets
 import string
 
 
@@ -11,4 +11,4 @@ symbols = string.punctuation
 all_characters = letters + digits + symbols
 
 print(all_characters)
-print(random.choice(all_characters))
+print(secrets.choice(all_characters))
