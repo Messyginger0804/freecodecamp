@@ -1,4 +1,4 @@
-Step 11
-With the function complete, you can now use it inside another function.
+Step 12
+Inside the main() function, replace the pass statement, with a call to the convert_to_snake_case() function, passing the string 'aLongAndComplexString' as input.
 
-Create a new function called main() with pass as the body of the function.
+To display the output, pass the function call as the argument to the print() function.
