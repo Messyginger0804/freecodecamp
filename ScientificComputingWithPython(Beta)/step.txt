@@ -1,2 +1,2 @@
-Step 20
-Finally, declare a variable new_password and assign it the result of calling generate_password. Pass 8 as the argument to your generate_password call.
+Step 21
+Check the result by printing your new variable.
