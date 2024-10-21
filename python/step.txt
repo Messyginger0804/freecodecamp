@@ -1,2 +1,4 @@
-Step 49
-Still within the elif clause, pass the expenses_from_category iterator to a print_expenses call.
+Step 50
+To provide a way to exit the program, use another elif clause to check if choice equals the string '5'.
+
+Inside the new elif clause, print the string 'Exiting the program.' to show that the program is terminating its execution.
