@@ -21,7 +21,7 @@ def main():
         print('3. Show total expenses')
         print('4. Filter expenses by category')
         print('5. Exit')
-        
+       
         choice = input('Enter your choice: ')
 
         if choice == '1':
@@ -35,6 +35,7 @@ def main():
 
         elif choice == '3':
             print('\nTotal Expenses: ', total_expenses(expenses))
+
         elif choice == '4':
             category = input('Enter category to filter: ')
             print(f'\nExpenses for {category}:')
@@ -42,3 +43,5 @@ def main():
             print_expenses(expenses_from_category)
         elif choice == '5':
             print('Exiting the program.')
+            break
+            
