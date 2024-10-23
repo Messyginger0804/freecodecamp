@@ -1,2 +1,2 @@
-Step 24
-Put your password variable declaration and the following for loop inside a while loop. Use True as the condition for your new loop.
+Step 25
+After your for loop, create a constraints variable and assign an empty list to this variable.
