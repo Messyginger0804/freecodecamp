@@ -1,2 +1,4 @@
-Step 32
-You can obtain the same result without using the compile() function. Modify your pattern variable into the literal string 'l+'. Then, change the print() call to print re.search(pattern, quote).
+Step 33
+To check that the generated password meets the required features, you are going to use the findall() function from the re module. It's similar to search but it returns a list with all the occurrences of the matched pattern.
+
+Replace the search() call with findall() and check the output.
