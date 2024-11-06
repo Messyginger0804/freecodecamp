@@ -1,4 +1,2 @@
-Step 44
-Python provides a particular type of string called raw string. Raw strings are prefixed with a r. The key distinction from regular strings lies in how they handle the backslash character: in raw strings, backslashes are treated as literal characters rather than escape characters. When writing regular expressions, using raw strings is a good practice, since they can usually contain a lot of \ characters.
-
-Turn your pattern string into a raw string by prefixing it with a r.
+Step 45
+Now, turn the four patterns from the constraints list into raw strings.
