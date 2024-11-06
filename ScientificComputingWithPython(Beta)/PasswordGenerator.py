@@ -2,6 +2,7 @@ import re
 import secrets
 import string
 
+
 def generate_password(length, nums, special_chars, uppercase, lowercase):
     # Define the possible characters for the password
     letters = string.ascii_letters
@@ -25,3 +26,4 @@ def generate_password(length, nums, special_chars, uppercase, lowercase):
 
 # new_password = generate_password(8)
 # print(new_password)
+pattern = re.compile('i')
