@@ -1,4 +1,2 @@
-Step 30
-The value None is returned since 'i' is not found inside the parsed string.
-
-Now, modify the string passed to re.compile() into 'l' and see the result.
+Step 32
+You can obtain the same result without using the compile() function. Modify your pattern variable into the literal string 'l+'. Then, change the print() call to print re.search(pattern, quote).
