@@ -1,2 +1,2 @@
-Step 45
-Now, turn the four patterns from the constraints list into raw strings.
+Step 46
+The character class \d is a shorthand for [0-9]. Replace this character class with the shorthand inside your first constraint tuple.
