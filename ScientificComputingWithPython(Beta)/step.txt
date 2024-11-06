@@ -1,4 +1,2 @@
-Step 59
-Turn the expression inside your for loop into an if statement. Use the expression you wrote in the previous step as the if condition.
-
-Inside the new conditional statement, increment the count value by 1.
+Step 60
+Finally, after the for loop, create an if statement to check if count is equal to 4 and break out of the while loop by using the break statement.
