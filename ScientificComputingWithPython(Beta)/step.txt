@@ -1,2 +1,2 @@
-Step 57
-Inside your for loop, compare constraint and the length of the list returned by findall(). Use the <= operator for that.
+Step 58
+Right before your for loop, declare a count variable and assign the value zero to this variable.
