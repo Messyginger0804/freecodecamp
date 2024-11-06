@@ -1,2 +1,4 @@
-Step 55
-Inside the for loop, call the findall() function passing pattern and password as the arguments.
+Step 56
+You are interested in the number of elements in the list returned by the findall() function.
+
+Pass your existent findall() call to the len() function.
