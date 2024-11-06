@@ -1,2 +1,2 @@
-Step 54
-After your new comment, write a for loop to iterate over the constraints list. Use constraint and pattern as the loop variables.
+Step 55
+Inside the for loop, call the findall() function passing pattern and password as the arguments.
