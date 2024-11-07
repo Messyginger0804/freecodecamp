@@ -1,6 +1,6 @@
-Step 61
-Instead of using a loop and a counter variable, you can achieve the same result with a different approach, which you are going to implement in the next few steps.
+Step 63
+Having all([expression for i in iterable]), means that a new list is created by evaluating expression for each i in iterable. After the all() function iterates over the newly created list, the list is deleted automatically, since it is no longer needed.
 
-all() is a built-in Python function that returns True if all the elements inside a given iterable evaluate to True. Otherwise, it returns False.
+Memory can be saved by using a generator expression. Generator expressions follow the syntax of list comprehensions but they use parentheses instead of square brackets.
 
-Replace your existing for loop and two if statements with a single if statement. For the if condition, use a call to the all() function and pass an empty list as the argument to the function call.
+Change your list comprehension into a generator expression by removing the square brackets.
