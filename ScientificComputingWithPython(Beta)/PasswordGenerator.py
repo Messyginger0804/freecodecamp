@@ -3,8 +3,7 @@ import secrets
 import string
 
 
-def generate_password(length, nums, special_chars, uppercase, lowercase):
-   
+def generate_password(length, nums, special_chars, uppercase, lowercase):   
     # Define the possible characters for the password
     letters = string.ascii_letters
     digits = string.digits
@@ -35,6 +34,5 @@ def generate_password(length, nums, special_chars, uppercase, lowercase):
     
     return password
     
-# length, nums, special_chars, uppercase, lowercase
-new_password = generate_password(length=8, nums=1, special_chars=1, uppercase=1, lowercase=1)
+new_password = generate_password(nums=1, length=8, special_chars=1, uppercase=1, lowercase=1)
 print(new_password)
