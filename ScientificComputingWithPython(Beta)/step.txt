@@ -1,2 +1,2 @@
-Step 70
-Now, remove all the arguments from your function call.
+Step 71
+Modify your print() call to take the string 'Generated password:' as the first argument, before new_password.
